@@ -676,6 +676,61 @@ page~\pageref{sec:bscsschedule}.
 Note: classes that receive no grade (including classes that are
 audited) do not count toward your degree requirements.
 
+\subsection{Capstone Sequence}
+\label{capstone-section}
+
+All SEAS students must complete a senior thesis, which is encapsulated
+in the STS 4500 and 4600 courses.  In addition to the STS courses,
+students must complete one or two CS courses to fulfill the capstone
+sequence requirement.  There are two ``tracks'' to complete the
+capstone, described below, and students may choose either track.
+
+Formally, students must complete 3 credits of either CS 4971 or CS
+4980 to fulfill the capstone requirement.  But note that CS 4970 is a
+strict pre-req to CS 4971!
+
+\subsubsection{Research Capstone Track}
+
+This track is intended for students who are interested in performing
+an independent project, either a research-based proejct or an
+implementation-based project.  The student must seek out a faculty
+adviser, who will agree to advise the project.  The requirements of
+the project, workload, etc., are to be agreed upon by the student and
+adviser.  Students will receive 3 credits for CS 4780 (Research
+Capstone), which is what formally fulfills the capstone requirement.
+Advisers may decide to assign the credit in a single semester, or
+spread across multiple semesters; as long as 3 credits are eventually
+earned, then the requirement will be fulfilled.  Large projects may
+receive additional credit through CS 4993 (Independent Study), but
+this is solely up to the adviser.  Note that there is a maximum of 3
+credits (1 course) of CS electives that that CS 4993 may count toward;
+any additional count toward the unrestricted elective requirement.
+
+\subsubsection{Project Capstone Track}
+
+This track is intended for any students who are not planning on
+performing an independent project.  Students under this track will
+register for CS 4970 (Capstone Practicum I) in the fall of their 4th
+year, and CS 4971 (Capstone Practicum II) in the spring of their 4th
+year~-- specifically, those classes are to be taken concurrently with
+STS 4500 and STS 4600, respectively.  Both of the CS courses are 3
+credits.
+
+These two courses form a year-long project implementation course.
+Students will be grouped into teams, will have real customers to
+interact with, will have real deadlines, and will need to complete
+real delvierables.  While the domain of the course is up to the
+instructor, the current implementation of the courses is a Service
+Learning Practicum\myurl{http://www.cs.virginia.edu/~asb/slp/}.
+
+Note that only CS 4971 counts toward the capstone requirement; CS 4970
+is a CS elective.  However, CS 4970 is a {\bf strict} pre-requisite to
+CS 4971.  In particular, because the projects are year-long
+group-based projects, there will be absolutely no allowances for
+studnets to join the sequence for just CS 4971 in the spring semester.
+
+
+
 \clearpage
 \subsection{Degree Requirements Checklist}
 
@@ -694,6 +749,7 @@ CS/ECE 3330: Computer Architecture & & & \\ \hline
 CS 3240: Advanced SW Devel. Tech. & & & \\ \hline
 CS 4414: Operating Systems & & & \\ \hline
 CS 4102: Analysis of Algorithms & & & \\ \hline
+Capstone course (cirlce: CS 4971 or 4980) & & & \\ \hline
 APMA 3100: Probability & & & \\ \hline
 APMA 2130 or 3080 or 3120 (circle one) & & & \\ \hline
 APMA 2130 or 3080 or 3120 (circle one) & & & \\ \hline
@@ -827,14 +883,15 @@ HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \und{Seventh semester} & & \und{15} \\
 STS 4010/4500 (401) & Western Tech and Culture & 3 \\
 CS & CS elective$^5$ & 3 \\
-CS & CS elective$^5$ & 3 \\
+CS & CS elective$^5$ or CS 4970 & 3 \\
 CS 4414 (414) & Operating Systems & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 & & \\
-\und{Eighth semester} & & \und{15} \\
+\und{Eighth semester} & & \und{18} \\
 STS 4020/4600 (402) & Engineer in Society & 3 \\
 CS & CS elective$^5$ & 3 \\
 CS & CS elective$^5$ & 3 \\
+CS 4971 or 4980 & Capstone course & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \end{tabular}
@@ -2402,6 +2459,38 @@ interest.
 %  competition.}{Prerequisite: Grade of C- or higher in CS 4810 (445)
 %  or equivalent working knowledge.}{Y}
 
+\course{CS 4970}{N/A}{Capstone Practicum I}{3 credits}{This course is
+  one option in the CS Senior Thesis track. Under the Practicum track,
+  students will take two 3-credit courses, CS 4970 and CS 4971. These
+  courses would form a year-long group-based and project-based
+  practicum class. There would be an actual customer, which could be
+  either internal (the course instructor, other CS professors, etc.)
+  or external (local companies, local non-profits, etc.). Note that
+  the course domain, as well as many of the details as to how the
+  course is structured (group size, etc.), are up to the individual
+  instructor.}{Prerequisites: CS 2150 (216) with a grade of C-.}{Y}
+
+\course{CS 4971}{N/A}{Capstone Practicum II}{3 credits}{This course is
+  one option in the CS Senior Thesis track and is the continuation
+  from CS 4970. Under the Practicum track, students will take two
+  3-credit courses, CS 4970 and CS 4971. These courses would form a
+  year-long group-based and project-based practicum class. There would
+  be an actual customer, which could be either internal (the course
+  instructor, other CS professors, etc.) or external (local companies,
+  local non-profits, etc.). Note that the course domain, as well as
+  many of the details as to how the course is structured (group size,
+  etc.), are up to the individual instructor.}{Prerequisites: CS 4970
+    with a grade of C-.}{Y}
+
+  \course{CS 4980}{N/A}{Capstone Research}{1 to 3 credits}{This course
+    is one option in the CS Senior Thesis track.  Students will seek
+    out a faculty member as an advisor, and do an independent project
+    with said advisor.  Instructors can give the 3 credits across
+    multiple use that research for their senior thesis.  Note that
+    this track could also be an implementation project, including a
+    group-based implementation project.}{Prerequisite: Instructor
+    permission.}{S}
+
 \course{CS 4993}{493}{Independent Study}{1 to 3 credits}{In-depth
   study of a computer science or computer engineering problem by an
   individual student in close consultation with departmental
@@ -2486,8 +2575,24 @@ fulfill the CS elective that replaced it.
 Focal paths were also added to the undergraduate handbook, although
 they do not change the major requirements.
 
+\subsection{Requirements revision from fall 2013}
 
-\clearpage
+The fall 2013 version of the handbook was the first version not to
+include the old 3-digit course numbers (UVa started 4-digit course
+numbers for the fall 2009 semester).  Anybody interested in the
+original 3-digit course numbers can look in old versions of this
+handbook online\myurl{http://www.cs.virginia.edu/bscs/}.
+
+The other major change was the inclusion of the capstone requirement.
+This added 3 additional credits (CS 4971 (Capstone Practicum II) or CS
+4980 (Research Capstone)) needed to complete the BS CS degree.  In
+additionl CS 4970 (Capstone Praticum I) was added as a CS elective.
+Details about the capstone can be found in
+section~\ref{capstone-section}.
+
+
+
+\cleardoublepage
 \pagestyle{empty}
 
 \vspace*{2in}
