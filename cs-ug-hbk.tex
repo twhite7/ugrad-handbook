@@ -1288,16 +1288,17 @@ CS 2110 & Software Development Methods & 3 \\
 CS 2102 & Discrete Mathematics & 3 \\
 ECE 2630 () & Introductory Circuit Analysis & 3 \\
 HSS & HSS elective$^1$ & 3 \\
-\end{tabular}
- 
-\noindent \begin{tabular}{llc}
+& & \\
 \und{Fourth semester} & & \und{16} \\
 CS 2150 & Program and Data Representation & 3 \\
 CS/ECE 2330 & Digital Logic Design & 3 \\
 ECE 2660 () & Electronics I & 4 \\
 CS/ECE & CS/ECE elective $^{3,5}$ & 3 \\
 STS STS & 2xxx/3xxx elective & 3 \\
-& & \\
+\end{tabular}
+ 
+\noindent \begin{tabular}{llc}
+%& & \\
 \und{Fifth semester} & & \und{16} \\
 CS/ECE 3330 & Computer Architecture (see \S\ref{embedded})& 3 \\
 ECE 3750 () & Signals \& Systems & 3 \\
@@ -1354,22 +1355,34 @@ UE & Unrestricted elective$^4$ & 3 \\
 \subsection{Embedded Systems Course Requirement}
 \label{embedded}
 
-As of the time of the printing of this version of the handbook
-(September 2012), the Computer Engineering program is investigating
-creating an Embedded Systems course with the intent for it to replace
-the requirement for CS 3330, Computer Architecutre.  As with all
-degree requirement changes, students may graduate using any set of
-requirements that were in effect when they were a declared major.
-However, note that future versions of ECE 4435, Computer
-Organization \& Design, and ECE 4440, Embedded Systems Design,
-may be redesigned to require the embedded systems class as a
-pre-requisite.
+As of the spring semester of 2013, the computer engineering curriculum
+was modified to require ECE 3430 (Introduction to Embedded Computing
+Systems).  This course takes the place of CS/ECE 3330 (Computer
+Architecture), which is no longer required for a computer engineering
+degree.  In addition, CS 4435 (Computer Organization \& Design) was
+restructured to include many of the topics in CS 3330.  Note that this
+embedded systems requirement change also affects the ECE curriculum,
+but that is not being covered here.
 
-While we expect that this requirement change will be enacted, please
-check back to verify the details~-- the CpE undergraduate website
-(\url{http://www.cpe.virginia.edu/ugrads/}), as well as the errata
-page for this handbook (\url{http://www.cs.virginia.edu/bscs/}) will
-both contain updated information.
+For any computer science classes that require CS 3330 as a pre-req, CS
+4457 will also be allowed.  The one exception is CS 4457 (Computer
+Networks), which has either CS 3330 or CS 3430 as pre-reqs (i.e., not
+CS 4435).
+
+Questions to ask Joanne:
+\begin{itemlist}
+\item what are the name changes?  they are listed differently in
+  different places
+\item is that pre-req structure really correct? what about
+  cross-listed courses?  what about cs-only courses?
+\item what other changes to 4435 and 4440 are there?  name changes
+  also?
+\item how does the when-they-take-what table change?  i can replace
+  3330 with 3430, but does it move up a semester?  what about 4435 and
+  4440?
+\item where does ece 3430 go a few pages back? (page 26) i have it in
+  the general category
+\end{itemlist}
 
 \mysection{Miscellaneous Information}
 
@@ -2231,13 +2244,13 @@ interest.
   topics covered in the course will include the design of super-scalar
   processors and their memory systems, and the fundamentals of
   multi-core processor design.}{Prerequisite: CS 2150, CS/ECE 2330,
-  and CS/ECE 3330 with a C- or higher.}{Y}
+  and (CS/ECE 3330 or ECE 4457) with a C- or higher.}{Y}
 
 \course{CS 4414}{414}{Operating Systems}{3 credits}{Analyzes process
   communication and synchronization; resource management; virtual
   memory management algorithms; file systems; and networking and
-  distributed systems.}{Prerequisite: CS 2150 and CS/ECE 3330
-  with grades of C- or higher.}{S}
+  distributed systems.}{Prerequisite: CS 2150 and (CS/ECE 3330 or ECE
+  4457) with grades of C- or higher.}{S}
 
 \course{CS 4434}{434}{Fault-tolerant Computing}{3
   credits}{Investigates techniques for designing and analyzing
@@ -2248,24 +2261,24 @@ interest.
   modeling, availability modeling, maintainability, safety modeling,
   trade-off analysis, design for testability, and the testing of
   redundant digital systems. Cross-listed as ECE 434.}{Prerequisite:
-  CS/ECE 2330, CS/ECE 3330, APMA 2130, and APMA 3100, each with grades
-  of C- or higher.}{SI}
+  CS/ECE 2330, (CS/ECE 3330 or ECE 4457), APMA 2130, and APMA 3100,
+  each with grades of C- or higher.}{SI}
 
 \course{CS 4444}{444}{Introduction to Parallel Computing}{3
   credits}{Introduces the student to the basics of high-performance
   parallel computing and the national cyber-infrastructure. The course
   is targeted for both computer science students and students from
   other disciplines who want to learn how to significantly increase
-  the performance of applications.}{Prerequisite: CS 2150 and
-  CS/ECE 3330 with a C- or higher.}{Y}
+  the performance of applications.}{Prerequisite: CS 2150 and (CS/ECE
+  3330 or ECE 4457) with a C- or higher.}{Y}
 
 \course{CS/ECE 4457}{457}{Computer Networks}{3 credits}{Intended as a
   first course in communication networks for upper-level undergraduate
   students. Topics include the design of modern communication
   networks; point-to-point and broadcast network solutions; advanced
   issues such as Gigabit networks; ATM networks; and real-time
-  communications. Cross-listed as ECE 457.}{Prerequisite: CS/ECE 3330
-  with a grade of C- or higher.}{Y}
+  communications. Cross-listed as ECE 4457.}{Prerequisite: CS/ECE 3330
+  or CS 3430 with a grade of C- or higher.}{Y}
 
 \course{CS 4458}{458}{Internet Engineering}{3 credits}{An advanced
   course on computer networks on the technologies and protocols of the
@@ -2298,7 +2311,7 @@ interest.
   will learn the core ideas behind compilation and how to use software
   tools such as lex/flex, yacc/bison to build a compiler for a
   non-trivial programming language.}{Prerequisite: CS 3240 and
-  CS/ECE 3330 with grades of C- or higher.}{Y}
+  (CS/ECE 3330 or ECE 4457) with grades of C- or higher.}{Y}
 
 \course{CS 4630}{425}{Defense Against the Dark Arts}{3
   credits}{Viruses, worms, and other malicious software are an
@@ -2433,6 +2446,7 @@ lists the courses that way.  However, the table below is included as a
 reference to show the mapping of the old course numbers to the new
 course numbers; it is sorted by the old numbers.
 
+\begin{table}
 \begin{tabular}{llp{2.5in}} \hline
 \bf Old & \bf New & \bf Title \\ \hline
 CS 100T & CS 1000T & Non-UVa Transfer/Test Credit \\
@@ -2479,6 +2493,8 @@ CS 494 & CS 4501 & Special Topics in Computer Science \\
 CS 495 & CS 4998 & Distinguished BA Majors Research \\ \hline
 \\
 \end{tabular}
+\caption{Course numbering mapping}
+\end{table}
 
 The registrar provides an online course renumbering
 website\myurl{http://www.virginia.edu/registrar/search.php}
@@ -2585,6 +2601,24 @@ versions throughout the document.  However, the course numbering
 section (section~\ref{course-numbering}) still lists the mapping, for
 reference.
 
+\subsection{Requirements revision from spring 2013}
+
+The fall 2013 version of the handbook was the first version not to
+include the old 3-digit course numbers (UVa started 4-digit course
+numbers for the fall 2009 semester).  Anybody interested in the
+original 3-digit course numbers can look in old versions of this
+handbook online\myurl{http://www.cs.virginia.edu/bscs/}.
+
+The inclusion BS CS capstone requirement added 3 additional credits
+(CS 4971 (Capstone Practicum II) or CS 4980 (Research Capstone))
+needed to complete the BS CS degree.  In additionl CS 4970 (Capstone
+Praticum I) was added as a CS elective.  Details about the capstone
+can be found in section~\ref{capstone-section}.
+
+The BS CpE embedded systems requirement was added as well, which
+caused many changes to the CpE-related diagrams.
+
+
 \subsection{Requirements revision from spring 2010}
 
 In January of 2010, the elective structure was changed. Previously,
@@ -2615,23 +2649,6 @@ fulfill the CS elective that replaced it.
 
 Focal paths were also added to the undergraduate handbook, although
 they do not change the major requirements.
-
-\subsection{Requirements revision from fall 2013}
-
-The fall 2013 version of the handbook was the first version not to
-include the old 3-digit course numbers (UVa started 4-digit course
-numbers for the fall 2009 semester).  Anybody interested in the
-original 3-digit course numbers can look in old versions of this
-handbook online\myurl{http://www.cs.virginia.edu/bscs/}.
-
-The other major change was the inclusion of the capstone requirement.
-This added 3 additional credits (CS 4971 (Capstone Practicum II) or CS
-4980 (Research Capstone)) needed to complete the BS CS degree.  In
-additionl CS 4970 (Capstone Praticum I) was added as a CS elective.
-Details about the capstone can be found in
-section~\ref{capstone-section}.
-
-
 
 \cleardoublepage
 \pagestyle{empty}

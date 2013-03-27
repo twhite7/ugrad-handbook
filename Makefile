@@ -1,6 +1,6 @@
 tex:
-	pdflatex cs-ug-hbk-11-12.tex
-	pdflatex cs-ug-hbk-11-12.tex
+	pdflatex cs-ug-hbk.tex
+	pdflatex cs-ug-hbk.tex
 
 html:
 	/bin/rm -rf html
