@@ -4,6 +4,7 @@
 \usepackage{palatino}
 \usepackage{epsfig}
 \usepackage{fancyhdr}
+\usepackage{ulem} % for the CpE embedded requirement strikeout
 
 \usepackage[margin=0.5in, paperwidth=5.5in, paperheight=8.5in]{geometry}
 \setlength{\paperheight}{8.5in}
@@ -580,44 +581,42 @@ audited) do not count toward your degree requirements.
 \label{capstone-section}
 
 All SEAS students must complete a senior thesis, which is encapsulated
-in the STS 4500 and 4600 courses.  In addition to the STS courses,
-students must complete one or two CS courses to fulfill the capstone
-sequence requirement.  There are two ``tracks'' to complete the
-capstone, described below, and students may choose either track.
+in the STS 4500 and STS 4600 courses.  In addition to the STS courses,
+BS CS students must complete one or two CS courses to fulfill the
+computer science capstone sequence requirement.  There are two
+``tracks'' to complete the capstone, described below, and students may
+choose either track.
 
-Formally, students must complete 3 credits of either CS 4971 or CS
-4980 to fulfill the capstone requirement.  But note that CS 4970 is a
-strict pre-req to CS 4971!
-
-A SEAS student who is double-majoring with the BS CS and another SEAS
-degree must do the following regarding the CS capstone and senior
-thesis requirement. The student must complete the capstone or
-major-design experience (MDE) course requirements in their non-CS
-major, and also the CS Capstone Research (CS4980) or Capstone
-Practicum requirement (CS4970 and 4971). The student will be allowed
-to negotiate with their capstone/MDE instructors and their STS
-instructor which degree program's work will be used to satisfy
-the STS thesis portfolio requirements. However, the student should be
-aware that the capstone/MDE instructors in both departments will
-almost certainly require some kind of documentation of the technical
-work done for that program's requirement.
+Formally, students must complete 3 credits of either CS 4971 (Capstone
+Practicum II) or CS 4980 (Research Capstone) to fulfill the capstone
+requirement.  But note that CS 4970 (Capstone Practicum I), which is a
+CS elective, is a strict pre-req to CS 4971!  Also note that STS 4500
+and STS 4600 must {\bf still} be taken; the CS courses are in addition
+to, not instead of, the STS courses.
 
 \subsubsection{Research Capstone Track}
 
 This track is intended for students who are interested in performing
-an independent project, either a research-based proejct or an
+an independent project, either a research-based project or an
 implementation-based project.  The student must seek out a faculty
-adviser, who will agree to advise the project.  The requirements of
-the project, workload, etc., are to be agreed upon by the student and
+member, who will agree to advise the project.  The requirements of the
+project, workload, etc., are to be agreed upon by the student and
 adviser.  Students will receive 3 credits for CS 4780 (Research
-Capstone), which is what formally fulfills the capstone requirement.
-Advisers may decide to assign the credit in a single semester, or
-spread across multiple semesters; as long as 3 credits are eventually
-earned, then the requirement will be fulfilled.  Large projects may
-receive additional credit through CS 4993 (Independent Study), but
-this is solely up to the adviser.  Note that there is a maximum of 3
-credits (1 course) of CS electives that that CS 4993 may count toward;
-any additional count toward the unrestricted elective requirement.
+Capstone), which is what formally fulfills the capstone requirement
+for the degree.  Faculty advisers may decide to assign the three
+credits in a single semester, or spread the three credits across
+multiple semesters; as long as three credits are eventually earned,
+then the requirement will be fulfilled.  Group projects are up to the
+discretion of the adviser, but are certainly permissible.  Large
+projects may receive additional credit through CS 4993 (Independent
+Study), but this is solely up to the adviser.  Note that there is a
+maximum of 3 credits (1 course) of CS electives that that CS 4993 may
+count toward; any additional credits count toward the unrestricted
+elective requirement.
+
+This track is based on how the senior thesis technical requirement
+worked previously, except that students now receive three credits for
+the technical work performed.
 
 \subsubsection{Project Capstone Track}
 
@@ -626,13 +625,13 @@ performing an independent project.  Students under this track will
 register for CS 4970 (Capstone Practicum I) in the fall of their 4th
 year, and CS 4971 (Capstone Practicum II) in the spring of their 4th
 year~-- specifically, those classes are to be taken concurrently with
-STS 4500 and STS 4600, respectively.  Both of the CS courses are 3
+STS 4500 and STS 4600, respectively.  Both of these CS courses are 3
 credits.
 
 These two courses form a year-long project implementation course.
-Students will be grouped into teams, will have real customers to
-interact with, will have real deadlines, and will need to complete
-real delvierables.  While the domain of the course is up to the
+Students will be grouped into teams, will have requirements, real
+customers to interact with, real deadlines, and will need to complete
+real deliverables.  While the domain of the course is up to the
 instructor, the current implementation of the courses is a Service
 Learning Practicum\myurl{http://www.cs.virginia.edu/~asb/slp/}.
 
@@ -640,7 +639,23 @@ Note that only CS 4971 counts toward the capstone requirement; CS 4970
 is a CS elective.  However, CS 4970 is a {\bf strict} pre-requisite to
 CS 4971.  In particular, because the projects are year-long
 group-based projects, there will be absolutely no allowances for
-studnets to join the sequence for just CS 4971 in the spring semester.
+students to join the sequence for just CS 4971 in the spring semester.
+
+
+\subsubsection{Double Majors and the Capstone}
+
+A SEAS student who is double-majoring with the BS CS and another SEAS
+degree must complete the capstone or major design experience (MDE)
+course requirements in their non-CS major {\bf in addition to} the
+capstone sequence in the computer science major.  This means that they
+will still have to take either CS 4980 (Research Capstone) or the
+practicum capstone sequence (CS 4970 and CS 4971). Students can
+negotiate with their capstone/MDE instructors and their STS instructor
+which degree program's work will be used to satisfy the STS thesis
+portfolio requirements. However, the student should be aware that the
+capstone/MDE instructors in both departments will almost certainly
+require some kind of documentation of the technical work done for that
+program's requirement.
 
 
 
@@ -777,9 +792,10 @@ CS 2190 & CS Seminar & 1 \\
 STS STS & 2xxx/3xxx elective$^6$ & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 & & \\
-\und{Fifth semester} & & \und{15} \\
+\und{Fifth semester} & & \und{18} \\
 CS/ECE 3330 & Computer Architecture & 3 \\
 CS 4102 & Algorithms & 3 \\
+CS & CS elective$^5$ & 3 \\
 APMA & APMA elective$^4$ or APMA 3100 & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
@@ -800,9 +816,8 @@ CS & CS elective$^5$ or CS 4970 & 3 \\
 CS 4414 & Operating Systems & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 & & \\
-\und{Eighth semester} & & \und{18} \\
+\und{Eighth semester} & & \und{15} \\
 STS 4600 & Engineer in Society & 3 \\
-CS & CS elective$^5$ & 3 \\
 CS & CS elective$^5$ & 3 \\
 CS 4971 or 4980 & Capstone course & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
@@ -1355,34 +1370,40 @@ UE & Unrestricted elective$^4$ & 3 \\
 \subsection{Embedded Systems Course Requirement}
 \label{embedded}
 
-As of the spring semester of 2013, the computer engineering curriculum
-was modified to require ECE 3430 (Introduction to Embedded Computing
-Systems).  This course takes the place of CS/ECE 3330 (Computer
-Architecture), which is no longer required for a computer engineering
-degree.  In addition, CS 4435 (Computer Organization \& Design) was
-restructured to include many of the topics in CS 3330.  Note that this
-embedded systems requirement change also affects the ECE curriculum,
-but that is not being covered here.
+Plese see
+online\myurl{http://www.cpe.virginia.edu/ugrads/embedded.html} for
+details about this requirement; the information below is not yet
+complete in this preliminary version of the handbook.\newline
 
-For any computer science classes that require CS 3330 as a pre-req, CS
-4457 will also be allowed.  The one exception is CS 4457 (Computer
-Networks), which has either CS 3330 or CS 3430 as pre-reqs (i.e., not
-CS 4435).
+\sout{As of the spring semester of 2013, the computer engineering
+  curriculum was modified to require ECE 3430 (Introduction to
+  Embedded Computing Systems).  This course takes the place of CS/ECE
+  3330 (Computer Architecture), which is no longer required for a
+  computer engineering degree.  In addition, CS 4435 (Computer
+  Organization \& Design) was restructured to include many of the
+  topics in CS 3330.  Note that this embedded systems requirement
+  change also affects the ECE curriculum, but that is not being
+  covered here.}
 
-Questions to ask Joanne:
-\begin{itemlist}
-\item what are the name changes?  they are listed differently in
-  different places
-\item is that pre-req structure really correct? what about
-  cross-listed courses?  what about cs-only courses?
-\item what other changes to 4435 and 4440 are there?  name changes
-  also?
-\item how does the when-they-take-what table change?  i can replace
-  3330 with 3430, but does it move up a semester?  what about 4435 and
-  4440?
-\item where does ece 3430 go a few pages back? (page 26) i have it in
-  the general category
-\end{itemlist}
+\sout{For any computer science classes that require CS 3330 as a
+  pre-req, CS 4457 will also be allowed.  The one exception is CS 4457
+  (Computer Networks), which has either CS 3330 or CS 3430 as pre-reqs
+  (i.e., not CS 4435).}
+
+%Questions to resolve by asking Joanne:
+%\begin{itemlist}
+%\item what are the name changes?  they are listed differently in
+%  different places
+%\item is that pre-req structure really correct? what about
+%  cross-listed courses?  what about cs-only courses?
+%\item what other changes to 4435 and 4440 are there?  name changes
+%  also?
+%\item how does the when-they-take-what table change?  i can replace
+%  3330 with 3430, but does it move up a semester?  what about 4435 and
+%  4440?
+%\item where does ece 3430 go a few pages back? (page 26) i have it in
+%  the general category
+%\end{itemlist}
 
 \mysection{Miscellaneous Information}
 
