@@ -43,7 +43,7 @@
 \newcommand{\badmpemail}{weimer@virginia.edu}
 \newcommand{\sisexceptionenterer}{Brenda Perkins}
 
-\newcommand{\course}[7]{\noindent {\bf #1~-- #3} (#4): #5 #6 (#7)\vspace{0.1in}}
+\newcommand{\course}[5]{\noindent {\bf #1~-- #2} (#3): #4 #5\vspace{0.1in}}
 
 \newcommand{\mychapter}[2]{\chapter{#1}\renewcommand{\leftmark}{\textsc{#2}}}
 \newcommand{\mysection}[1]{\section{#1}\renewcommand{\rightmark}{#1}}
@@ -902,18 +902,16 @@ descriptions can be found in the Course Descriptions section
 (page~\pageref{sec:coursedesc}).
 
 \begin{itemlist}
-\item CS 2110, Software Development Methods, or CS 2220,
-  Engineering Software
+\item CS 2110, Software Development Methods
 \item CS 2102, Discrete Math
 \item CS 2150, Program and Data Representation
 \item CS 3330, Computer Architecture
 \item CS 4102, Algorithms
 \end{itemlist}
 
-Note that the CS1 class, either CS 111x (101/101E/101X), Introduction
+Note that any CS1 class, either CS 111x (101/101E/101X), Introduction
 to Programming, or CS 1120, Introduction to Computing: Language,
-Logic, and Machines, is required to enroll in CS 2110 or CS
-2220, respectively.
+Logic, and Machines, is required to enroll in CS 2110.
 
 \subsection{CS Electives}
 
@@ -1477,8 +1475,6 @@ World Wide Web) can replace the CS 111x requirement.  However, all
 SEAS students are required to take a CS 111x course regardless, so
 courses, so taking CS 1120 would not help at all.
 
-Likewise, CS 2220 (Engineering Software) can replace CS 2110.
-
 Note that if you place out of CS 1110 via the placement exam,
 you still have to take 6 CS courses; if you receive course credit for
 it via the AP exam or transfer credit, then you need not substitute a
@@ -1509,10 +1505,9 @@ To declare the minor:
 
 \begin{numlist}
 
-\item A student should have completed CS 1110 or 1120, CS
-  2110 or 2220, and CS 2102. Furthermore, the
-  student should have completed, or at least be enrolled in, CS 2150
- .
+\item A student should have completed CS 1110 or 1120, CS 2110, and CS
+  2102. Furthermore, the student should have completed, or at least be
+  enrolled in, CS 2150.
 
 \item Complete the minor declaration form, which is available in the
   Computer Science department's front office (Rice Hall, room 527).
@@ -1967,10 +1962,12 @@ section.
 \item 
 \item Introduction to Engineering: Instead of ENGR 1620 and ENGR 1621,
   Rodman Scholars take ENGR 1410 (Synthesis Design I) in the fall of
-  their first year, and ENGR 1420
-  (Synthesis Design II) in the spring of their first year.  Because
-  this is a fall-spring sequence, mid-year applicants are not required
-  to take it, and can use ENGR 1620/1621 credit instead.
+  their first year, and ENGR 1420 (Synthesis Design II) in the spring
+  of their first year.  Note that this sequence is 6 credits, whereas
+  the ENGR 1620 and ENGR 1621 sequence is only 4 credits.  Because
+  ENGR 1410 and ENGR 1420 this is a fall-spring sequence, mid-year
+  applicants are not required to take it, and can use ENGR 1620/1621
+  credit instead.
 \item A total of four 1-credit seminars (ENGR 3580) must be taken
   prior to graduation.
 \item The requirements in place of STS 1500 are in a state of flux.
@@ -2100,362 +2097,370 @@ interest.
 
 \subsection{1000 Level Courses}
 
-\course{CS 1010}{110}{Introduction to Information Technology}{3
+\course{CS 1010}{Introduction to Information Technology}{3
   credits}{Provides exposure to a variety of issues in information
   technology, such as computing ethics and copyright. Introduces and
   provides experience with various computer applications, including
   e-mail, newsgroups, library search tools, word processing, Internet
   search engines, and HTML. Not intended for students expecting to do
   further work in CS. Cannot be taken for credit by students in SEAS
-  or Commerce.}{}{S}
+  or Commerce.}{}
 
-\course{CS 1110}{101}{Introduction to Programming}{3
-  credits}{Introduces the basic principles and concepts of
-  object-oriented programming through a study of algorithms, data
-  structures and software development methods in Java. Emphasizes both
-  synthesis and analysis of computer programs.}{}{S}
+\course{CS 1020}{Introduction to Business Computing}{3
+  credits}{Overview of modern computer systems and introduction to
+  programming in Visual Basic, emphasizing development of programming
+  skills for business applications. Intended primarily for
+  pre-commerce students. May not be taken for credit by students in
+  SEAS.}{}
 
-\course{CS 1111}{101E}{Introduction to Programming}{3
-  credits}{Introduces the basic principles and concepts of
-  object-oriented programming through a study of algorithms, data
-  structures and software development methods in Java. Emphasizes both
-  synthesis and analysis of computer programs.}{Prerequisite: Prior
-  programming experience.}{S}
+\course{CS 1110}{Introduction to Programming}{3 credits}{Introduces
+  the basic principles and concepts of object-oriented programming
+  through a study of algorithms, data structures and software
+  development methods in Java. Emphasizes both synthesis and analysis
+  of computer programs.}{}
 
-\course{CS 1112}{101X}{Introduction to Programming}{3
-  credits}{Introduces the basic principles and concepts of
-  object-oriented programming through a study of algorithms, data
-  structures and software development methods in Java. Emphasizes both
-  synthesis and analysis of computer programs. Note: No prior
-  programming experience.}{}{SI}
+\course{CS 1111}{Introduction to Programming}{3 credits}{Introduces
+  the basic principles and concepts of object-oriented programming
+  through a study of algorithms, data structures and software
+  development methods in Java. Emphasizes both synthesis and analysis
+  of computer programs.}{Prerequisite: Prior programming experience.}
 
-\course{CS 1120}{150}{Introduction to Computing: Language, Logic, and
-  Machines}{3 credits}{Introduction to computer science with no
-  previous background. Focuses on describing and reasoning about
-  information processes using language and logic. Uses motivating
-  examples from liberal arts and sciences areas such as art, biology,
-  economics, narrative, physics, and sociology.}{}{Y}
+\course{CS 1112}{Introduction to Programming}{3 credits}{Introduces
+  the basic principles and concepts of object-oriented programming
+  through a study of algorithms, data structures and software
+  development methods in Java. Emphasizes both synthesis and analysis
+  of computer programs. Note: No prior programming experience
+  allowed.}{}
+
+\course{CS 1120}{Introduction to Computing: Explorations in Language,
+  Logic, and Machines}{3 credits}{This course is an introduction to
+  the most important ideas in computing. It focuses on the big ideas
+  in computer science including the major themes of recursive
+  definitions, universality, and abstraction.  It covers how to
+  describe information processes by defining procedures using the
+  Scheme and Python programming languages, how to analyze the costs
+  required to carry out a procedure, and the fundamental limits of
+  what can be computed.}{}
+
+\course{CS 1501}{Special Topics in Computer Science}{1
+  to 3 credits}{Content varies annually, depending on students needs
+  and interests. Recent topics include the foundations of computation,
+  artificial intelligence, database design, real-time systems,
+  Internet engineering, wireless sensor networks, and electronic
+  design automation.}{Prerequisite: Instructor permission.}
 
 \subsection{2000 Level Courses}
 
-\course{CS 2102}{202}{Discrete Mathematics}{3 credits}{Introduces
-  discrete mathematics and proof techniques involving first order
-  predicate logic and induction. Application areas include sets
-  (finite and infinite), elementary combinatorial problems, and
-  probability. Development of tools and mechanisms for reasoning about
-  discrete problems. Cross-listed as APMA 202.}{Prerequisite: CS 1110
-  or 1120 with a grade of C- or higher.}{S}
+\course{CS 2102}{Discrete Mathematics}{3 credits}{Introduces discrete
+  mathematics and proof techniques involving first order predicate
+  logic and induction. Application areas include finite and infinite
+  sets and elementary combinatorial problems. Development of tools and
+  mechanisms for reasoning about discrete problems.}{Prerequisite: CS
+  1110, 1111, 1112 or 1120 with a grade of C- or higher.}
 
-\course{CS 2110}{201}{Software Development Methods}{3 credits}{A
-  continuation of CS 1110, emphasizing modern software
-  development methods. An introduction to the software development
-  life cycle and processes. Topics include requirements analysis,
-  specification, design, implementation, and verification. Emphasizes
-  the role of the individual programmer in large software development
-  projects.}{Prerequisite: CS 1110 with a grade of C- or
-  higher.}{S}
+\course{CS 2110}{Software Development Methods}{3 credits}{A
+  continuation of CS 1010, emphasizing modern software development
+  methods. An introduction to the software development life cycle and
+  processes. Topics include requirements analysis, specification,
+  design, implementation, and verification. Emphasizes the role of the
+  individual programmer in large software development
+  projects.}{Prerequisite: CS 1010, 1111, or 1112 with a grade of C-
+  or higher.}
 
-\course{CS 2150}{216}{Program and Data Representation}{3 credits}
-  {Introduces programs and data representation at the machine
-  level. Data structuring techniques and the representation of data
+\course{CS 2150}{Program and Data Representation}{3 credits}
+{Introduces programs and data representation at the machine level.
+  Data structuring techniques and the representation of data
   structures during program execution. Operations and control
-  structures and their representation during program
-  execution. Representations of numbers, arithmetic operations,
-  arrays, records, recursion, hashing, stacks, queues, trees, graphs,
-  and related concepts.)}{Prerequisite: CS 2102 and either CS
-  2110 or CS 2220 with all grades of C- or higher.}{S}
+  structures and their representation during program execution.
+  Representations of numbers, arithmetic operations, arrays, records,
+  recursion, hashing, stacks, queues, trees, graphs, and related
+  concepts.}{Prerequisite: CS 2102 and CS 2110, both with grades of C-
+  or higher.}
 
-\course{CS 2190}{290}{Computer Science Seminar I}{1 credit}{Provides
-  cultural capstone to the undergraduate experience. Students make
+\course{CS 2190}{Computer Science Seminar}{1 credit}{Proides cultural
+  capstone to the undergraduate experience. Students make
   presentations based on topics not covered in the traditional
   curriculum. Emphasizes learning the mechanisms by which researchers
   and practicing computer scientists can access information relevant
   to their discipline, and on the professional computer scientist's
-  responsibility in society.}{Prerequisite: CS 2110 or 2220
-  with a grade of C- or higher, as well as a computing major
-  (BA CS, BS CS, or BS CpE).}{Y}
+  responsibility in society.}{Prerequisite: CS 2102 and 2110, both
+  with a grade of C- or higher.}
 
-\course{CS 2220}{205}{Engineering Software}{3 credits}{Covers tools
-  and techniques used to manage complexity and to build, analyze, and
-  test complex software systems including abstraction, analysis, and
-  specification.  Notes: Students may not receive credit for both CS
-  2110 and CS 2220.}{Prerequisite: CS 150 with a grade of
-  C- or higher.}{Y}
-
-\course{CS/ECE 2330}{230}{Digital Logic Design}{3 credits}{Includes
-  number systems and conversion; Boolean algebra and logic gates;
+\course{CS/ECE 2330}{Digital Logic Design}{3 credits}{Includes number
+  systems and conversion; Boolean algebra and logic gates;
   minimization of switching functions; combinational network design;
-  ip-ops; sequential network design; arithmetic networks. Introduces
-  computer organization and assembly language. Cross-listed as ECE
-  2330.}{}{S}
+  flip-flops; sequential network design; arithmetic networks.
+  Introduces computer organization and assembly language. Cross-listed
+  as ECE 2330.}
 
-\course{CS 2501}{251}{Selected Topics in Computer Science}{1 to 3
-  credits}{Content varies annually, depending on students needs and
-  interests. Recent topics include the foundations of computation,
+\course{CS 2501}{Special Topics in Computer Science}{1
+  to 3 credits}{Content varies annually, depending on students needs
+  and interests. Recent topics include the foundations of computation,
   artificial intelligence, database design, real-time systems,
-  Internet engineering, and electronic design
-  automation.}{Prerequisite: Instructor permission.}{SI}
+  Internet engineering, wireless sensor networks, and electronic
+  design automation.}{Prerequisite: Instructor permission.}
 
 \subsection{3000 Level Courses}
 
-\course{CS 3102}{302}{Theory of Computation}{3 credits}{Introduces
+\course{CS 3102}{Theory of Computation}{3 credits}{Introduces
   computation theory including grammars, finite state machines and
-  Turing machines; and graph theory. Cross-listed as APMA
-  3102.}{Prerequisite: CS 2102 and either CS 2110 or 2220 all with
-  grades of C- or higher.}{Y}
+  Turing machines; and graph theory.}{Prerequisites: CS 2102 and CS
+  2110 both with grades of C- or higher.}
 
-\course{CS 3205}{305}{HCI in Software Development}{3
+\course{CS 3205}{HCI in Software Development}{3
   credits}{Human-computer interaction and user-centered design in the
   context of software engineering. Examines the fundamental principles
-  of human-computer interaction. Includes evaluating a systems
+  of human-computer interaction. Includes evaluating a system's
   usability based on well-defined criteria; user and task analysis, as
   well as conceptual models and metaphors; the use of prototyping for
   evaluating design alternatives; and physical design of software
-  user-interfaces, including windows, menus, and
-  commands.}{Prerequisite: CS 2110 or 2220 with a grade of
-  C- or higher.}{Y}
+  user-interfaces, including windows, menus, and commands.}
+{Prerequisite: CS 2110 with a grade of C- or higher.}
 
-\course{CS 3240}{340}{Advanced Software Development Techniques}{3
+\course{CS 3240}{Advanced Software Development Techniques}{3
   credits}{Analyzes modern software engineering practice for
   multi-person projects; methods for requirements specification,
   design, implementation, verification, and maintenance of large
   software systems; advanced software development techniques and large
   project management approaches; project planning, scheduling,
   resource management, accounting, configuration control, and
-  documentation.}{Prerequisite: CS 2150 with a grade of C- or
-  higher.}{Y}
+  documentation.}{Prerequisite: CS 2150 with a grade of C- or higher.}
 
-\course{CS/ECE 3330}{333}{Computer Architecture}{3 credits}{Includes
-  the organization and architecture of computer systems hardware;
+\course{CS 3330}{Computer Architecture}{3 credits}{Includes the
+  organization and architecture of computer systems hardware;
   instruction set architectures; addressing modes; register transfer
   notation; processor design and computer arithmetic; memory systems;
   hardware implementations of virtual memory, and input/output control
-  and devices. Cross-listed as ECE 3330.}{Prerequisite: CS 2110
-  or 2220 with a grade of C- or higher.}{S}
+  and devices.}{Prerequisite: CS 2110 with a grade of C- or higher. CS
+  2330 recommended. Students may not receive credit for both CS 3330
+  and ECE 3430.}
 
-\course{CS 3501}{351}{Selected Topics in Computer Science}{1 to 3
-  credits}{Content varies annually, depending on students needs and
-  interests. Recent topics include the foundations of computation,
-  artificial intelligence, database design, real-time systems,
-  Internet engineering, and electronic design
-  automation.}{Prerequisite: Instructor permission.}{SI}
-
-\subsection{4000 Level Courses}
-
-\course{CS 4102}{432}{Algorithms}{3 credits}{Introduces the analysis
-  of algorithms and the effects of data structures on them. Algorithms
-  selected from areas such as sorting, searching, shortest paths,
-  greedy algorithms, backtracking, divide- and-conquer, and dynamic
-  programming. Data structures include heaps and search, splay, and
-  spanning trees. Analysis techniques include asymptotic worst case,
-  expected time, amortized analysis, and reductions between
-  problems.}{Prerequisite: CS 2150 with a grade of C- or
-  higher.}{Y}
-
-\course{CS 4240}{441}{Principles of Software Design}{3
-  credits}{Focuses on techniques for software design in the
-  development of large and complex software systems. Topics will
-  include software architecture, modeling (including UML),
-  object-oriented design patterns, and processes for carrying out
-  analysis and design. More advanced or recent developments may be
-  included at the instructor's discretion. The course will balance an
-  emphasis on design principles with an understanding of how to apply
-  techniques and methods to create successful software
-  systems.}{Prerequisite: CS 2150 with a C- or higher.}{Y}
-
-\course{CS 4330}{433}{Advanced Computer Architecture}{3
-  credits}{Provides an overview of modern microprocessor design. The
-  topics covered in the course will include the design of super-scalar
-  processors and their memory systems, and the fundamentals of
-  multi-core processor design.}{Prerequisite: CS 2150, CS/ECE 2330,
-  and (CS/ECE 3330 or ECE 4457) with a C- or higher.}{Y}
-
-\course{CS 4414}{414}{Operating Systems}{3 credits}{Analyzes process
-  communication and synchronization; resource management; virtual
-  memory management algorithms; file systems; and networking and
-  distributed systems.}{Prerequisite: CS 2150 and (CS/ECE 3330 or ECE
-  4457) with grades of C- or higher.}{S}
-
-\course{CS 4434}{434}{Fault-tolerant Computing}{3
-  credits}{Investigates techniques for designing and analyzing
-  dependable computer-based systems. Topics include fault models and
-  effects, fault avoidance techniques, hardware redundancy, error
-  detecting and correcting codes, time redundancy, software
-  redundancy, combinatorial reliability modeling, Markov reliability
-  modeling, availability modeling, maintainability, safety modeling,
-  trade-off analysis, design for testability, and the testing of
-  redundant digital systems. Cross-listed as ECE 434.}{Prerequisite:
-  CS/ECE 2330, (CS/ECE 3330 or ECE 4457), APMA 2130, and APMA 3100,
-  each with grades of C- or higher.}{SI}
-
-\course{CS 4444}{444}{Introduction to Parallel Computing}{3
-  credits}{Introduces the student to the basics of high-performance
-  parallel computing and the national cyber-infrastructure. The course
-  is targeted for both computer science students and students from
-  other disciplines who want to learn how to significantly increase
-  the performance of applications.}{Prerequisite: CS 2150 and (CS/ECE
-  3330 or ECE 4457) with a C- or higher.}{Y}
-
-\course{CS/ECE 4457}{457}{Computer Networks}{3 credits}{Intended as a
-  first course in communication networks for upper-level undergraduate
-  students. Topics include the design of modern communication
-  networks; point-to-point and broadcast network solutions; advanced
-  issues such as Gigabit networks; ATM networks; and real-time
-  communications. Cross-listed as ECE 4457.}{Prerequisite: CS/ECE 3330
-  or CS 3430, as well as CS 2110, all with a grade of C- or higher.}{Y}
-
-\course{CS 4458}{458}{Internet Engineering}{3 credits}{An advanced
-  course on computer networks on the technologies and protocols of the
-  Internet. Topics include the design principles of the Internet
-  protocols, including TCP/IP, the Domain Name System, routing
-  protocols, and network management protocols. A set of laboratory
-  exercises covers aspects of traffic engineering in a wide-area
-  network.}{Prerequisite: CS 4457 with a grade of C- or
-  higher.}{Y}
-
-\course{CS 4501}{451 and 494}{Selected Topics in Computer Science}{1
+\course{CS 3501}{Special Topics in Computer Science}{1
   to 3 credits}{Content varies annually, depending on students needs
   and interests. Recent topics include the foundations of computation,
   artificial intelligence, database design, real-time systems,
   Internet engineering, wireless sensor networks, and electronic
-  design automation.}{Prerequisite: Instructor permission.}{SI}
+  design automation.}{Prerequisite: Instructor permission.}
 
-\course{CS 4610}{415}{Programming Languages}{3 credits}{Presents the
+\subsection{4000 Level Courses}
+
+\course{CS 4102}{Algorithms}{3 credits}{Introduces the analysis of
+  algorithms and the effects of data structures on them. Algorithms
+  selected from areas such as sorting, searching, shortest paths,
+  greedy algorithms, backtracking, divide- and-conquer, and dynamic
+  programming. Data structures include heaps and search, splay, and
+  spanning trees. Analysis techniques include asymtotic worst case,
+  expected time, amortized analysis, and reductions between problems.}
+{Prerequisite: CS 2102 and 2150 with grades of C- or higher.}
+
+\course{CS 4240}{Principles of Software Design}{3 credits}{Focuses on
+  techniques for software design in the development of large and
+  complex software systems. Topics will include software architecture,
+  modeling (including UML), object-oriented design patterns, and
+  processes for carrying out analysis and design. More advanced or
+  recent developments may be included at the instructor's discretion.
+  The course will balance an emphasis on design principles with an
+  understanding of how to apply techniques and methods to create
+  successful software systems.}{Prerequisite: CS 2150 with grade of C-
+  or higher.}
+
+\course{CS 4330}{Advanced Computer Architecture}{3 credits}{Provides
+  an overview of modern microprocessor design. The topics covered in
+  the course will include the design of super-scalar processors and
+  their memory systems, and the fundamentals of multi-core processor
+  design.}{Prerequisite: CS 2150 and CS 3330, both with grades of C-
+  or higher.}
+
+\course{CS 4414}{Operating Systems}{3 credits}{Analyzes process
+  communication and synchronization; resource management; virtual
+  memory management algorithms; file systems; and networking and
+  distributed systems.}{Prerequisite: CS 2150 with grade of C- or
+  higher, and CS 3330 or ECE 3430 with a grade of C- or higher.}
+
+\course{CS 4434}{Dependable Computing Systems}{3 credits}{Focuses on
+  the techniques for designing and analyzing dependable computer-based
+  systems. Topics include fault models and effects, fault avoidance
+  techniques, hardware redundancy, error detecting and correcting
+  codes, time redundancy, software redundancy, combinatorial
+  reliability modeling, Markov reliability modeling, availability
+  modeling, maintainability, safety modeling, trade-off analysis,
+  design for testability, and the testing of redundant digital
+  systems.}
+
+\course{CS 4444}{Introduction to Parallel Computing}{3
+  credits}{Introduces the student to the basics of high-performance
+  parallel computing and the national cyber-infrastructure. The course
+  is targeted for both computer science students and students from
+  other disciplines who want to learn how to significantly increase
+  the performance of applications.}{Prerequisites: CS 2110 with grade
+  of C- or higher, CS3330 or ECE 3430 with a grade of C- or higher,
+  APMA 3100 and APMA 3110.}
+
+\course{CS/ECE 4457}{Computer Networks}{3 credits}{ Topics include the
+  design of modern communication networks; point-to-point and
+  broadcast network solutions; advanced issues such as Gigabit
+  networks; ATM networks; and real-time communications.  Cross-listed
+  as ECE 4457.}{Prerequisites: CS 2110 with grade of C- or higher, and
+  CS 3330 or ECE 3430 with a grade of C- or higher.}
+
+\course{CS 4458}{Internet Engineering}{3 credits}{An advanced course
+  on computer networks on the technologies and protocols of the
+  Internet. Topics include the design principles of the Internet
+  protocols, including TCP/IP, the Domain Name System, routing
+  protocols, and network management protocols. A set of laboratory
+  exercises covers aspects of traffic engineering in a wide-area
+  network.}{Prerequisite: CS 4457 with a grade of C- or better.}
+
+\course{CS 4501}{Special Topics in Computer Science}{1
+  to 3 credits}{Content varies annually, depending on students needs
+  and interests. Recent topics include the foundations of computation,
+  artificial intelligence, database design, real-time systems,
+  Internet engineering, wireless sensor networks, and electronic
+  design automation.}{Prerequisite: Instructor permission.}
+
+\course{CS 4610}{Programming Languages}{3 credits}{Presents the
   fundamental concepts of programming language design and
   implementation. Emphasizes language paradigms and implementation
   issues. Develops working programs in languages representing
-  different language par\-a\-digms. Many programs oriented toward language
-  implementation issues.}{Prerequisite: CS 2150 with a grade of
-  C- or higher.}{Y}
+  different language paradigms. Many programs oriented toward language
+  implementation issues.}{Prerequisite: CS 2150 with grade of C- or
+  higher.}
 
-\course{CS 4620}{471}{Compilers}{3 credits}{Provides an introduction
+\course{CS 4620}{Compilers}{3 credits}{Provides an introduction
   to the field of compilers, which translate programs written in
   high-level languages to a form that can be executed. The course
   covers the theories and mechanisms of compilation tools. Students
   will learn the core ideas behind compilation and how to use software
   tools such as lex/flex, yacc/bison to build a compiler for a
-  non-trivial programming language.}{Prerequisite: CS 3240 and
-  (CS/ECE 3330 or ECE 4457) with grades of C- or higher.}{Y}
+  non-trivial programming language.}{Prerequisite: CS2150 with grade
+  of C- or higher. CS3330 recommended.}
 
-\course{CS 4630}{425}{Defense Against the Dark Arts}{3
-  credits}{Viruses, worms, and other malicious software are an
-  ever-increasing threat to computer systems. There is an escalating
-  battle between computer security specialists and the designers of
-  malicious software. This course provides an essential understanding
-  of the techniques used by both sides of the computer security
-  battle.}{Prerequisite: CS 2150 with a grade of C- or
-  higher.}{Y}
+\course{CS 4630}{Defense Against the Dark Arts}{3 credits}{Viruses,
+  worms, and other malicious software are an ever-increasing threat to
+  computer systems. There is an escalating battle between computer
+  security specialists and the designers of malicious software. This
+  course provides an essential understanding of the techniques used by
+  both sides of the computer security battle.}{Prerequisite: CS 2150
+  with a grade of C- or above.}
 
-\course{CS 4710}{416}{Artificial Intelligence}{3 credits}{Introduces
+\course{CS 4710}{Artificial Intelligence}{3 credits}{Introduces
   artificial intelligence. Covers fundamental concepts and techniques
   and surveys selected application areas. Core material includes state
   space search, logic, and resolution theorem proving. Application
   areas may include expert systems, natural language understanding,
   planning, machine learning, or machine perception. Provides exposure
   to AI implementation methods, emphasizing programming in Common
-  LISP.}{Prerequisite: CS 2150 with a grade of C- or higher.}{Y}
+  LISP.}{Prerequisite: CS 2150 with grade of C- or higher.}
 
-\course{CS 4720}{N/A}{Web and Mobile Systems}{3 credits}{With advances
-  in the Internet and World Wide Web technologies, research on the
+\course{CS 4720}{Web and Mobile Systems}{3 credits}{With advances in
+  the Internet and World Wide Web technologies, research on the
   design, implementation and management of web-based information
-  systems has become increasingly important. Thus looks at the
-  systematic and disciplined creation of web-based software
-  systems. Students will be expected to work in teams on projects
-  involving mobile devices and web applications.}{Prerequisite: CS
-  2150 with a grade of C- or higher.}{Y}
+  systems has become increasingly important. In this course, we will
+  look at the systematic and disciplined creation of web-based
+  software systems. Students will be expected to work in teams on
+  projects involving mobile devices and web
+  applications.}{Prerequisite: CS 2150 with a grade of C- or higher.}
 
-\course{CS 4730}{N/A}{Computer Game Design}{3 credits}{This course
-  will introduce students to the concepts and tools used in the
-  development of modern 2-D and 3-D real-time interactive computer
-  video games.  Advanced CS topics such as graphics, parallel
-  processing, human-computer interaction, networking, artificial
-  intelligence, and software engineering play a large role in industry
-  in general.}{Prerequisite: CS 2150 with a grade of C- or
-  higher.}{Y}
+\course{CS 4730}{Computer Game Design}{3 credits}{This course will
+  introduce students to the concepts and tools used in the development
+  of modern 2-D and 3-D real-time interactive computer video games.
+  Topics covered in this include graphics, parallel processing,
+  human-computer interaction, networking, artificial intelligence, and
+  software engineering.}{Prerequisite: CS 2150 with a grade of C- or
+  higher.}
 
-\course{CS 4750}{462}{Database Systems}{3 credits}{Introduces the
-  fundamental concepts for design and development of database
-  systems. Emphasizes relational data model and conceptual schema
-  design using ER model, practical issues in commercial database
-  systems, database design using functional dependencies, and other
-  data models. Develops a working relational database for a realistic
-  application.}{Prerequisite: CS 2150 with a grade of C- or
-  higher.}{Y}
+\course{CS 4750}{Database Systems}{3 credits}{Introduces the
+  fundamental concepts for design and development of database systems.
+  Emphasizes relational data model and conceptual schema design using
+  ER model, practical issues in commercial database systems, database
+  design using functional dependencies, and other data models.
+  Develops a working relational database for a realistic
+  application.}{Prerequisite: CS 2150 with grades of C- or higher.}
 
-\course{CS 4753}{453}{Electronic Commerce Technologies}{3
-  credits}{Focuses on the history of the Internet and electronic
-  commerce on the web; case studies of success and failure;
-  cryptographic techniques for privacy, security, and authentication;
-  digital money; transaction processing; wired and wireless access
-  technologies; Java; streaming multimedia; XML; Bluetooth. Defining,
-  protecting, growing, and raising capital for an
-  e-business.}{Prerequisite: CS 2150 with a grade of C- or
-  higher.}{Y}
+\course{CS 4753}{Electronic Commerce Technologies}{3 credits}{History
+  of Internet and electronic commerce on the web; case studies of
+  success and failure; cryptographic techniques for privacy, security,
+  and authentication; digital money; transaction processing; wired and
+  wireless access technologies; Java; streaming multimedia; XML;
+  Bluetooth. Defining, protecting, growing, and raising capital for an
+  e-business.}{Prerequisite: CS 2150 with a grade of C- or higher.}
 
-\course{CS 4810}{445}{Introduction to Computer Graphics}{3
+\course{CS 4810}{Introduction to Computer Graphics}{3
   credits}{Introduces the fundamentals of three-dimensional computer
   graphics: rendering, modeling, and animation. Students learn how to
   represent three-dimensional objects (modeling) and the movement of
   those objects over time (animation). Students learn and implement
   the standard rendering pipeline, defined as the stages of turning a
   three-dimensional model into a shaded, lit, texture-mapped
-  two-dimensional image.}{Prerequisites: CS 2150 with a grade of
-  C-.}{Y}
+  two-dimensional image.}{Prerequisite: CS 2150 with a grade of
+  C- or higher.}
 
-%\course{CS 4830}{447}{Image Synthesis}{3 credits}{Provides a broad
-%  overview of the theory and practice of rendering. Discusses classic
-%  rendering algorithms, although most of the course focuses on either
-%  fundamentals of image synthesis or current methods for physically
-%  based rendering. The final project is a rendering
-%  competition.}{Prerequisite: Grade of C- or higher in CS 4810
-%  or equivalent working knowledge.}{Y}
+\course{CS 4820}{Real Time Rendering}{3 credits}{Examines real-time
+  rendering of high-quality interactive graphics. Studies the advances
+  in graphics hardware and algorithms that are allowing applications
+  such as video games, simulators, and virtual reality to become
+  capable of near cinematic-quality visuals at real-time rates. Topics
+  include non-photorealistic rendering, occlusion culling, level of
+  detail, terrain rendering, shadow generation, image-based rendering,
+  and physical simulation. Over several projects throughout the
+  semester students work in small teams to develop a small 3-D game
+  engine incorporating some state-of-the-art
+  techniques.}{Prerequisite: Grade of C- or better in CS 4810 or
+  equivalent working knowledge.}
 
-\course{CS 4970}{N/A}{Capstone Practicum I}{3 credits}{This course is
-  one option in the CS Senior Thesis track. Under the Practicum track,
+\course{CS 4830}{Computer Animation}{3 credits}{Introduces both
+  fundamental and advanced computer animation techniques. Discusses
+  such traditional animation topics as keyframing, procedural
+  algorithms, camera control, and scene composition. Also introduces
+  modern research techniques covering dynamic simulation, motion
+  capture, and feedback control algorithms. These topics help prepare
+  students for careers as technical directors in the computer
+  animation industry and assist in the pursuit of research
+  careers.}{Prerequisite: Grade of C- or better in CS 4810 or
+  equivalent working knowledge.}
+
+\course{CS 4970}{Capstone Practicum I}{3 credits}{This course is one
+  option in the CS Senior Thesis track. Under the Practicum track,
   students will take two 3-credit courses, CS 4970 and CS 4971. These
   courses would form a year-long group-based and project-based
   practicum class. There would be an actual customer, which could be
   either internal (the course instructor, other CS professors, etc.)
-  or external (local companies, local non-profits, etc.). Note that
-  the course domain, as well as many of the details as to how the
-  course is structured (group size, etc.), are up to the individual
-  instructor.}{Prerequisites: CS 2150 with a grade of C-.}{Y}
+  or external (local companies, local non-profits,
+  etc.).}{Prerequisite: CS 2150 with a grade of C- or higher.}
 
-\course{CS 4971}{N/A}{Capstone Practicum II}{3 credits}{This course is
-  one option in the CS Senior Thesis track and is the continuation
-  from CS 4970. Under the Practicum track, students will take two
-  3-credit courses, CS 4970 and CS 4971. These courses would form a
-  year-long group-based and project-based practicum class. There would
-  be an actual customer, which could be either internal (the course
+\course{CS 4971}{Capstone Practicum II}{3 credits}{This course is one
+  option in the CS Senior Thesis track and is the continuation from CS
+  4970. Under the Practicum track, students will take two 3-credit
+  courses, CS 4970 and CS 4971. These courses would form a year-long
+  group-based and project-based practicum class. There would be an
+  actual customer, which could be either internal (the course
   instructor, other CS professors, etc.) or external (local companies,
-  local non-profits, etc.). Note that the course domain, as well as
-  many of the details as to how the course is structured (group size,
-  etc.), are up to the individual instructor.}{Prerequisites: CS 4970
-    with a grade of C-.}{Y}
+  local non-profits, etc.).}{Prerequisite: CS 4970.}
 
-  \course{CS 4980}{N/A}{Capstone Research}{1 to 3 credits}{This course
-    is one option in the CS Senior Thesis track.  Students will seek
-    out a faculty member as an advisor, and do an independent project
-    with said advisor.  Instructors can give the 3 credits across
-    multiple use that research for their senior thesis.  Note that
-    this track could also be an implementation project, including a
-    group-based implementation project.}{Prerequisite: Instructor
-    permission.}{S}
+\course{CS 4980}{Capstone Research}{1 to 3 credits}{This course is one
+  option in the CS Senior Thesis track. Students will seek out a
+  faculty member as an advisor, and do an independent project with
+  said advisor. Instructors can give the 3 credits across multiple
+  semesters, if desired. This course is designed for students who are
+  doing research, and want to use that research for their senior
+  thesis. Note that this track could also be an implementation
+  project, including a group-based project.}{Prerequisite: CS 2150
+  with a grade of C- or higher.}
 
-\course{CS 4993}{493}{Independent Study}{1 to 3 credits}{In-depth
-  study of a computer science or computer engineering problem by an
-  individual student in close consultation with departmental
-  faculty. The study is often either a thorough analysis of an
-  abstract computer science problem or the design, implementation, and
-  analysis of a computer system (software or hardware).}{Prerequisite:
-  Instructor permission.}{S}
+\course{CS 4993}{Independent Study}{1 to 3 credits}{In-depth study of
+  a computer science or computer engineering problem by an individual
+  student in close consultation with departmental faculty. The study
+  is often either a thorough analysis of an abstract computer science
+  problem or the design, implementation, and analysis of a computer
+  system (software or hardware).}{Prerequisite: Instructor
+  permission.}
 
-\course{CS 4998}{495}{Distinguished BA Majors Research}{3
-  credits}{Required for Distinguished Majors completing the Bachelor
-  of Arts degree in the College of Arts and Sciences. An introduction
-  to computer science research and the writing of a Distinguished
-  Majors thesis.}{Prerequisite: in the BA program and instructor
-  permission.}{S}
+\course{CS 4998}{Distinguished BA Majors Research}{3 credits}{Required
+  for Distinguished Majors completing the Bachelor of Arts degree in
+  the College of Arts and Sciences. An introduction to computer
+  science research and the writing of a Distinguished Majors
+  thesis.}{Prerequisites: CS 2150 with a grade of C- or higher AND a
+  CLAS student.}
  
 
 \mysection{Course Numbering}
