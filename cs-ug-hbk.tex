@@ -424,7 +424,7 @@ CS 111x for CLAS majors; placement is avaialble (see sections
 
 \clearpage
 \mychapter{Bachelor of Science in Computer Science}{BS CS Degree}
-
+\label{bscschapter}
 
 \mysection{Introduction}
 
@@ -927,6 +927,7 @@ does not count toward any other requirement except to replace CS 2190
 
 \clearpage
 \mychapter{Bachelor of Arts in Computer Science}{BA CS Degree}
+\label{bacschapter}
 
 \mysection{Introduction}
 
@@ -1185,37 +1186,37 @@ exception.
 
 \mysection{Miscellaneous Information}
 
-\subsection{Declaring the Major}
+%\subsection{Declaring the Major}
 
-Before declaring the computer science major, students should have
-taken one introductory computer science course (CS 111x (101, 101E,
-101x), Introduction to Programming, or CS 1120, Introduction to
-Computing: Language, Logic, and Machines) with a grade of C+ or
-better, or have comparable experience. Students may be permitted to
-declare the major while they are currently taking the introductory
-course.
-
-To declare the major:
-
-\begin{numlist}
-
-\item Satisfy the major prerequisite by taking one of the introductory
-  computer science courses. CS 1120 is the recommended course
-  for most BA CS majors, but the other introductory courses (CS 1110
-  CS1111, and CS 1112) can also be used to satisfy the
-  prerequisite. You may declare the major before completing the course
-  as long as you are on track to complete the course successfully. If
-  you believe you have comparable experience in some other way, you
-  may also be able to declare the major.
-
-\item Pick up a Major Declaration Form from the Dean's office, and
-  fill out the top half.
-
-\item Arrange to meet with \badup\ (\badupemail), Director of the
-  Undergraduate Program (DUP). You can email \baduppronountwo to arrange
-  a meeting time, or drop by during \baduppronoun office hours.
-
-\end{numlist}
+%Before declaring the computer science major, students should have
+%taken one introductory computer science course (CS 111x (101, 101E,
+%101x), Introduction to Programming, or CS 1120, Introduction to
+%Computing: Language, Logic, and Machines) with a grade of C+ or
+%better, or have comparable experience. Students may be permitted to
+%declare the major while they are currently taking the introductory
+%course.
+%
+%To declare the major:
+%
+%\begin{numlist}
+%
+%\item Satisfy the major prerequisite by taking one of the introductory
+%  computer science courses. CS 1120 is the recommended course
+%  for most BA CS majors, but the other introductory courses (CS 1110
+%  CS1111, and CS 1112) can also be used to satisfy the
+%  prerequisite. You may declare the major before completing the course
+%  as long as you are on track to complete the course successfully. If
+%  you believe you have comparable experience in some other way, you
+%  may also be able to declare the major.
+%
+%\item Pick up a Major Declaration Form from the Dean's office, and
+%  fill out the top half.
+%
+%\item Arrange to meet with \badup\ (\badupemail), Director of the
+%  Undergraduate Program (DUP). You can email \baduppronountwo to arrange
+%  a meeting time, or drop by during \baduppronoun office hours.
+%
+%\end{numlist}
 
 
 \subsection{Distinguished Majors Program}
@@ -1445,17 +1446,17 @@ PHYS 1429 & Physics I Workshop & 1 \\
 CS 1110 & Intro to Computer Science & 3 \\
 SCI & Science elective$^2$ & 3 \\
 HSS & HSS elective$^1$ & 3 \\
-%& & \\
-\end{tabular}
- 
-\noindent \begin{tabular}{llc}
+& & \\
 \und{Third semester} & & \und{16} \\
 APMA 2130 & Ordinary Differential Equations & 4 \\
 CS 2110 & Software Development Methods & 3 \\
 CS 2102 & Discrete Mathematics & 3 \\
 ECE 2630 & Introductory Circuit Analysis & 3 \\
 HSS & HSS elective$^1$ & 3 \\
-& & \\
+%& & \\
+\end{tabular}
+ 
+\noindent \begin{tabular}{llc}
 \und{Fourth semester} & & \und{16} \\
 CS 2150 & Program and Data Representation & 3 \\
 CS/ECE 2330 & Digital Logic Design & 3 \\
@@ -1492,8 +1493,6 @@ UE & Unrestricted elective$^4$ & 3 \\
 UE & Unrestricted elective$^4$ & 3 \\
 STS 4600 & Engineer in Society & 3 \\
 \end{tabular}
-
-\vspace{0.25in}
 
 \paragraph{Footnotes:}
 
@@ -1552,10 +1551,17 @@ pre-reqs (i.e., not CS 4435).
 
 \mysection{Miscellaneous Information}
 
-Please refer to the Undergraduate Record for detailed information
-about SEAS Academic Rules and Regulations including HSS
-electives. Guidelines such as Course Load, Academic Probation and
-Academic Suspension can also be found in the Record.
+There are three CS capstone courses: CS 4970 (Capstone Practicum I), 
+CS 4971 (Capstone Practicum II), and CS 4980 (Capstone Research).
+Only the first one (CS 4970) counts as a CS/ECE elective for the
+Computer Engineering degree; the other two can only count as an
+unrestricted elective.
+
+Please refer to the Undergraduate
+Record\myurl{http://records.ureg.virginia.edu/} for detailed
+information about SEAS Academic Rules and Regulations including HSS
+electives. Guidelines such as course load, academic probation and
+academic suspension can also be found in the Record.
 
 The Registrar web site provides a Course Renumbering Crosswalk to
 assist with the transition from 3 to 4 digit course
@@ -1581,9 +1587,9 @@ numbers\myurl{http://www.virginia.edu/registrar/search.php}.
 \mychapter{Minor in Computer Science}{CS Minor}
 \label{sec:csminor}
 
-{\Large\em Warning: Due to limited resources, the department is not
-accepting any minor applications from non-SEAS students, and only a
-limited number of applications from SEAS students are accepted.}
+%{\Large\em Warning: Due to limited resources, the department is not
+%accepting any minor applications from non-SEAS students, and only a
+%limited number of applications from SEAS students are accepted.}
 
 \mysection{Introduction}
 
@@ -1673,31 +1679,31 @@ courses. Be aware that the department strictly enforces its
 prerequisite policy.
 
  
-\mysection{Miscellaneous Information}
-\subsection{Declaring the Minor}
-
-To declare the minor:
-
-\begin{numlist}
-
-\item A student should have completed CS 1110 or 1120, CS 2110, and CS
-  2102. Furthermore, the student should have completed, or at least be
-  enrolled in, CS 2150.
-
-\item Complete the minor declaration form, which is available in the
-  Computer Science department's front office (Rice Hall, room 527).
-  The form has the title, ``School of Engineering and Applied Science,
-  Minor Declaration''~-- this is the form for everybody; the SEAS
-  school title at the top is because the CS department is in SEAS.
-
-\item Meet with the CS department's minor advisor(s), currently
-  \csminoradvisor\ (\csminoradvisoremail).  Bring a the minor
-  declaration form and your transcript (unofficial is fine).
-
-\item Assuming the form is approved, it will be processed by the
-  department.
-
-\end{numlist}
+%\mysection{Miscellaneous Information}
+%\subsection{Declaring the Minor}
+%
+%To declare the minor:
+%
+%\begin{numlist}
+%
+%\item A student should have completed CS 1110 or 1120, CS 2110, and CS
+%  2102. Furthermore, the student should have completed, or at least be
+%  enrolled in, CS 2150.
+%
+%\item Complete the minor declaration form, which is available in the
+%  Computer Science department's front office (Rice Hall, room 527).
+%  The form has the title, ``School of Engineering and Applied Science,
+%  Minor Declaration''~-- this is the form for everybody; the SEAS
+%  school title at the top is because the CS department is in SEAS.
+%
+%\item Meet with the CS department's minor advisor(s), currently
+%  \csminoradvisor\ (\csminoradvisoremail).  Bring a the minor
+%  declaration form and your transcript (unofficial is fine).
+%
+%\item Assuming the form is approved, it will be processed by the
+%  department.
+%
+%\end{numlist}
 
 
 \clearpage
@@ -2049,26 +2055,25 @@ chapter\myurl{http://acm.cs.virginia.edu} or ACM's advisor,
 
 Advanced placement (AP) credit is awarded by the University for most
 AP tests in which the grade is a 4 or a 5. This section only deals
-with the AP computer science test. A student's SIS report will
+with the AP Computer Science test. A student's SIS report will
 always list which courses qualify for the AP test scores (both in
 computer science and in other fields).
 
-A 5 on the computer science AB test will receive course credit for CS
-1110 and CS 2110. A 4 on the computer science AB test OR a
-5 on the computer science A test will receive course credit for CS
-1110. If the AP exam was not in Java, proficiency in Java must
-be demonstrated prior to taking CS 2110. Note that CS 2110
-is required for other majors: computer engineering, systems
-engineering, and electrical engineering. There is also a placement
-exam before the fall semester that will allow the student to place out
-of CS 1110, but does not allow credit to be received for the
+Students who receive a 4 or 5 on the Computer Science A test will
+receive credit for CS 1110.  Students who took the High Level Computer
+Science course through International Baccalaureate will get credit for
+CS 1110 with a 5 and for both CS 1110 and CS 2110 with a 6 or 7.
+
+Note that CS 2110 is required for other majors: computer engineering,
+systems engineering, and electrical engineering. There is also a
+placement exam before the fall semester that will allow the student to
+place out of CS 1110, but does not allow credit to be received for the
 course~-- the student must then take another 3 hour CS or technical
 course (see your advisor for details about a 'technical course')
 instead. See the next question and answer for information about the CS
 1110 placement exam.
 
-\subsection{Can I place out of CS 1110? What about CS 2110
- ?}
+\subsection{Can I place out of CS 1110? What about CS 2110 ?}
 \label{101placement}
 
 There is a placement exam for CS 1110, which covers all the
@@ -2081,7 +2086,7 @@ course credit for CS 1110. A student must still take CS 2110
 'technical course') to fulfill the SEAS CS 1110 requirement. The
 test is offered before the beginning of the fall semester. Note that
 any student who has enrolled in CS 1110 or equivalent (1111,
-1112) and got a letter grade – including a 'W'~-- is not allowed to
+1112) and got a letter grade~-- including a 'W'~-- is not allowed to
 take the placement exam (in other words, if you enroll and then drop
 the course without a 'W', you may still take the placement exam). The
 exam may be taken by visiting the departmental office in Rice Hall,
@@ -2205,24 +2210,32 @@ for more details.
  
 \subsection{How do I transfer into the CS program?}
 
-Like other SEAS students, transfer students must formally apply to,
-and be approved by, the Department of Computer Science to enroll in
-the computer science program of study. To minimize loss of credit upon
-transfer, students must take a rigorous program in mathematics and the
-sciences. The School of Engineering and Applied Science expects a
-minimum of 63 credits in the first two years, instead of the 60-credit
-minimum that is customary in the College of Arts and Sciences. The
-additional credits are often completed through summer
-courses. Detailed information on curriculum requirements may be
-obtained from the Office of the Dean of the School of Engineering and
-Applied Science.
+Students must decide which school they want to receive their degree
+in: either in the Engineering School (which will yield a BS CS degree,
+chapter~\ref{bscschapter}) or the College of Arts and Sciences (which
+will yield a BA CS degree, chapter~\ref{bacschapter}).  Students must
+then apply for the degree in that school; the application process is
+described in section~\ref{bscsapplicationprocess} for the BS CS
+degree, and section ~\ref{bacsapplicationprocess} for the BA CS degree.
 
-There is also the Bachelor of Arts in Computer Science, offered
-through the College; also see their main
-web page\myurl{http://www.cs.virginia.edu/ba/}. Students
-outside of the School of Engineering and Applied Science with an
-interest in obtaining a BS (as opposed to a BA) degree in computer
-science must transfer to the Engineering school.
+%Like other SEAS students, transfer students must formally apply to,
+%and be approved by, the Department of Computer Science to enroll in
+%the computer science program of study. To minimize loss of credit upon
+%transfer, students must take a rigorous program in mathematics and the
+%sciences. The School of Engineering and Applied Science expects a
+%minimum of 63 credits in the first two years, instead of the 60-credit
+%minimum that is customary in the College of Arts and Sciences. The
+%additional credits are often completed through summer
+%courses. Detailed information on curriculum requirements may be
+%obtained from the Office of the Dean of the School of Engineering and
+%Applied Science.
+%
+%There is also the Bachelor of Arts in Computer Science, offered
+%through the College; also see their main
+%web page\myurl{http://www.cs.virginia.edu/ba/}. Students
+%outside of the School of Engineering and Applied Science with an
+%interest in obtaining a BS (as opposed to a BA) degree in computer
+%science must transfer to the Engineering school.
 
 
 \subsection{Where can I find out about the Business minor?}
@@ -2456,7 +2469,8 @@ interest.
   communication and synchronization; resource management; virtual
   memory management algorithms; file systems; and networking and
   distributed systems.}{Prerequisite: CS 2150 with grade of C- or
-  higher, and CS 3330 or ECE 3430 with a grade of C- or higher.}
+  higher, CS/ECE 2330 with a grade of C- or higher, and CS 3330 or ECE
+  3430 with a grade of C- or higher.}
 
 \course{CS 4434}{Dependable Computing Systems}{3 credits}{Focuses on
   the techniques for designing and analyzing dependable computer-based
@@ -2474,8 +2488,8 @@ interest.
   is targeted for both computer science students and students from
   other disciplines who want to learn how to significantly increase
   the performance of applications.}{Prerequisites: CS 2110 with grade
-  of C- or higher, CS3330 or ECE 3430 with a grade of C- or higher,
-  APMA 3100 and APMA 3110.}
+  of C- or higher, CS/ECE 2330 with a grade of C- or higher, CS3330 or
+  ECE 3430 with a grade of C- or higher, APMA 3100 and APMA 3110.}
 
 \course{CS/ECE 4457}{Computer Networks}{3 credits}{ Topics include the
   design of modern communication networks; point-to-point and
