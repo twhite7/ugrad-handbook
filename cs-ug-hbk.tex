@@ -1026,7 +1026,7 @@ you are accepted into the degree program.
 
 Before declaring the computer science major, all students should have
 taken one introductory computer science course (either CS 1120,
-CS 1110, CS 1111 (101-E), or CS 1112 (101-X)) with a grade of C+
+CS 1110, CS 1111, or CS 1112) with a grade of C+
 or better, or have comparable experience. Students may be permitted to
 declare the major while they are currently taking the introductory
 course.
@@ -1050,19 +1050,35 @@ descriptions can be found in the Course Descriptions section
 \item CS 4102, Algorithms
 \end{itemlist}
 
-Note that any CS1 class, either CS 111x (101/101E/101X), Introduction
-to Programming, or CS 1120, Introduction to Computing: Language,
-Logic, and Machines, is required to enroll in CS 2110.
+Note that any CS1 class, either CS 111x, Introduction to Programming,
+or CS 1120, Introduction to Computing: Language, Logic, and Machines,
+is required to enroll in CS 2110.
 
 \subsection{CS Electives}
 
-Four computing-intensive electives are to be selected from a list of
+Four computing intensive electives are to be selected from a list of
 approved courses. The list of approved courses will initially comprise
 current Computer Science courses at 3000-level or above as well as CS
 2330. Additional courses that may be jointly offered by CLAS and CS
 departments will be added to the list of approved computing electives
 based on approval by the BA committee.
 
+There are a few restrictions on which upper-level CS courses can count
+as a CS elective:
+
+\begin{itemlist}
+\item CS 4971 (Capstone Practicum II) does not count as a CS elective,
+as it is part of the BS CS capstone requirement.  Note that it's
+pre-req (CS 4970, Capstone Practicum I) {\em does} count as a CS
+elective.
+\item CS 4980 (Capstone Research) does not count as a CS elective, as
+it is part of the BS CS capstone requirement.
+\item CS 4993 (Independent Study) credits can only count for at most 1
+CS elective (i.e., 3 credits).
+\item CS 4998 (Distinguished BA Majors Research) is a separate
+requirement for the DMP (see section~\ref{sec:badmp}), and thus does
+not count as a CS elective.
+\end{itemlist}
 
 \subsection{Integration Electives}
 
@@ -1148,11 +1164,6 @@ of September 2013.
 \item BME 4784: Medical Image Analysis
 \end{itemlist}
 
-\paragraph{Civil Engineering}
-\begin{itemlist}
-\item CE 4810: Geographic Information Systems
-\end{itemlist}
-
 \paragraph{Chemistry}
 \begin{itemlist}
 \item CHEM 4411: Biological Chemistry Lab I
@@ -1194,17 +1205,6 @@ of September 2013.
 \item EVSC 5020: GIS Methods
 \item EVSC 5030: Applied Statistics for Environmental Scientists
 \item EVSC 5110: Systems Analysis in Environmental Sciences
-\end{itemlist}
-
-\paragraph{General History}
-\begin{itemlist}
-\item HIST 4501: Major Seminar
-\end{itemlist}
-
-\paragraph{United States History}
-\begin{itemlist}
-\item HIUS 3162: Digitizing America
-\item HIUS 4591: Topics in U.S. History
 \end{itemlist}
 
 \paragraph{Linguistics}
@@ -1306,11 +1306,6 @@ of September 2013.
 \item STAT 5330: Data Mining
 \end{itemlist}
 
-\paragraph{Science, Technology, \& Society}
-\begin{itemlist}
-\item STS 2160: Cellular Neurobiology
-\end{itemlist}
-
 
 \paragraph{Using other courses.}  If a student would like to use a
 course not on the above list as an integration elective, they should
@@ -1357,7 +1352,7 @@ approval for a requirement exception.
 
 
 \subsection{Distinguished Majors Program}
-
+\label{sec:badmp}
 
 %Bachelor of Arts Computer Science 
 BA CS majors who have completed 18 credit hours toward their major
@@ -2437,12 +2432,65 @@ fulfill this requirement, as it's all the same course.
 \mysection{Course Descriptions}
 \label{sec:coursedesc}
 
-These course listings are from the undergraduate
-record\myurl{http://records.ureg.virginia.edu/content.php?catoid=11\&navoid=189}. The
-frequency code for each class specifies how often it is offered. (S)
-means offered each (spring and fall) semester; (Y) means offered once
-each academic year, and (SI) means offered upon sufficient student
-interest.
+These course listings in this section are from the undergraduate
+record\myurl{http://records.ureg.virginia.edu/content.php?catoid=11\&navoid=189}.
+Table~\ref{table:course-offering-history} on
+page~\pageref{table:course-offering-history} gives this history of
+which courses were taught when for the last few years.  The department
+generally cannot guarantee that electives can be taught at least once
+a year, as when an elective is offered is dependent on the available
+faculty.  However, many electives are still offered regularly.
+Lower-level causes are typically taught every semester.
+
+\subsection{Course Offering History}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{l|cccccccccccc}
+\label{table:course-offering-history}
+Course & 08 & 09 & 09 & 10 & 10 & 11 & 11 & 12 & 12 & 13 & 13 \\
+& F & S & F & S & F & S & F & S & F & S & F \\ \hline\hline
+CS 1010 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 1110 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 1111 & X & X &   & X & X & X & X & X & X & X & X \\
+CS 1112 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 1120 &   & X & X & X & X & X & X & X & X & X &   \\
+CS 2102 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 2110 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 2150 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 2190 &   & X &   & X &   & X &   & X &   & X &   \\
+%CS 2220 & X &   & X &   & X &   & X &   &   &   &   \\
+CS 2330 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 2501 & X &   &   &   & X &   & X &   &   &   & X \\
+CS 3102 &   & X & X & X & X & X & X & X & X & X & X \\
+CS 3205 & X &   &   &   &   & X &   & X &   & X & X \\
+CS 3240 &   & X &   & X &   & X &   & X & X & X & X \\
+CS 3330 & X & X & X & X & X & X & X & X & X &   & X \\
+CS 4102 & X &   & X & X & X & X & X & X & X & X & X \\
+CS 4240 &   &   & X &   & X &   & X &   & X &   & X \\
+CS 4330 &   & X &   &   &   &   &   &   &   &   &   \\
+CS 4414 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 4434 &   &   &   & X &   &   &   & X &   &   &   \\
+CS 4444 & X &   & X &   & X &   & X &   &   & X &   \\
+CS 4457 & X & X & X & X & X & X & X & X & X & X & X \\
+CS 4458 & X &   &   &   &   &   &   &   &   &   &   \\
+CS 4501 &   &   &   &   & X & X &   &   & X & X &   \\
+CS 4610 &   &   & X &   &   &   &   & X &   &   &   \\
+CS 4620 &   &   &   &   &   &   &   &   &   &   & X \\
+CS 4630 &   & X & X & X &   & X &   & X &   & X & X \\
+CS 4710 &   & X &   &   &   & X &   & X &   & X &   \\
+CS 4720 &   &   & X &   & X &   & X &   & X &   & X \\
+CS 4730 &   &   &   & X &   &   & X &   &   &   &   \\
+CS 4740 &   &   &   &   &   &   &   & X &   & X &   \\
+CS 4750 & X &   &   & X &   & X &   & X &   & X & X \\
+CS 4753 & X &   & X &   & X &   & X &   & X &   & X \\
+CS 4810 & X &   &   & X &   &   & X &   & X &   &   \\
+CS 4970 &   &   &   &   &   &   &   & X & X &   & X \\
+CS 4971 &   &   &   &   &   &   &   &   &   & X &   \\
+\end{tabular}
+\caption{Course Offering History}
+\end{center}
+\end{table}
 
 \subsection{1000 Level CS Courses}
 
@@ -2481,6 +2529,7 @@ interest.
   of computer programs. Note: No prior programming experience
   allowed.}{}
 
+\clearpage
 \course{CS 1120}{Introduction to Computing: Explorations in Language,
   Logic, and Machines}{3 credits}{This course is an introduction to
   the most important ideas in computing. It focuses on the big ideas
