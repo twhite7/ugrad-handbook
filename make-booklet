@@ -1,0 +1,26 @@
+#!/bin/tcsh
+
+if ( "$1" == "" ) then
+	echo "Usage: $0 <pdf>"
+	exit
+endif
+
+echo This script does not check that the number of pages is divisible by 4...
+
+set p = `pdfinfo $1 | grep Pages | awk '{print $2}'`
+@ q = $p / 4
+
+set pagespec = ""
+
+foreach i ( `seq 1 $q` )
+	@ p1 = $p - $i * 2 + 2
+	@ p2 = $i * 2 - 1
+	@ p3 = $i * 2
+	@ p4 = $p - $i * 2 + 1
+	set pagespec = "$pagespec $p1 $p2 $p3 $p4"
+end
+
+pdftk $1 cat $pagespec output booklet.pdf
+
+echo All done!
+echo Be sure to print two sheets per page, double sided, and set the two-sided option to short-edge

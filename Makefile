@@ -9,3 +9,6 @@ html:
 
 clean:
 	/bin/rm *.aux *.log *.out *.toc *~
+
+booklet:
+	./make-booklet cs-ug-hbk.pdf
