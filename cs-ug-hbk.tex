@@ -603,25 +603,26 @@ the sample course schedule shown in section~\ref{sec:bscsschedule}
   level or above. A course that is fulfilling another requirement
   cannot count as a CS elective. If you take more than five CS
   electives, you can count additional CS elective course(s) as
-  unrestricted electives. ECE 4435 (Computer Architecture \& Design)
-  and ECE 4440 (Embedded Systems Design) also count as a CS electives
-  (this is not the case for CpE majors, as they are both required
-  courses for CpE). Note, however, that those two courses only count
-  as {\em one} CS elective each; those 9 credits (each is worth 4.5
-  credits) do not count as 3 CS electives.  And in order for them to
-  be counted, a SIS exception must be entered~-- see
-  section~\ref{sec:sisece4435issue}
-  (page~\pageref{sec:sisece4435issue}) for details.  CS 4993
+  unrestricted electives. Note that
+  % ECE 4435 (Computer Architecture \& Design) and
+  ECE 4440 (Embedded Systems Design) can count as a CS elective, but
+  see the details in section~\ref{bscscpedoublemajors}
+  (page~\pageref{bscscpedoublemajors}).  Due to substantial overlap with
+  CS 3330 (Computer Architecture), ECE 4435 (Computer Architecture \&
+  Design) can NOT count as a CS elective.  CS 4993
   (Independent Study) can be used at the most once for a CS elective
   (i.e. no more than 3 credits); additional CS 4993 credits can be
   used as unrestricted electives. Note that for a class that does not
   meet these requirements to count as a CS elective requires approval
   by the CS undergraduate curriculum committee (NOT by the student's
   academic advisor); this process can be initiated by emailing the BS
-  CS director at \bscsdirectoremail. Due to substantial overlap, one
-  cannot get credit for both ECE 4435 and CS 4330. Thus, if a student
-  takes both of those classes, the other one can ONLY count as a
-  unrestricted elective.
+  CS director at \bscsdirectoremail. 
+  % the following paragraph is no longer relevant if ECE 4435 does not
+  % count as a CS elective any more
+  %  
+  % Due to substantial overlap, one cannot get credit for both ECE 4435
+  % and CS 4330. Thus, if a student takes both of those classes, the
+  % other one can ONLY count as a unrestricted elective.
 
 \item STS 2xxx/3xxx elective (1 required): Any STS course at the
   2000-level or 3000-level.
@@ -699,7 +700,7 @@ students to join the sequence for just CS 4971 in the spring semester.
 
 \subsubsection{Double Majors and the Capstone}
 
-A SEAS student who is double-majoring with the BS CS and another SEAS
+A SEAS student who is double majoring with the BS CS and another SEAS
 degree must complete the capstone or major design experience (MDE)
 course requirements in their non-CS major {\bf in addition to} the
 capstone sequence in the computer science major.  This means that they
@@ -1205,7 +1206,7 @@ of September 2013.
 
 \paragraph{Biomedical Engineering}
 \begin{itemlist}
-\item BME 3310: Biomed Systems Analysis \& Design
+\item BME 3310: Biomedical Systems Analysis \& Design
 \item BME 3315: Computational BME
 \item BME 3636: Neural Network Models
 \item BME 4783: Medical Imaging Modalities
@@ -1301,7 +1302,7 @@ of September 2013.
 
 \paragraph{Music}
 \begin{itemlist}
-\item MUSI 2350: Technosonics: Digital Music and Sound Art Composition
+\item MUSI 2350: Technosonics: Digital Music \& Sound Art Composition
 \item MUSI 3390: Intro to Music \& Computers
 \item MUSI 4535: Interactive Media
 \item MUSI 4540: Computer Sound Generation
@@ -1366,7 +1367,10 @@ student to come up with a good argument as to why the course should
 qualify, and once the advisor approves it, send it to the BA CS
 Director at \bacsdirectoremail.  Alternatively, if the advisor
 prefers, s/he can just send the student to BA CS director to get
-approval for a requirement exception.
+approval for a requirement exception.  This will require a SIS
+exception to be entered for the student; see
+section~\ref{sec:sisexceptions} (page~\pageref{sec:sisexceptions}) for
+the manual SIS exception process.
 
 \mysection{Miscellaneous Information}
 
@@ -1474,12 +1478,8 @@ section~\ref{bacsapplicationprocess}
 \epsfig{figure=diagrams/ba-cs.pdf,width=4.5in}
 \end{figure}
 
-\noindent Notes:
-
-\begin{itemlist}
-\item CS 2102 requires {\em either} CS 111x or CS 1120 as a
-  prerequisite.
-\end{itemlist}
+\noindent Notes that CS 2102 requires {\em either} CS 111x or CS 1120
+as a prerequisite.
 
 
 \clearpage
@@ -1538,7 +1538,7 @@ The Computer Engineering program does not offer a minor.
 The application process for the Computer Engineering degree are the
 exact same as with the BS Computer Science degree (section
 \ref{bscsapplicationprocess}, page~\pageref{bscsapplicationprocess}),
-and thus they are not repeated here.
+and thus it is not repeated here.
 
 
 \mysection{Curriculum} % called ``Disciplines'' in the original
@@ -1570,7 +1570,7 @@ courses:
 %\paragraph{Please Note:} Course numbers changed in 2009. The old 
 %course numbers are shown in parentheses.
 
-In addition to providing breadth across the two areas,
+\noindent In addition to providing breadth across the two areas,
 this core of the Computer Engineering program provides
 depth in the following areas:
 
@@ -1740,12 +1740,12 @@ Systems).  This course takes the place of CS 3330 (Computer
 Architecture), which is no longer required for a computer engineering
 degree.  In addition, ECE 4435 (Computer Architecture \& Design) was
 restructured to include many of the topics in CS 3330.  Note that this
-embedded systems requirement change also affects the Electrical
-Engineering curriculum, but that is not being covered here.
+change also affects the Electrical Engineering curriculum, but that is
+not being covered here.
 
 For any computer science classes that require CS 3330 as a
 pre-requisite, ECE 4435 is also allowed.  The one exception is CS/ECE 4457
-(Computer Networks), which has either CS 3330 or ECE 3430 as
+(Computer Networks), which allows either CS 3330 or ECE 3430 as
 pre-requisites (i.e., not CS 4435).
 
 %Questions to resolve by asking Joanne:
@@ -1771,11 +1771,6 @@ Only the first one (CS 4970) counts as a CS/ECE elective for the
 Computer Engineering degree; the other two can only count as an
 unrestricted elective.
 
-Students who are dual-majoring in BS CS and Computer Engineering may
-have ECE 4435 count as their computer architecture (CS 3330)
-requirement, although this will require a manual SIS exception to do
-so.
-
 Please refer to the Undergraduate
 Record\myurl{http://records.ureg.virginia.edu/} for detailed
 information about SEAS Academic Rules and Regulations including HSS
@@ -1786,6 +1781,26 @@ probation and academic suspension can also be found in the Record.
 %assist with the transition from 3 to 4 digit course
 %numbers\myurl{http://www.virginia.edu/registrar/search.php}.
 
+\subsection{Double BS CS \& BS CpE majors}
+\label{bscscpedoublemajors}
+
+Due to substantial overlap with CS 3330 (Computer Architecture), ECE
+4435 (Computer Architecture \& Design) can NOT count as a CS elective.
+However, double majors may have ECE 4435 count as their CS 3330
+requirement, although this will require a manual SIS exception to do
+so; see section~\ref{sec:sisexceptions}
+(page~\pageref{sec:sisexceptions}) for the SIS exception
+process.
+
+ECE 4440 (Embedded Systems Design) can count as a CS elective, but
+this will also require a SIS exception to be entered~-- see
+section~\ref{sec:sisexceptions} (page~\pageref{sec:sisexceptions})
+and section~\ref{sec:sisece4435issue} (page~\pageref{sec:sisece4435issue})
+for details.  Note that even though ECE 4440 is a 4.5 credit course,
+it can only count as one CS elective (i.e., only 3 credits).
+
+The BS CpE web site\myurl{http://www.cpe.virginia.edu/ugrads/} has a
+sample course schedule for double majors.
 
 %\clearpage
 %\mysection{Course Requirements Flowchart}
@@ -2339,7 +2354,8 @@ footnote~\ref{cpeunrestricted} in section~\ref{sec:cpeunrestricted}
 (page~\pageref{cpeunrestricted}) for details on unrestricted
 electives.
 \item Other Engineering majors will have different rules as to what
-  can be substituted, but CS 2110 will typically be allowed.
+  can be substituted; consult your advisor in that department for
+  details.
 \end{itemlist}
 
 The test is offered before the beginning of the fall semester. Note
@@ -2427,20 +2443,39 @@ information in this section.
   1620, and PHYS 2610.
 \end{itemlist}
 
+\subsection{What is a SIS exception and how can I get one?}
+\label{sec:sisexceptions}
+
+SIS, which is UVa's Student Information System, keeps track of the
+requirements that all students must fulfill in order to graduate.  If
+any student has an approved reason to differ from the stated
+guidelines, then a SIS exception has to be entered.  Examples would
+include using a different course for a BA CS integration elective
+(section~\ref{sec:bacs-integrationelectives},
+page~\pageref{sec:bacs-integrationelectives}), or a BS CS \& BS CpE
+double major wanting to count ECE 4440 (Embedded Systems Design) as a CS
+elective (section~\ref{bscscpedoublemajors},
+page~\pageref{bscscpedoublemajors}).  Note that SIS exceptions are only
+entered with the appropriate approval.  Your academic advisor can
+request approval from the appropriate degree committee, and have such
+an exception entered by contacting the SEAS undergraduate office.
+
 \subsection{Why are ECE 4435 and ECE 4440 not showing up in my list of
   fulfilled CS electives?}
 \label{sec:sisece4435issue}
 
-This has to do with a restriction in how SIS handles the CS elective
-requirements.  While ECE 4435 (Computer Architecture \& Design) and
-ECE 4440 (Embedded Systems Design) can both count as a CS elective
-each, in order for this to happen a SIS exception will need to be
-entered.  Your academic advisor can request to have such an exception
-entered by contacting the SEAS undergraduate office.  Note that both
-of those courses only count as one elective each, even though they are
-4.5 credits per course (meaning that taking both of those classes~--
-worth 9 credits total~-- does not count as three CS electives, but
-only as two).
+ECE 4435 (Computer Architecture \& Design) does not count as a CS
+elective, as there is too much overlap with CS 3330 (Computer
+Architecture); see section~\ref{bscscpedoublemajors}
+(page~\pageref{bscscpedoublemajors}) for details.
+
+As for ECE 4440 (Embedded Systems Design), this has to do with a
+restriction in how SIS handles the CS elective requirements.  While it
+can count as a CS elective, in order for this to happen a SIS
+exception will need to be entered. 
+office.  Note that this course can only count as one elective each,
+even though it is a 4.5 credit course (meaning that only 3 credits
+counts toward the CS elective requirement).
 
 \subsection{Why do the SIS requirements for the BS CS major list 6 HSS
   electives, and not 5?}
@@ -2626,8 +2661,6 @@ CS 4971 &   &   &   &   &   &   &   &   &   & X &   \\
 %  skills for business applications. Intended primarily for
 %  pre-commerce students. May not be taken for credit by students in
 %  SEAS.}{}
-
-\clearpage
 
 \course{CS 1110}{Introduction to Programming}{3 credits}{Introduces
   the basic principles and concepts of object-oriented programming
@@ -3147,7 +3180,10 @@ can be found in section~\ref{capstone-section}
 
 For the BS CpE, the embedded systems requirement
 (section~\ref{embedded}, page \pageref{embedded}) was added, as that
-was approved in the spring of 2013.
+was approved in the spring of 2013.  As a result of those changes, ECE
+4435 (Comptuer Architecture \& Design) can no longer count as a CS
+elective, as the content is to similar to that of CS 3330 (Comptuer
+Architecture).
 
 CS 2330 (Digital Logic Design) was removed as a pre-requisite for
 CS/ ECE 3330 (Computer Architecture), and added as a pre-requisite for
