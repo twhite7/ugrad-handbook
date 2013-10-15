@@ -1,17 +1,36 @@
-\documentclass[10pt,letter]{book}
+\documentclass[10pt,letter,twocolumn]{book}
+%\documentclass[10pt,letter]{book}
 
 \usepackage{hyperref}
 \usepackage{palatino}
 \usepackage{epsfig}
 \usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{amssymb} % for \checkmark
+%\usepackage{setspace}\setstretch{1.3}
+\usepackage[table]{xcolor} % for table row coloring
+\usepackage{graphicx}
 
 % the following pacakge was added to use the strikeout, but it caused
 % all emphasized text (i.e., \em) to be underlined instead.
 %\usepackage{ulem} % for the CpE embedded requirement strikeout
 
+
+\newboolean{lettersize} % if false, then page size is half-letter
+\setboolean{lettersize}{true}
+%\setboolean{lettersize}{false}
+
+\ifthenelse{\boolean{lettersize}}{
+\usepackage[top=1in,left=0.5in,right=0.5in,bottom=1in]{geometry}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+}{
 \usepackage[margin=0.5in, paperwidth=5.5in, paperheight=8.5in]{geometry}
 \setlength{\paperheight}{8.5in}
 \setlength{\paperwidth}{5.5in}
+}
 
 %\usepackage[margin=0.75in, paperwidth=8.5in, paperheight=11in]{geometry}
 %\setlength{\paperheight}{11in}
@@ -61,17 +80,15 @@
 \begin{document}
 \pagestyle{empty}
 
+\begin{figure*}[h!]
+
 \vspace*{0.5in}
 
-\begin{figure}[h!]
 \begin{center}
 \epsfig{figure=images/Engineering-4-color.pdf,width=3.5in}
-\end{center}
-\end{figure}
 
-\vspace{0.25in}
+\vspace{0.75in}
 
-\begin{center}
 {\huge Department {\em of} Computer Science}
 
 \vspace{12pt}
@@ -96,12 +113,13 @@
 
 {\large Handbook version for the 2013--2014 academic year}
 \end{center}
-
+\end{figure*}
 
 \clearpage
 
-\vspace*{1.5in}
 
+\begin{figure*}[h!]
+\ifthenelse{\boolean{lettersize}}{}{\vspace*{1.5in}}
 \begin{center}
 \parbox{3in} {The last updates to this undergraduate handbook were
   made in the summer of 2013.  This version is valid for the
@@ -131,6 +149,7 @@ errata to \handbookmaintainerpronoun.
 
 }
 \end{center}
+\end{figure*}
 
 \clearpage
 \pagestyle{fancy}
@@ -381,25 +400,19 @@ Science in Computer Engineering is accredited by the Engineering
 Accreditation Commission of ABET\myurlrecall{abet}.
 
 
-%\clearpage
-%\mysection{Venn Diagram}
-%\begin{figure}[h!]
-%\epsfig{figure=flowcharts/venn-diagram.png,width=4.5in}
-%\end{figure}
-
-\clearpage
+\ifthenelse{\boolean{lettersize}}{}{\clearpage}
 
 \mysection{Major Course Requirements Comparison}
 
 \begin{figure}[h!]
+\label{fig:coursereqscomparison}
 \begin{center}
 \epsfig{figure=diagrams/venn-diagram.pdf,width=3.9in}
 \end{center}
+\ifthenelse{\boolean{lettersize}}{\caption{Course Requirements Comparison}}{}
 \end{figure}
 
-\noindent
-\begin{tabular}{p{2in}p{2.25in}}
-
+\ifthenelse{\boolean{lettersize}}{\noindent See figure~\ref{fig:coursereqscomparison}.}{\noindent\begin{tabular}{p{2in}p{2.25in}}}
 The SEAS school requirements consist of:
 \begin{itemlist}
 \item APMA 1110 \& 2120
@@ -413,8 +426,7 @@ The SEAS school requirements consist of:
 \item STS 4500 \& 4600
 \end{itemlist}
 
-&
-
+\ifthenelse{\boolean{lettersize}}{\noindent}{&}
 The CLAS school requirements consist of:
 \begin{itemlist}
 \item First \& second writing requirements
@@ -426,13 +438,13 @@ The CLAS school requirements consist of:
 \item 12 credits of natural science and math
 \end{itemlist}
 
-\end{tabular}
+\ifthenelse{\boolean{lettersize}}{}{\end{tabular}}
 
-\noindent A ``CS 1 class'' is CS 1110, CS 1111, or CS 1112.  CLAS
-majors can take CS 1120, provided they have Java experience.
-Placement is available; see sections~\ref{applacement}
-(page~\pageref{applacement}) \& \ref{101placement}
-(page~\pageref{101placement}).
+\ifthenelse{\boolean{lettersize}}{}{\noindent} A ``CS 1 class'' is CS
+1110, CS 1111, or CS 1112.  CLAS majors can take CS 1120, provided
+they have Java experience.  Placement is available; see
+sections~\ref{applacement} (page~\pageref{applacement}) \&
+\ref{101placement} (page~\pageref{101placement}).
 
 \clearpage
 \mychapter{Bachelor of Science in Computer Science}{BS CS Degree}
@@ -728,9 +740,11 @@ The degree requirement checklist is shown in figure~\ref{fig:bscsreqs}
 online\myurl{http://www.cs.virginia.edu/acad/bscs/} in a full
 (letter-sized) page format.
 
-\begin{figure}
+\begin{figure*}
+\subsection*{BS CS Degree Requirements Checklist}
 \label{fig:bscsreqs}
-\small 
+\begin{center}
+\ifthenelse{\boolean{lettersize}}{\large}{\small}
 \begin{tabular}{|l|l|l|l|} \hline
 \bf Required Computing \& Math courses & \bf Grade & \bf Semester &
 \bf Comments \\ \hline \hline
@@ -823,7 +837,8 @@ HSS electives (5) & Unrestricted electives (5) \\
 \end{tabular}
 \caption{BS CS Degree Requirements Checklist}
 
-\end{figure}
+\end{center}
+\end{figure*}
 
 \normalsize
 
@@ -863,53 +878,53 @@ You may also want to see the FAQ question about how HSS requirements
 list in the SIS report (section~\ref{sec:sishssissue},
 page~\pageref{sec:sishssissue}).
 
+\ifthenelse{\boolean{lettersize}}{
+\newcommand{\samplescheduletableheader}{\noindent\begin{tabular}{p{1.1in}p{1.9in}c}}
+}{
+\newcommand{\samplescheduletableheader}{\noindent\begin{tabular}{p{1.25in}p{2.5in}c}}
+}
+
 \vspace{0.15in}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+%\ifthenelse{\boolean{lettersize}}{\begin{multicols}{2}}{}
+
+\samplescheduletableheader
 \und{First semester} & & \und{15} \\
 APMA 1110 & Single Variable Calculus & 4 \\
-CHEM 1610 \& 1611 & Chemistry for Engineers \& Lab & 4 \\
+CHEM 1610/1611 & Chemistry for Engineers \& Lab & 4 \\
 %CHEM 1611 & Chemistry Lab & 1 \\
 ENGR 1620 & Introduction to Engineering & 3 \\
-ENGR 1621 & Introduction to Engineering Lab & 1 \\
-STS 1500 & Engineering, Technology \& Society & 3 \\
+ENGR 1621 & Intro.\ to Engineering Lab & 1 \\
+STS 1500 & Engineering, Tech.\ \& Society & 3 \\
 \\
-\end{tabular}
-
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\end{tabular}\newline\samplescheduletableheader
 \und{Second semester} & & \und{17} \\
 APMA 2120 & Multivariate Calculus & 4 \\
-PHYS 1425 \& 1429 & Physics I \& Lab & 4 \\
+PHYS 1425/1429 & Physics I \& Lab & 4 \\
 %PHYS 1429 & Physics I Workshop & 1 \\
 CS 1110 & Intro to Computer Science & 3 \\
 SCI & Science elective$^1$ & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \\
-\end{tabular}
-
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\end{tabular}\newline\samplescheduletableheader
 \und{Third semester} & & \und{16} \\
 APMA & APMA elective$^4$ or APMA 3100 & 3 \\
-CS 2110 & Software Development Methods & 3 \\
+CS 2110 & Software Develop.\ Methods & 3 \\
 CS 2102 & Discrete Mathematics & 3 \\
-PHYS 2415 \& 2419 & General Physics II \& Lab & 4 \\
+PHYS 2415/2419 & General Physics II \& Lab & 4 \\
 %PHYS 2419 & General Physics Lab I & 1 \\ 
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \\
-\end{tabular}
-
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\end{tabular}\newline\samplescheduletableheader
 \und{Fourth semester} & & \und{16} \\
-CS 2150 & Program and Data Representation & 3 \\
+CS 2150 & Prog.\ \& Data Representation & 3 \\
 CS/ECE 2330 & Digital Logic Design & 3 \\
 CS 3102 & Theory of Computation & 3 \\
 CS 2190 & CS Seminar & 1 \\
 STS STS & 2xxx/3xxx elective$^6$ & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \\
-\end{tabular}
-
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\end{tabular}\newline\samplescheduletableheader
 \und{Fifth semester} & & \und{18} \\
 CS 3330 & Computer Architecture & 3 \\
 CS 4102 & Algorithms & 3 \\
@@ -918,19 +933,15 @@ APMA & APMA elective$^4$ or APMA 3100 & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \\
-\end{tabular}
-
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\end{tabular}\newline\samplescheduletableheader
 \und{Sixth semester} & & \und{15} \\
-CS 3240 & Advanced Software Development & 3 \\
+CS 3240 & Advanced Software Develop. & 3 \\
 CS & CS elective$^5$ & 3 \\
 APMA & APMA elective$^4$ or APMA 3100 & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \\
-\end{tabular}
-
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\end{tabular}\newline\samplescheduletableheader
 \und{Seventh semester} & & \und{15} \\
 STS 4500 & Western Tech and Culture & 3 \\
 CS & CS elective$^5$ & 3 \\
@@ -938,9 +949,7 @@ CS & CS elective$^5$ or CS 4970 & 3 \\
 CS 4414 & Operating Systems & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \\
-\end{tabular}
-
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\end{tabular}\newline\samplescheduletableheader
 \und{Eighth semester} & & \und{15} \\
 STS 4600 & Engineer in Society & 3 \\
 CS & CS elective$^5$ & 3 \\
@@ -949,6 +958,15 @@ HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 HSS/UE & HSS or unrestricted elective$^{2,3}$ & 3 \\
 \\
 \end{tabular}
+
+%\ifthenelse{\boolean{lettersize}}{\end{multicols}}{}
+
+%\ifthenelse{\boolean{lettersize}}{
+%\begin{wrapfigure}{r}{0.6\textwidth}
+%\vspace{-0.75in}
+%\epsfig{figure=diagrams/bs-cs.pdf,width=4.5in}
+%\end{wrapfigure}
+%}{}
 
 \mysection{Miscellaneous Information}
 \subsection{CS 2190 Specific Details}
@@ -961,20 +979,18 @@ course in ethics and technology in its place (even though CS 2190 is
 only 1 credit). This course taken in place of CS 2190 does not count
 toward any other requirement except to replace CS 2190.
 
-
-%\clearpage
-%\mysection{Course Requirements Flowchart}
-%\begin{figure}[h!]
-%\epsfig{figure=flowcharts/Cs-course-flowchart-summer-2010.png,width=4.5in}
-%\end{figure}
-
-\clearpage
+%\ifthenelse{\boolean{lettersize}}{
+%\mysection{Course Requirements\newline Flowchart}
+%See the figure to the right.
+%}{
+\clearpage%\mysection{Course Requirements Flowchart}
+\begin{figure*}[h!]
 \mysection{Course Requirements Flowchart}
-
-\begin{figure}[h!]
-\epsfig{figure=diagrams/bs-cs.pdf,width=4.5in}
-\end{figure}
-
+\begin{center}
+\ifthenelse{\boolean{lettersize}}{\epsfig{figure=diagrams/bs-cs.pdf,width=5.5in}}{\epsfig{figure=diagrams/bs-cs.pdf,width=4.5in}}
+\end{center}
+\end{figure*}
+%}
 
 \clearpage
 \mychapter{Bachelor of Arts in Computer Science}{BA CS Degree}
@@ -1076,7 +1092,7 @@ you are accepted into the degree program.
 
 \mysection{Curriculum}
 
-\paragraph{Prerequisites:}
+%\paragraph{Prerequisites:}
 
 Before declaring the computer science major, all students should have
 taken one introductory computer science course (either CS 1110, CS
@@ -1090,7 +1106,7 @@ Requirements\myurl{http://artsandsciences.virginia.edu/college/requirements/inde
 as well as at least 27 credits in Computer Science courses and 12
 credits in Integration Electives.
 
-\subsection{Required ``Core'' Courses}
+\subsection{Required Core Courses}
 \label{sec:bacs-corecourses}
 
 The following courses are required for all BA CS majors.  Full
@@ -1158,6 +1174,8 @@ have prerequisites. The list of integration electives may change
 slightly from year to year.  You can always check the current list of
 integration electives on SIS.  The list below is according to SIS as
 of September 2013.
+
+%\ifthenelse{\boolean{lettersize}}{\begin{multicols}{2}}{}
 
 \paragraph{Anthropology}
 \begin{itemlist}
@@ -1367,6 +1385,7 @@ of September 2013.
 \item STAT 5330: Data Mining
 \end{itemlist}
 
+%\ifthenelse{\boolean{lettersize}}{\end{multicols}}{}
 
 \paragraph{Using other courses.}  If a student would like to use a
 course not on the above list as an integration elective, they should
@@ -1482,12 +1501,20 @@ section~\ref{bacsapplicationprocess}
 
 \mysection{Course Requirements Flowchart}
 
-\begin{figure}[h!]
-\epsfig{figure=diagrams/ba-cs.pdf,width=4.5in}
-\end{figure}
+\begin{figure*}[h!]
+\label{fig:barequirementsflowchart}
+\ifthenelse{\boolean{lettersize}}{\section*{Course Requirements Flowchart}}{}
+\begin{center}
+\ifthenelse{\boolean{lettersize}}
+{\epsfig{figure=diagrams/ba-cs.pdf,width=5.5in}}
+{\epsfig{figure=diagrams/ba-cs.pdf,width=4.25in}}
+\end{center}
+\end{figure*}
 
-\noindent Notes that CS 2102 requires {\em either} CS 111x or CS 1120
-as a prerequisite.
+\ifthenelse{\boolean{lettersize}}{See
+  figure~\ref{fig:barequirementsflowchart} on page~\pageref{fig:barequirementsflowchart}.}{\noindent}
+Note that CS 2102 requires {\em either} CS 111x or CS 1120 as a
+prerequisite.
 
 
 \clearpage
@@ -1584,6 +1611,8 @@ courses:
 this core of the Computer Engineering program provides
 depth in the following areas:
 
+%\ifthenelse{\boolean{lettersize}}{\begin{multicols}{2}}{}
+
 \paragraph{Circuits}
 \begin{itemlist}
 \item ECE 2630: Introductory Circuit Analysis
@@ -1602,6 +1631,8 @@ depth in the following areas:
 \item CS 2102: Discrete Math
 \end{itemlist}
 
+\ifthenelse{\boolean{lettersize}}{\columnbreak}{}
+
 \paragraph{Computer Systems}
 \begin{itemlist}
 \item CS 2150: Program and Data Representation
@@ -1612,6 +1643,8 @@ depth in the following areas:
 \item ECE 4436: Embedded Systems Design
 \item CS/ECE 4457: Computer Networks
 \end{itemlist}
+
+%\ifthenelse{\boolean{lettersize}}{\end{multicols}}{}
 
 \subsection{Grade Requirement}
 To complete their program of study, computer engineering majors must
@@ -1637,21 +1670,23 @@ shown below~-- consult your academic advisor for details.
 
 \vspace{0.15in}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+%\ifthenelse{\boolean{lettersize}}{\begin{multicols}{2}}{}
+
+\samplescheduletableheader
 \und{First semester} & & \und{15} \\
 APMA 1110 & Single Variable Calculus & 4 \\
-CHEM 1610 \& 1611 & Chemistry for Engineers \& Lab & 4 \\
+CHEM 1610/1611 & Chemistry for Engineers \& Lab & 4 \\
 %CHEM 1611 & Chemistry Lab & 1 \\
 ENGR 1620 & Introduction to Engineering & 3 \\
-ENGR 1621 & Introduction to Engineering Lab & 1 \\
-STS 1500 & Engineering, Technology \& Society & 3 \\
+ENGR 1621 & Intro.\ to Engineering Lab & 1 \\
+STS 1500 & Engineering, Tech.\ \& Society & 3 \\
 \\
 \end{tabular}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\samplescheduletableheader
 \und{Second semester} & & \und{17} \\
 APMA 2120 & Multivariate Calculus & 4 \\
-PHYS 1425 \& 1429 & Physics I \& Lab & 4 \\
+PHYS 1425/1429 & Physics I \& Lab & 4 \\
 %PHYS 1429 & Physics I Workshop & 1 \\
 CS 1110 & Intro to Computer Science & 3 \\
 SCI & Science elective$^2$ & 3 \\
@@ -1659,19 +1694,21 @@ HSS & HSS elective$^1$ & 3 \\
 \\
 \end{tabular}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\ifthenelse{\boolean{lettersize}}{\clearpage}{}
+
+\samplescheduletableheader
 \und{Third semester} & & \und{16} \\
-APMA 2130 & Ordinary Differential Equations & 4 \\
-CS 2110 & Software Development Methods & 3 \\
+APMA 2130 & Ordinary Differential Eq. & 4 \\
+CS 2110 & Software Develop.\ Methods & 3 \\
 CS 2102 & Discrete Mathematics & 3 \\
 ECE 2630 & Introductory Circuit Analysis & 3 \\
 HSS & HSS elective$^1$ & 3 \\
 \\
 \end{tabular}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\samplescheduletableheader
 \und{Fourth semester} & & \und{16} \\
-CS 2150 & Program and Data Representation & 3 \\
+CS 2150 & Prog.\ \& Data Representation & 3 \\
 CS/ECE 2330 & Digital Logic Design & 3 \\
 ECE 2660 & Electronics I & 4 \\
 UE & Unrestricted elective$^3$ & 3 \\
@@ -1679,28 +1716,28 @@ STS & 2xxx/3xxx elective & 3 \\
 \\
 \end{tabular}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\samplescheduletableheader
 \und{Fifth semester} & & \und{16} \\
 ECE 3430 & Intro to Embed.\ Systems (see \S\ref{embedded}, p.~\pageref{embedded})& 3 \\
 ECE 3750 & Signals \& Systems & 3 \\
 CS/ECE & CS/ECE elective $^4$ & 3 \\
-PHYS 2415 & General Physics II \& Lab & 4 \\
+PHYS 2415/2419 & General Physics II \& Lab & 4 \\
 %PHYS 2419 & General Physics Lab I & 1 \\ 
 UE & Unrestricted elective$^3$ & 3 \\
 \\
 \end{tabular}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
-\und{Sixth semester} & & \und{15} \\
+\samplescheduletableheader
+\und{Sixth semester} & & \und{16.5} \\
 APMA 3100 & Probability & 3 \\
-ECE 4435 & Computer Architecture \& Design & 4.5 \\
-CS 3240 & Advanced Software Development & 3 \\
+ECE 4435 & Computer Arch.\ \& Design & 4.5 \\
+CS 3240 & Advanced Software Develop. & 3 \\
 CS/ECE & CS/ECE elective $^4$ & 3 \\
 HSS & HSS elective$^1$ & 3 \\
 \\
 \end{tabular}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
+\samplescheduletableheader
 \und{Seventh semester} & & \und{16.5} \\
 ECE 4440 & Embedded Systems Design & 4.5 \\
 CS/ECE 4457 & Computer Networks & 3 \\
@@ -1710,14 +1747,16 @@ STS 4500 & Western Tech and Culture & 3 \\
 \\
 \end{tabular}
 
-\noindent \begin{tabular}{p{1.25in}p{2.5in}c}
-\und{Eighth semester} & & \und{16.5} \\
+\samplescheduletableheader
+\und{Eighth semester} & & \und{15} \\
 CS 4414 & Operating Systems & 3 \\
 CS/ECE & CS/ECE elective $^4$ & 3 \\
 UE & Unrestricted elective$^3$ & 3 \\
 UE & Unrestricted elective$^3$ & 3 \\
 STS 4600 & Engineer in Society & 3 \\
 \end{tabular}
+
+%\ifthenelse{\boolean{lettersize}}{\end{multicols}}{}
 
 \paragraph{Footnotes:}
 
@@ -1803,7 +1842,7 @@ so; see section~\ref{sec:sisexceptions}
 process.
 
 ECE 4440 (Embedded Systems Design) can count as a CS elective, but
-this will also require a SIS exception to be entered~-- see
+this also requires a SIS exception to be entered~-- see
 section~\ref{sec:sisexceptions} (page~\pageref{sec:sisexceptions})
 and section~\ref{sec:sisece4435issue} (page~\pageref{sec:sisece4435issue})
 for details.  Note that even though ECE 4440 is a 4.5 credit course,
@@ -1818,12 +1857,16 @@ sample course schedule for double majors.
 %\epsfig{figure=flowcharts/cpe-flowchart.png,width=4.5in}
 %\end{figure}
 
-\clearpage
-\mysection{Course Requirements Flowchart}
+\ifthenelse{\boolean{lettersize}}{}{\clearpage}
 
-\begin{figure}[h!]
-\epsfig{figure=diagrams/bs-cpe.pdf,width=4.5in}
-\end{figure}
+\begin{figure*}[h!]
+\mysection{Course Requirements Flowchart}
+\begin{center}
+\ifthenelse{\boolean{lettersize}}
+{\epsfig{figure=diagrams/bs-cpe.pdf,width=5.5in}}
+{\epsfig{figure=diagrams/bs-cpe.pdf,width=4.5in}}
+\end{center}
+\end{figure*}
 
 
 
@@ -2438,7 +2481,6 @@ most up-to-date information, as that URL will supersede the
 information in this section.
 
 \begin{itemlist}
-\item 
 \item Introduction to Engineering: Instead of ENGR 1620 and ENGR 1621,
   Rodman Scholars take ENGR 1410 (Synthesis Design I) in the fall of
   their first year, and ENGR 1420 (Synthesis Design II) in the spring
@@ -2599,8 +2641,8 @@ But you can take ECE 2330 to fulfill this requirement, as it's all the
 same course.
 
 
+\ifthenelse{\boolean{lettersize}}{}{\clearpage}
 
-\clearpage
 \mysection{Course Descriptions}
 \label{sec:coursedesc}
 
@@ -2616,50 +2658,66 @@ Lower-level causes are typically taught every semester.
 
 \subsection{Course Offering History}
 
-\begin{table}[h!]
-\begin{center}
+\ifthenelse{\boolean{lettersize}}{The table below shows which courses
+  were offered in recent semesters.}{ See
+  table~\ref{table:course-offering-history} on
+  page~\pageref{table:course-offering-history}.  The table shows which
+  courses were offered in recent semesters.}
+
+\newcommand{\X}{\checkmark}
+\newcommand{\courseofferingtable}{
 \begin{tabular}{l|cccccccccccc}
 \label{table:course-offering-history}
 Course & 08 & 09 & 09 & 10 & 10 & 11 & 11 & 12 & 12 & 13 & 13 \\
 & F & S & F & S & F & S & F & S & F & S & F \\ \hline\hline
-CS 1010 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 1110 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 1111 & X & X &   & X & X & X & X & X & X & X & X \\
-CS 1112 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 1120 &   & X & X & X & X & X & X & X & X & X &   \\
-CS 2102 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 2110 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 2150 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 2190 &   & X &   & X &   & X &   & X &   & X &   \\
-%CS 2220 & X &   & X &   & X &   & X &   &   &   &   \\
-CS 2330 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 2501 & X &   &   &   & X &   & X &   &   &   & X \\
-CS 3102 &   & X & X & X & X & X & X & X & X & X & X \\
-CS 3205 & X &   &   &   &   & X &   & X &   & X & X \\
-CS 3240 &   & X &   & X &   & X &   & X & X & X & X \\
-CS 3330 & X & X & X & X & X & X & X & X & X &   & X \\
-CS 4102 & X &   & X & X & X & X & X & X & X & X & X \\
-CS 4240 &   &   & X &   & X &   & X &   & X &   & X \\
-CS 4330 &   & X &   &   &   &   &   &   &   &   &   \\
-CS 4414 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 4434 &   &   &   & X &   &   &   & X &   &   &   \\
-CS 4444 & X &   & X &   & X &   & X &   &   & X &   \\
-CS 4457 & X & X & X & X & X & X & X & X & X & X & X \\
-CS 4458 & X &   &   &   &   &   &   &   &   &   &   \\
-CS 4501 &   &   &   &   & X & X &   &   & X & X &   \\
-CS 4610 &   &   & X &   &   &   &   & X &   &   &   \\
-CS 4620 &   &   &   &   &   &   &   &   &   &   & X \\
-CS 4630 &   & X & X & X &   & X &   & X &   & X & X \\
-CS 4710 &   & X &   &   &   & X &   & X &   & X &   \\
-CS 4720 &   &   & X &   & X &   & X &   & X &   & X \\
-CS 4730 &   &   &   & X &   &   & X &   &   &   &   \\
-CS 4740 &   &   &   &   &   &   &   & X &   & X &   \\
-CS 4750 & X &   &   & X &   & X &   & X &   & X & X \\
-CS 4753 & X &   & X &   & X &   & X &   & X &   & X \\
-CS 4810 & X &   &   & X &   &   & X &   & X &   &   \\
-CS 4970 &   &   &   &   &   &   &   & X & X &   & X \\
-CS 4971 &   &   &   &   &   &   &   &   &   & X &   \\
+CS 1010 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 1110 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 1111 & \X & \X &    & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 1112 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 1120 &    & \X & \X & \X & \X & \X & \X & \X & \X & \X &    \\
+CS 2102 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 2110 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 2150 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 2190 &    & \X &    & \X &    & \X &    & \X &    & \X &    \\
+%CS 2220 & \X &    & \X &    & \X &    & \X &    &    &    &   \\
+CS 2330 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 2501 & \X &    &    &    & \X &    & \X &    &    &    & \X \\
+CS 3102 &    & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 3205 & \X &    &    &    &    & \X &    & \X &    & \X & \X \\
+CS 3240 &    & \X &    & \X &    & \X &    & \X & \X & \X & \X \\
+CS 3330 & \X & \X & \X & \X & \X & \X & \X & \X & \X &    & \X \\
+CS 4102 & \X &    & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 4240 &    &    & \X &    & \X &    & \X &    & \X &    & \X \\
+CS 4330 &    & \X &    &    &    &    &    &    &    &    &    \\
+CS 4414 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 4434 &    &    &    & \X &    &    &    & \X &    &    &    \\
+CS 4444 & \X &    & \X &    & \X &    & \X &    &    & \X &    \\
+CS 4457 & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X & \X \\
+CS 4458 & \X &    &    &    &    &    &    &    &    &    &    \\
+CS 4501 &    &    &    &    & \X & \X &    &    & \X & \X &    \\
+CS 4610 &    &    & \X &    &    &    &    & \X &    &    &    \\
+CS 4620 &    &    &    &    &    &    &    &    &    &    & \X \\
+CS 4630 &    & \X & \X & \X &    & \X &    & \X &    & \X & \X \\
+CS 4710 &    & \X &    &    &    & \X &    & \X &    & \X &    \\
+CS 4720 &    &    & \X &    & \X &    & \X &    & \X &    & \X \\
+CS 4730 &    &    &    & \X &    &    & \X &    &    &    &    \\
+CS 4740 &    &    &    &    &    &    &    & \X &    & \X &    \\
+CS 4750 & \X &    &    & \X &    & \X &    & \X &    & \X & \X \\
+CS 4753 & \X &    & \X &    & \X &    & \X &    & \X &    & \X \\
+CS 4810 & \X &    &    & \X &    &    & \X &    & \X &    &    \\
+CS 4970 &    &    &    &    &    &    &    & \X & \X &    & \X \\
+CS 4971 &    &    &    &    &    &    &    &    &    & \X &    \\
 \end{tabular}
+}
+
+\begin{table}[h!]
+\begin{center}
+\rowcolors{2}{gray!25}{white} % from http://tex.stackexchange.com/questions/5363/how-to-create-alternating-rows-in-a-table
+
+\ifthenelse{\boolean{lettersize}}
+{\resizebox{3.625in}{!}{\courseofferingtable}}
+{\courseofferingtable}
+
 \caption{Computer Science Course Offering History}
 \end{center}
 \end{table}
@@ -2701,7 +2759,8 @@ CS 4971 &   &   &   &   &   &   &   &   &   & X &   \\
   of computer programs. Note: No prior programming experience
   allowed.}{}
 
-\clearpage
+\ifthenelse{\boolean{lettersize}}{}{\clearpage}
+
 \course{CS 1120}{Introduction to Computing: Explorations in Language,
   Logic, and Machines}{3 credits}{This course is an introduction to
   the most important ideas in computing. It focuses on the big ideas
@@ -3224,41 +3283,48 @@ reference.  Anybody interested in the original 3-digit course numbers
 can find the mapping
 online\myurl{http://www.virginia.edu/registrar/atoz.html\#CS}.
 
-\subsection{Requirements revision from spring 2010}
+\subsection{Prior requirements revisions}
 
-In January of 2010, the elective structure was changed. Previously,
-majors were required to take 3 HSS electives, 3 general education
-electives, 3 technical electives, and 1 unrestricted elective. With
-the change, these 10 elective courses are now split into 5 HSS
-electives and 5 unrestricted electives. Students wishing to graduate
-using the old rules (if you were a declared major prior to 2010)
-should see the previous editions of this handbook for the description
-of what constitutes general education electives and technical
-electives. However, the new requirements are more general, and we
-expect most students to graduate using these updated requirements. The
-old versions of this handbook are available from the department.
+There are no known currently enrolled students who are eligible to graduate
+using any set of requirements prior to those listed above, and thus
+prior sets of revisions are not included in this handbook.  Earlier
+editions of this handbook, available from the department, describe
+the prior sets of requirements.
 
-\subsection{Requirements revision from fall 2009}
+%\subsection{Requirements revision from spring 2010}
 
-In addition to the course numbering change, the change in the
-requirements was that the computer architecture elective was replaced
-with an additional CS elective, to bring the total number of required
-CS electives to 5. The previous computer architecture requirement had
-the students take one class from a set of 3: CS 4444
-(Introduction to Parallel Computing), CS 4330 (Advanced Computer
-Architecture) or ECE 4435 (Computer Architecture and
-Design). Since all of those three courses count as CS electives,
-students who have already fulfilled this old requirement will still
-fulfill the CS elective that replaced it.
+%In January of 2010, the elective structure was changed. Previously,
+%majors were required to take 3 HSS electives, 3 general education
+%electives, 3 technical electives, and 1 unrestricted elective. With
+%the change, these 10 elective courses are now split into 5 HSS
+%electives and 5 unrestricted electives. Students wishing to graduate
+%using the old rules (if you were a declared major prior to 2010)
+%should see the previous editions of this handbook for the description
+%of what constitutes general education electives and technical
+%electives. However, the new requirements are more general, and we
+%expect most students to graduate using these updated requirements. The
+%old versions of this handbook are available from the department.
 
-Focal paths were also added to the undergraduate handbook, although
-they do not change the major requirements.
+%\subsection{Requirements revision from fall 2009}
+
+%In addition to the course numbering change, the change in the
+%requirements was that the computer architecture elective was replaced
+%with an additional CS elective, to bring the total number of required
+%CS electives to 5. The previous computer architecture requirement had
+%the students take one class from a set of 3: CS 4444
+%(Introduction to Parallel Computing), CS 4330 (Advanced Computer
+%Architecture) or ECE 4435 (Computer Architecture and
+%Design). Since all of those three courses count as CS electives,
+%students who have already fulfilled this old requirement will still
+%fulfill the CS elective that replaced it.
+%
+%Focal paths were also added to the undergraduate handbook, although
+%they do not change the major requirements.
 
 \cleardoublepage
 \pagestyle{empty}
 
-\vspace*{2in}
-
+\begin{figure*}
 \begin{center}
 \parbox{2.5in}{{\em Enlighten the people generally, and tyranny and
     oppression of body and mind will vanish like evil spirits at the
@@ -3266,12 +3332,12 @@ they do not change the major requirements.
     the instrument by which it is to be effected.\linebreak\linebreak
     --~Thomas Jefferson, 1816}}
 \end{center}
-
+\end{figure*}
 
 \clearpage
 
-\vspace*{2.75in}
-
+\begin{figure*}
+\ifthenelse{\boolean{lettersize}}{\large\vspace*{5.25in}}{\vspace*{2.75in}}
 \begin{center}
 Department {\em of} Computer Science \linebreak
 School of Engineering and Applied Science \linebreak
@@ -3283,10 +3349,9 @@ Charlottesville, Virginia 22904-4740 \linebreak
 \url{http://www.cs.virginia.edu} \linebreak
 \end{center}
 
-\begin{figure}[h!]
 \begin{center}
 \epsfig{figure=images/uva-seal.png,width=2in}
 \end{center}
-\end{figure}
+\end{figure*}
 
 \end{document}
