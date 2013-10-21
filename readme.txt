@@ -5,3 +5,7 @@ handbook, and removing the section number, header line, and page
 number.  This also requires moving the "(Updated <date>)" text over to
 be left-aligned with the title above it (and note that the title no
 longer has a section number).
+
+The PNG image is created by running it through pdftoppm and then
+pnmtopng.  Then load it into gimp and do an auto-crop.  It should
+already be in grayscale mode.
