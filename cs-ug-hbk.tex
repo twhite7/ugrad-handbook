@@ -17,6 +17,9 @@
 % all emphasized text (i.e., \em) to be underlined instead.
 %\usepackage{ulem} % for the CpE embedded requirement strikeout
 
+\newboolean{useflowchartimages}
+%\setboolean{useflowchartimages}{true}
+\setboolean{useflowchartimages}{false}
 
 \newboolean{lettersize} % if false, then page size is half-letter
 \setboolean{lettersize}{true}
@@ -988,7 +991,15 @@ toward any other requirement except to replace CS 2190.
 \mysection{Course Requirements Flowchart}
 {\em (Updated October 2013)}
 \begin{center}
-\ifthenelse{\boolean{lettersize}}{\epsfig{figure=diagrams/bs-cs.pdf,width=5.5in}}{\epsfig{figure=diagrams/bs-cs.pdf,width=4.5in}}
+\ifthenelse{\boolean{useflowchartimages}}{
+\ifthenelse{\boolean{lettersize}}
+{\epsfig{figure=diagrams/bs-cs.png,width=5.5in}}
+{\epsfig{figure=diagrams/bs-cs.png,width=4.5in}}
+}{
+\ifthenelse{\boolean{lettersize}}
+{\epsfig{figure=diagrams/bs-cs.pdf,width=5.5in}}
+{\epsfig{figure=diagrams/bs-cs.pdf,width=4.5in}}
+}
 \end{center}
 \end{figure*}
 %}
@@ -1507,9 +1518,15 @@ section~\ref{bacsapplicationprocess}
 \ifthenelse{\boolean{lettersize}}{\section*{Course Requirements Flowchart}}{}
 {\em (Updated October 2013)}
 \begin{center}
+\ifthenelse{\boolean{useflowchartimages}}{
+\ifthenelse{\boolean{lettersize}}
+{\epsfig{figure=diagrams/ba-cs.png,width=5.5in}}
+{\epsfig{figure=diagrams/ba-cs.png,width=4.25in}}
+}{
 \ifthenelse{\boolean{lettersize}}
 {\epsfig{figure=diagrams/ba-cs.pdf,width=5.5in}}
 {\epsfig{figure=diagrams/ba-cs.pdf,width=4.25in}}
+}
 \end{center}
 \end{figure*}
 
@@ -1865,9 +1882,15 @@ sample course schedule for double majors.
 \mysection{Course Requirements Flowchart}
 {\em (Updated October 2013)}
 \begin{center}
+\ifthenelse{\boolean{useflowchartimages}}{
+\ifthenelse{\boolean{lettersize}}
+{\epsfig{figure=diagrams/bs-cpe.png,width=6in}}
+{\epsfig{figure=diagrams/bs-cpe.png,width=4.5in}}
+}{
 \ifthenelse{\boolean{lettersize}}
 {\epsfig{figure=diagrams/bs-cpe.pdf,width=6in}}
 {\epsfig{figure=diagrams/bs-cpe.pdf,width=4.5in}}
+}
 \end{center}
 \end{figure*}
 
