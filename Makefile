@@ -1,4 +1,5 @@
 tex:
+	pdflatex ba-integration-electives.tex
 	pdflatex cs-ug-hbk.tex
 	pdflatex cs-ug-hbk.tex
 
