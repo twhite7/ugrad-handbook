@@ -1,0 +1,64 @@
+#define PAGE_TITLE BS CS Undergraduate Program
+#include "include_header.html"
+#include "macros2000"
+
+<body>
+
+<div align="left">
+
+<p>
+
+<table border="0" width="100%" id="table1">
+	<tr>
+		<td align="left" valign="top">
+		<h2><font color="#FF9900">BS CS Undergraduate program (and minor option)</font></h2>
+
+<table align=right>
+macro_CS_slide_show_table_row(right)
+macro_CS_slide_show_table_row(right)
+</table>
+
+		<p>
+
+macro_letter(O,red)ur Computer Science 
+BS degree readies students for careers that provide
+both personal and societal rewards. As creators of information
+technologies our graduates are reaching out to people and the world by
+supporting and enhancing communication, health care, entertainment,
+scientific inquiry, transportation, business, and almost any other
+endeavor you can imagine. 
+	
+	<p> 
+
+The full requirements for the Bachelors of Science in Computer Science
+can be found in our <a href="ugradhandbook.pdf">undergraduate
+handbook</a> (<a
+href="http://www.adobe.com/products/acrobat/readstep2.html">PDF</a>).
+These requirements are the same as what was available online
+previously, and are now contained solely within this handbook.  The
+handbook also contains the requirements for the minor in computer
+science.  Printed copies of the handbook are available in the computer
+science main office (Olsson 204).  The course dependency graph in the
+handbook is also available as a <a href="Cs-course-flowchart.gif">gif
+image</a>.
+
+		<p align="center">
+
+<p><br>
+<table align=center border=0><tr><td>
+macro_CS_photo(tj-laptop.JPG,183,239,center)
+</td></tr></table>
+			
+</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">&nbsp;</td>
+		<td width="25" align="left" valign="top">&nbsp;</td>
+	</tr>
+</table>
+
+</div>
+
+</body>
+
+# include "include_footer.html"

@@ -1,0 +1,115 @@
+Received: from ares.cs.Virginia.EDU (localhost [127.0.0.1])
+Date: Sun, 29 Oct 2006 22:05:40 -0500
+From: Tom Horton <horton@cs.virginia.edu>
+
+
+Computing students:
+
+Here is some info about the spring course schedule.  
+
+1) We believe the COD for CS courses is now in fact correct.  If I hear 
+differently, I'll let you know ASAP!
+
+2) CS 462, Databases, does have a time-conflict with CS340's lab.  
+Unfortunately, despite efforts to resolve this, it can't be fixed and 
+students won't be able to take both of these.  If you're a 3rd year BSCS 
+or CpE major, consult your advisor to see if you want to delay CS340 
+until your 4th year.
+
+3) At the end of this are descriptions of some of the new courses being 
+taught this spring.  (Except for CS 351, Malware -- I didn't get a 
+description for it.)
+
+4) Prof. Skadron's course CS433 counts as a computer architecture 
+elective for SEAS BSCS majors (i.e. Engineering CS majors, not CpE 
+majors) who are using the most recent rules and want to take something 
+besides ECE435.  This is a modified version of the course he taught last 
+year, CS 454.  Right now we don't think you can get credit for both 
+CS433 and ECE435.
+
+5) We've submitted a request to get CS453 to count towards the 
+Engineering Business minor.  I'll post news about this when I hear the 
+outcome.
+
+6) BACS students who have not taken CS150 yet should take it this 
+spring.  It's not offered in the fall term.
+
+7) Reminder: CS390 is now taught as CS290, and all 2nd year SEAS 
+Computer Science majors must take it in their 2nd year.  (It's not 
+required of CpE or BACS students, and in fact doesn't count as an 
+elective for them.)  Last year's website is here: 
+http://www.cs.virginia.edu/~horton/cs390/
+If you're a third year and did not take CS290 last year, take it this year.
+
+8) CS494, Object-oriented Design, is likely to be taught next summer by 
+me (Prof. Horton).  This counts as a CS elective, and the pre-req is 
+CS216.  It's a software course focusing on design issues, including 
+design patterns, UML, etc.  It will run in the 5-week session that 
+starts around July 12.
+
+(9) Because of the substantial overlap between CS 433 (Advanced
+Computer Architecture) and ECE 435 (Computer Organization and Design),
+students who have taken CS435 cannot take receive credit for CS 433.
+This applies to all majors and minors who were thinking of signing up
+for CS433 next spring (or later).
+
+Note: students who already took Prof. Skadron's CS454 class *last
+year* and who have completed or are completing ECE435 this term
+(i.e. 063) *can* get credit for both of these. We did not discover the
+overlap until after you took both courses, so it would not be fair to
+punish you by changing the rules after the fact.
+
+(10) The course CS351, Malware, will be very similar to
+Prof. Davidson's previous course "Dark Arts".  The pre-req is CS216.
+The course can count as a CS elective for BSCS students, BSCpE
+students, BACS students and CS minors.
+
+
+Course descriptions that I have are listed below.  If you have other 
+questions, consult your advisor.  I may post follow-ups to this if there 
+other things you should know.
+
+Tom Horton (for the CS department)
+
+
+====================================
+Here's a description of Prof. Skadron's CS433.
+
+Advanced Computer Architecture will teach the concepts necessary to 
+understand the architecture and organization of current high-performance 
+microprocessors (such as pipelining, dataflow, branch prediction, and 
+out of order execution), with a special focus on preparing students to 
+understand the challenges presented by highly multicore chips. Prereq: 
+CS 333
+
+=================================
+Prof. Marty Humphrey's course CS 451: Distributed Systems is described here:
+http://www.cs.virginia.edu/~humphrey/cs451/
+It *is* open to undergrad students (there was a mistake in the COD earlier).
+You must take CS414 (operating systems) at the same time as CS451 if you 
+haven't already had it.
+
+==================================
+CS 494: Computational Science & Engineering 1.
+The course will introduce computational science to students from the 
+perspective of a problem solving environment,
+e.g. Matlab (Mathworks) or the open-source Octave (Gnu Project).  
+
+Prerequisites: To ensure a minimum basic preparation there are two
+prerequisites, two semesters of calculus and some programming experience
+(language not an issue).
+
+Topics:
+.         Computer basics, numerical issues, memory limits, etc.
+.         Software basics, programming in the abstract, complexity and O()
+notation, flow control, IO, programming in a problem solving environment
+(Matlab)
+.         Numerical Methods;
+o       Solution of systems of linear and nonlinear equations.
+o       Functional optimization.
+o       Solution of linear and nonlinear ODEs and PDEs.
+.         Simulation and modeling (problem, theory, model, implementation,
+assessment).
+.         Data analysis and visualization.
+
+=========================

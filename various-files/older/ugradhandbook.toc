@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Degrees Offered}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}ABET accreditation}{2}{subsection.2.1}
+\contentsline {section}{\numberline {3}Recommended Course of Study}{3}{section.3}
+\contentsline {section}{\numberline {4}Degree Requirement Checklist}{4}{section.4}
+\contentsline {section}{\numberline {5}Course Requirement Flowchart}{5}{section.5}
+\contentsline {section}{\numberline {6}Elective Information}{6}{section.6}
+\contentsline {section}{\numberline {7}Technical Elective Policies}{7}{section.7}
+\contentsline {subsection}{\numberline {7.1}General information}{7}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Class specific details}{8}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Overlap with other courses}{8}{subsection.7.3}
+\contentsline {section}{\numberline {8}General Elective Policies}{9}{section.8}
+\contentsline {subsection}{\numberline {8.1}General information}{9}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Approved general elective courses}{9}{subsection.8.2}
+\contentsline {section}{\numberline {9}Minor in Computer Science}{10}{section.9}
+\contentsline {subsection}{\numberline {9.1}SEAS students}{10}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Non-SEAS students}{11}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Declaring the minor}{11}{subsection.9.3}
+\contentsline {section}{\numberline {10}Frequently Asked Questions}{12}{section.10}
+\contentsline {subsection}{\numberline {10.1}What kind of advanced placement credit is available?}{12}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Can I place out of CS 101?}{12}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Can CS courses from another college receive credit?}{12}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}What are the Rodman Scholar requirements?}{12}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}Is the number of computer majors capped?}{13}{subsection.10.5}
+\contentsline {subsection}{\numberline {10.6}Where can I get information on VISTAA?}{13}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.7}Can CS students study abroad?}{14}{subsection.10.7}
+\contentsline {subsection}{\numberline {10.8}How do I transfer into the CS program?}{14}{subsection.10.8}
+\contentsline {section}{\numberline {11}Course Descriptions}{14}{section.11}
+\contentsline {section}{\numberline {12}Degree Requirement Revisions}{19}{section.12}
+\contentsline {subsection}{\numberline {12.1}Requirement revision from fall 2005}{19}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Requirement revision from fall 2004}{19}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Requirement revision from fall 2003}{20}{subsection.12.3}

@@ -1,0 +1,13 @@
+#!/bin/csh
+
+pstoimg -density 600 -crop a -scale 2 -out tmp.png Eng-side-Grayscale-pc.eps
+pngtopnm tmp.png | pnmscale -height=750 | ppmtopgm | pnmtopng > Eng-side-Grayscale-pc.png
+/bin/rm -f tmp.png
+
+pstoimg -density 600 -crop a -scale 2 -out tmp.png Eng-side-cmyk-uncoated-pc.eps
+pngtopnm tmp.png | pnmscale -height=750 | pnmtopng > Eng-side-cmyk-uncoated-pc.png
+/bin/rm -f tmp.png
+
+pstoimg -density 600 -crop a -out tmp.png rolg_blueseal_bw.eps
+pngtopnm tmp.png | pnmscale -width=900 | ppmtopgm | pnmtopng > rolg_blueseal_bw.png
+/bin/rm -f tmp.png

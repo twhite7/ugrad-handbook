@@ -1,0 +1,1509 @@
+\documentclass[12pt,twoside]{article}
+
+\usepackage{epsfig}
+%\usepackage{url}
+\usepackage{fancyheadings}
+\usepackage{setspace}
+\usepackage[pdftex]{hyperref}
+\usepackage{ifthen}
+
+\newenvironment{itemlist}{
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
+
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\newboolean{printmode}
+\setboolean{printmode}{false}
+
+\raggedbottom
+
+\ifthenelse{\boolean{printmode}}{
+\newcommand{\textsize}{\Large}
+}{
+\newcommand{\textsize}{\normalsize}
+}
+
+\begin{document}
+\pagestyle{empty}
+\vspace*{1in}
+
+\begin{centering}
+\Huge
+
+\ifthenelse{\boolean{printmode}}{
+\epsfig{figure=Eng-side-Grayscale-pc.png,height=1.25in}
+}{
+\epsfig{figure=Eng-side-cmyk-uncoated-pc.png,height=1.25in}
+}
+
+\vspace*{1in}
+
+Department {\em of}\/ Computer Science
+
+\bigskip
+
+Undergraduate Handbook
+
+\vspace{1in}
+
+\LARGE
+Bachelor of Science in Computer Science
+
+Minor in Computer Science
+
+\end{centering}
+
+\textsize
+
+\newpage
+
+\vspace*{3in}
+
+\begin{centering}
+
+This undergraduate handbook was\linebreak
+last updated on \today. \linebreak
+\linebreak\linebreak\linebreak
+Any version of this handbook dated\linebreak
+during or after December 2007 is\linebreak
+valid for the spring 2008 semester.\linebreak
+
+\end{centering}
+
+\newpage
+
+\pagestyle{fancy}
+
+%\section{Table of Contents}
+
+\pagenumbering{roman}
+\tableofcontents
+
+\newpage
+
+\pagenumbering{arabic}
+
+%----------------------------------------------------------------------
+
+%\doublespacing
+%\setstretch{2.2}
+
+\section{Introduction}
+
+Through the development of sophisticated computer systems, processors,
+and embedded applications, computer scientists have the opportunity to
+change society in ways unimagined several years ago. A major
+departmental goal is the education and training of a diverse body of
+students who can lead this current information technology
+revolution. To this end, the computer science program orients students
+toward the pragmatic aspects of computer science and provides the
+learning and practices to make them proficient computing
+professionals. Good engineering is rooted in solid mathematics and
+science, and grounding in these fundamentals is essential. Provided in
+the context of the practice of computing, this early grounding forms
+the basis for an education that prepares students for a computing
+career.
+
+With funding from the National Science Foundation, the Department of
+Computer Science has designed and developed a curriculum focused on
+the practice of computing, yet grounded in the mathematical and
+scientific fundamentals of computer science. The curriculum is
+structured around the introduction of modern software development
+techniques in the very beginning courses, and is supported by a
+set of ``closed laboratories''.
+
+In order to provide an environment appropriate to our courses, the
+department has established several laboratories with hundreds of
+workstations. These machines have high-resolution graphics and are
+connected to large file handlers, as well as to the University
+network. The lab courses expose students to many commercial software
+tools and systems, and introduce modern software development
+techniques via object-oriented design and implementation.
+
+The Department of Computer Science co-offers, with the Department of
+Electrical and Computer Engineering, a degree in computer engineering.
+
+Students have ample opportunities to participate in cutting-edge
+research with department faculty members.  From the senior thesis
+research project to independent study, one can pursue research in any
+conceivable area.  Our former students are enrolled in all of the top
+graduate programs in the country.  Our undergraduates have won many
+research awards, including winning five recent CRA research award
+winners.
+% we had 5 in 2007
+
+Graduates of the computer science program at the University of
+Virginia will have the knowledge, skills and attitudes that will allow
+them to make tangible contributions, meet new technical challenges,
+contribute effectively to society, act as team members, and be
+innovators in the design, analysis and application of computer
+systems.
+
+%\section{Introduction}
+
+%Our computer science and computer engineering degrees ready students
+%for careers that provide both personal and societal rewards. As
+%creators of information technologies, our graduates are reaching out
+%to people and the world by supporting and enhancing communication,
+%health care, entertainment, scientific inquiry, transportation,
+%business, and almost any other endeavor you can imagine.
+
+%The hallmarks of our undergraduate program of studies include a high
+%degree of mathematical rigor reinforced through use, an emphasis on a
+%philosophy of engineering, hands-on experience with team-oriented
+%laboratories, undergraduate involvement in research projects, and a
+%carefully crafted progression of material as the students advance
+%through the program.
+
+%----------------------------------------------------------------------
+
+\section{Degrees Offered}
+
+The Department of Computer Science offers three computing degrees, as
+well as a minor option.
+
+\begin{itemlist}
+\item Bachelor of Science in Computer Science
+\item Bachelor of Science in Computer Engineering
+\item Bachelor of Arts in Computer Science
+\item Minor in Computer Science
+\end{itemlist}
+
+The computer engineering degree, handled jointly with the Department
+of Electrical and Computer Engineering, focuses more on hardware-level
+issues, while still giving the students experience in both software
+and electrical engineering.  The computer science degree focuses more
+on software, while still giving students experience in computer
+hardware.  The undergraduate handbook for computer engineering can be
+found at
+\url{http://www.cpe.virginia.edu/ugradmainpage.html}.
+Students wishing to dual major in computer science and computer
+engineering should see
+\url{http://www.cpe.virginia.edu/compeng_and_cs_%20combined.pdf}.
+
+The Bachelor of Arts in Computer Science is for students in the
+College of Arts and Sciences.  The requirements for the Bachelor of
+Arts are different than those for the Bachelor of Science.  The
+Bachelor of Arts requirements can be found at
+\url{http://www.cs.virginia.edu/ba/}.
+
+This document deals primarily with the Bachelor of Science in computer
+science.  However, section \ref{minorreqs} describes the requirements
+for the minor.
+
+
+\subsection{ABET accreditation}
+
+The Bachelor of Science in Computer Science degree is accredited by
+the Computing Accreditation Commission of ABET, 111 Market Place,
+Suite 1050, Baltimore, MD 21202-4012, telephone: (410) 347-7700. 
+%The Bachelor of Science in Computer Engineering is accredited by the
+%Engineering Accreditation Commission of ABET.
+
+%----------------------------------------------------------------------
+\ifthenelse{\boolean{printmode}}{}{\newpage}
+\textsize
+
+\section{Recommended Course of Study}
+\label{sampleschedule}
+
+%Below is the recommended course of study for the Bachelor of Science
+%in Computer Science.  Note that if you have already completed some of
+%these classes (through AP credit, for example), then your course of
+%study would obviously deviate from what is shown below -- consult your
+%academic advisor for details.
+
+\ifthenelse{\boolean{printmode}}{On the next page}{Below} is the
+recommended course of study for the bachelor's degree.  If you have
+already completed some of these classes (through AP credit, for
+example), then your course of study would deviate from what is shown
+below -- consult your academic advisor for details.
+
+There are a total of 9 electives that the student can choose from.
+These electives are indicated by the footnotes below, and are
+described in detail beginning on page \pageref{electiveinformation}.
+Note that some of these requirements are for all SEAS students, while
+others are required for the CS bachelor's degree.
+
+Please be aware of when the classes are offered!  Some are only
+offered once per year, or in a particular semester.  See page
+\pageref{coursedescriptions} for details as to when courses are
+offered.
+
+\bigskip
+
+
+\ifthenelse{\boolean{printmode}}{
+\noindent\begin{tabular}{p{1.25in}p{4in}c}
+& \bf First semester				& \bf 15 \\
+APMA 111 & Single Variable Calculus 		& 4 \\
+CHEM 151 & Chemistry for Engineers 		& 3 \\
+CHEM 151L & Chemistry Lab 			& 1 \\
+ENGR162 & Problem Solving \& Design 		& 4 \\
+STS 101 & Engineering, Technology and Society	& 3 \\
+\\
+& \bf Second semester & \bf 17 \\
+APMA 212 & Multivariate Calculus & 4 \\
+PHYS 142E & Physics I & 3 \\
+PHYS 142W & Physics I Workshop & 1 \\
+CS 101 & Intro to Computer Science & 3 \\
+??? & Science elective$^1$ & 3 \\
+??? & HSS elective$^2$ & 3 \\
+\\
+& \bf Third semester				& \bf 16 \\
+APMA & APMA elective$^5$ or APMA 310 		& 3 \\
+CS 201 & Software Development Methods		& 3 \\
+CS 202 & Discrete Mathematics 			& 3 \\
+PHYS 241E & General Physics II 			& 1 \\
+PHYS 241W & General Physics Lab I 		& 3 \\
+??? & HSS elective$^2$ 				\\
+\\
+& \bf Fourth semester & \bf 16 \\
+CS 216 & Program and Data Representation & 3 \\
+CS 230 & Digital Logic Design & 3 \\
+CS 302 & Theory of Computation & 3 \\
+CS 290 & CS Seminar & 1 \\
+STS & STS 2xx/3xx elective$^9$ & 3 \\
+??? & Technical elective$^3$ & 3 \\
+\end{tabular}
+
+\noindent\begin{tabular}{p{1.25in}p{4in}c}
+& \bf Fifth semester				& \bf 15 \\
+CS 333 & Computer Architecture 			& 3 \\
+CS 432 & Algorithms 				& 3 \\
+APMA & APMA elective$^5$ or APMA 310		& 3 \\
+??? & Technical elective$^3$ 			& 3 \\
+??? & Unrestricted elective$^4$ 		& 3 \\
+\\
+& \bf Sixth semester & \bf 15 \\
+CS 340 & Adv.\ Software Develop. & 3 \\
+CS & CS elective$^8$ & 3 \\
+APMA & APMA elective$^5$ or APMA 310 & 3 \\
+??? & Gen Edu elective$^6$ & 3 \\
+??? & HSS elective$^2$ & 3 \\
+\\
+& \bf Seventh semester				& \bf 15 \\
+STS 401 & Western Tech and Culture 		& 3 \\
+??? & Computer Arch. elective$^7$ 		& 3 \\
+CS 414 & Operating Systems 			& 3 \\
+CS & CS elective$^8$ 				& 3 \\
+??? & Gen Edu elective$^6$ 			& 3 \\
+\\
+& \bf Eighth semester & \bf 15 \\
+STS 402 & Engineer in Society & 3 \\
+CS & CS elective$^8$ & 3 \\
+CS & CS elective$^8$ & 3 \\
+??? & Technical elective$^3$ & 3 \\
+??? & Gen Edu elective$^6$ & 3 \\
+\end{tabular}
+}{
+\normalsize
+\noindent \begin{tabular}{llccllc}
+& \bf First semester				& \bf 15 & & & \bf Second semester & \bf 17 \\
+APMA 111 & Single Variable Calculus 		& 4 & & APMA 212 & Multivariate Calculus & 4 \\
+CHEM 151 & Chemistry for Engineers 		& 3 & & PHYS 142E & Physics I & 3 \\
+CHEM 151L & Chemistry Lab 			& 1 & & PHYS 142W & Physics I Workshop & 1 \\
+ENGR162 & Problem Solving \& Design 		& 4 & & CS 101 & Intro to Computer Science & 3 \\
+STS 101 & Engineering, Technology 		& 3 & & ??? & Science elective$^1$ & 3 \\
+& and Society 	       				& & & ??? & HSS elective$^2$ & 3 \\
+\\
+& \bf Third semester				& \bf 16 & & & \bf Fourth semester & \bf 16 \\
+APMA & APMA elective$^5$ or	 		& 3 & & CS 216 & Program and Data & 3 \\
+& APMA 310 					& & & & Representation & \\
+CS 201 & Software Development 			& 3 & & CS 230 & Digital Logic Design & 3 \\
+& Methods 					& 3 & & CS 302 & Theory of Computation & 3 \\
+CS 202 & Discrete Mathematics 			& 3 & & CS 290 & CS Seminar & 1 \\
+PHYS 241E & General Physics II 			& 1 & & STS & STS 2xx/3xx elective$^9$ & 3 \\
+PHYS 241W & General Physics Lab I 		& 3 & & ??? & Technical elective$^3$ & 3 \\
+??? & HSS elective$^2$ 				\\
+\\
+& \bf Fifth semester				& \bf 15 & & & \bf Sixth semester & \bf 15 \\
+CS 333 & Computer Architecture 			& 3 & & CS 340 & Adv.\ Software Develop. & 3 \\
+CS 432 & Algorithms 				& 3 & & CS & CS elective$^8$ & 3 \\
+APMA & APMA elective$^5$ or 			& 3 & & APMA & APMA elective$^5$ or & 3 \\
+& APMA 310  		 			& & & & APMA 310 & \\
+??? & Technical elective$^3$ 			& 3 & & ??? & Gen Edu elective$^6$ & 3 \\
+??? & Unrestricted elective$^4$ 		& 3 & & ??? & HSS elective$^2$ & 3 \\
+\\
+& \bf Seventh semester				& \bf 15 & & & \bf Eighth semester & \bf 15 \\
+STS 401 & Western Tech and Culture 		& 3 & & STS 402 & Engineer in Society & 3 \\
+??? & Computer Arch. elective$^7$ 		& 3 & & CS & CS elective$^8$ & 3 \\
+CS 414 & Operating Systems 			& 3 & & CS & CS elective$^8$ & 3 \\
+CS & CS elective$^8$ 				& 3 & & ??? & Technical elective$^3$ & 3 \\
+??? & Gen Edu elective$^6$ 			& 3 & & ??? & Gen Edu elective$^6$ & 3
+\end{tabular}
+}
+
+\textsize
+
+%----------------------------------------------------------------------
+\section{Degree Requirement Checklist}
+\normalsize
+\begin{tabular}{@{}l} % outer 'holding' box
+
+\begin{tabular}{|l|l|l|l|}
+\hline
+\bf Required computing \& math courses & \bf Grade & \bf Semester & \bf Comments \\ \hline \hline
+CS 101 Introduction to Computer Science & & & \hspace{1.8in} \\ \hline
+CS 201 Software Development Methods & & & \\ \hline
+CS 202 Discrete Mathematics & & & \\ \hline
+CS 216 Program \& Data Representation & & & \\ \hline
+CS 230 Digital Logic Design & & & \\ \hline
+CS 290 CS Seminar & & & \\ \hline
+CS 302 Theory of Computation & & & \\ \hline
+CS 333 Computer Architecture & & & \\ \hline
+CS 340 Advanced SW Development Techniques & & & \\ \hline
+CS 414 Operating Systems & & & \\ \hline
+CS 432 Analysis of Algorithms & & & \\ \hline
+Computer Architecture Elective (from list)  & & & Course: \\ \hline
+APMA 310 Probability & & & \\ \hline
+APMA 213 or 308 or 312 (circle one) & & & \hspace{1.5in} \\ \hline
+APMA 213 or 308 or 312 (circle one) & & & \hspace{1.5in} \\ \hline
+\end{tabular}
+
+\bigskip
+
+\\
+
+\noindent\begin{tabular}{@{}ll}
+\noindent\begin{tabular}{@{}l}
+\noindent SEAS required courses
+\\
+\begin{tabular}{|l|l|l|} \hline
+\bf Course & \bf Grade & \bf Semester \\ \hline \hline
+APMA 111 & & \\ \hline
+APMA 212 & & \\ \hline
+CHEM 151 & & \\ \hline
+CHEM 151L & & \\ \hline
+ENGR 162 & & \\ \hline
+PHYS 142E & & \\ \hline
+PHYS 142W & & \\ \hline
+PHYS 241E & & \\ \hline
+PHYS 241W & & \\ \hline
+\end{tabular} \\
+\\
+% cs electives
+\noindent CS electives \\
+\noindent\begin{tabular}{|l|l|l|l|} \hline
+& \bf Course & \bf Grade & \bf Semester \\ \hline \hline
+1) & \hspace{1in} & & \\ \hline
+2) & & & \\ \hline
+3) & & & \\ \hline
+4) & & & \\ \hline
+\end{tabular} \\
+% tech electives
+\\
+\noindent Technical electives\\
+\noindent\begin{tabular}{|l|l|l|l|l|} \hline
+& \bf Course & \bf Grade & \bf Semester \\ \hline \hline
+1) & \hspace{1in} & & \\ \hline
+2) & & & \\ \hline
+3) & & & \\ \hline
+\end{tabular}\\
+
+\end{tabular}
+
+&
+
+\begin{tabular}{l}
+\noindent STS courses
+\\
+\begin{tabular}{|l|l|l|} \hline
+\bf Course & \bf Grade & \bf Semester \\ \hline \hline
+STS 101 & & \\ \hline
+STS 2xx/3xx & & \\ \hline
+STS 401 & & \\ \hline
+STS 402 & & \\ \hline
+\end{tabular} \\
+\\
+\noindent SEAS electives \\
+\noindent\begin{tabular}{|l|l|l|l|} \hline
+\bf Course & \bf Grade & \bf Semester & \bf Course \\ \hline \hline
+Science elective & & & \\ \hline
+HSS elective \# 1 & & & \\ \hline
+HSS elective \# 2 & & & \\ \hline
+HSS elective \# 3 & & & \\ \hline
+Unrest.\ elective & & & \\ \hline
+\end{tabular} \\
+
+\\
+\noindent General education electives (9 credits) \\
+\noindent\begin{tabular}{|l|l|l|l|} \hline
+& \bf Course & \bf Grade & \bf Semester \\ \hline \hline
+1) & \hspace{1in} & & \\ \hline
+2) & & & \\ \hline
+3) & & & \\ \hline
+4) & & & \\ \hline
+\end{tabular}
+
+\end{tabular}
+
+\end{tabular}
+
+\end{tabular} % outer 'holding' box
+
+%----------------------------------------------------------------------
+
+\newpage
+\section{Course Requirement Flowchart}
+
+\epsfig{figure=Cs-course-flowchart-073.png,width=\textwidth}
+
+
+%----------------------------------------------------------------------
+\section{Elective Information}
+\label{electiveinformation}
+\textsize
+
+The numbers in the list below correspond to the footnote numbers from
+the sample course schedule shown on page \pageref{sampleschedule}.
+
+\begin{enumerate}
+
+\item Science elective (1 required): Students must choose one of BIOL
+201 (Introduction to Biology: Cell Biology and Genetics), BIOL 202
+(Introduction to Biology: Organismal and Evolutionary Biology), CHEM
+152 (Introductory Chemistry for Engineers), CHEM 162 (Introductory
+Chemistry for Engineers), ECE 200 (Science of Information), MSE 209
+(Introduction to the Science and Engineering of Materials), or PHYS
+252 (Introductory Physics IV: Quantum Physics).  Additional courses in
+this list can count as technical or unrestricted electives.
+
+\item HSS electives (3 required): Studies in the humanities and social
+sciences serve not only to meet the objectives of a broad education,
+but also to meet the objectives of the engineering profession.  Such
+course work must meet the generally accepted definitions that the
+humanities are the branches of knowledge concerned with humankind and
+its culture, while the social sciences are the studies of society.
+See the full list of allowed courses in the SEAS Undergraduate
+Handbook.  This list can be found online at
+\url{http://www.seas.virginia.edu/advising/undergradhandbook.php#hss}.
+
+\item Technical electives (3 required): Technical electives are
+courses whose major emphasis is mathematics, science, or
+engineering.  Technical electives can be at the 200-level, but at
+least two courses (6 of the 9 credits) must be at the 300-level or
+higher.  See page \pageref{techelectives} for more details,
+including courses that do not count as technical electives.  Courses
+where there is uncertainty as to whether or not it qualifies
+should be approved by the student's advisor and recorded with a
+signature.
+
+\item Unrestricted elective (1 required): Any graded course in the
+University, with a few exceptions.  From the SEAS Undergraduate
+Student Handbook (found at
+\url{http://www.seas.virginia.edu/advising/undergradhandbook.php}):
+
+{\em All Unrestricted Electives may be chosen from any graded course
+in the University except mathematics courses below MATH 131, including
+STAT 110 and 112, and courses that substantially duplicate any others
+offered for the degree, including PHYS 201, PHYS 202, CS 110, CS 111,
+CS 120, or any introductory programming course. Students in doubt as
+to what is acceptable to satisfy a degree requirement should obtain
+the approval of their advisor and the dean's office, Thornton Hall,
+Room A122. APMA 109 counts as a three credit unrestricted elective for
+students.}
+
+Band classes (such as marching band) and ROTC classes can count for
+the unrestricted elective.
+
+\item APMA elective (2 required): Must choose two from: APMA 213
+(Ordinary Differential Equations), APMA 308 (Linear Algebra) or APMA
+312 (Statistics).  Note that APMA 310 (Probability) is a required
+course in addition to the two APMA electives.
+
+\item General education elective (3 required): General education
+courses are designed to further broaden the student beyond the three
+required HSS courses.  Allowed courses include all those allowed as an
+HSS elective, as well as other non-technical courses. See page
+\pageref{geneduelectives} for more information. Courses where there
+is uncertainty as to whether or not it qualifies should be
+approved by the student's advisor and recorded with a signature.
+
+\item \label{comparchelective} Computer architecture elective (1
+required): A student must take one course from the list of approved
+computer architecture electives. The current list includes: ECE 435
+(Computer Organization and Design), CS 433 (Advanced Computer
+Architecture), and CS 444 (Introduction to Parallel Computing).
+
+\item CS electives (4 required): Any 3 credit CS class at the 300
+level or above.  A course that is fulfilling another requirement can
+not also count as a CS elective.  If you take more than four CS
+electives, you can count additional CS elective course(s) as either
+a technical elective or an unrestricted elective.  ECE 436 (Advanced
+Digital Design) also counts as a CS elective (although not for CpE
+majors, as ECE 436 is required for CpE).  There are restrictions on
+counting independent study courses for your CS electives -- see your
+advisor for details.  Note that a previous set of degree requirements
+limited which courses above the 300 level counted as electives -- the
+description here is the current requirements (changed October, 2
+2006).  Note that for a class that does not meet these requirements to
+count as a CS elective requires approval by the department (NOT by the
+student's academic advisor).
+
+\item STS 2xx/3xx elective (1 required): Any STS course at the
+200-level or 300-level.
+
+\end{enumerate}
+
+Note that classes that receive no grade (such as the no longer offered
+TCC 100, or classes that are audited) do not count toward your degree
+requirements.
+
+%----------------------------------------------------------------------
+%\newpage
+\section{Technical Elective Policies}
+
+\label{techelectives}
+
+\subsection{General information}
+
+Technical electives are courses whose major emphasis is mathematics,
+science, or engineering.  Three technical elective courses (9 credits)
+are required for the bachelor's degree. One of the technical electives
+can be at the 200-level, but at least two courses (6 of the 9 credits)
+must be at the 300-level or higher.  The course should be one that
+majors from that field can take, i.e., no ``physics for poets''
+classes. Often the course description in the undergraduate record
+identifies such courses. CS majors can use CS courses as technical
+electives, once the requirements for the CS electives have been
+completed.
+
+Any course taught by another department in SEAS may count as a
+technical elective as long as the department offering that course
+considers it to meet the standards of a technical elective.
+
+Beware of courses with overlap substantial.  For example, a linear
+programming course overlaps with SYS 321 (Deterministic Decision
+Models).  You can only receive technical elective credit for one
+course if you take multiple courses whose subject material overlaps.
+If you have any questions, see your academic advisor.  Courses where
+there is uncertainty as to whether or not it qualifies should be
+approved by the student's advisor and recorded with a signature.
+
+\subsection{Class specific details}
+
+\noindent Examples of what does count as a technical elective:
+\begin{itemlist}
+\item EVSC 3xx or higher: Environmental Science courses of 3xx or
+better are accepted.
+\item PHIL 542 (Symbolic Logic) is a technical elective.
+\item PSYC 305 (Research Methods and Analysis), PSYC 306 (Research
+  Methods and Analysis II) count as technical or general elective,
+  {\bf not as a HSS elective}.
+\item TMP 351 (The Technology and Product-Development Life Cycle) is a technical elective.
+%\item MDST 345: MDST 345 is a technical elective % no longer offered as of 11-30-07
+\item MUSI 445 (Computer Applications in Music) is a technical
+elective, and does NOT count as a CS elective.
+\item PSYC 220 (A Survey of the Neural Basis of Behavior) is a
+technical elective.
+\item Students can take accounting courses as a technical elective.  
+
+\end{itemlist}
+
+\noindent Examples of what does NOT count as a technical elective:
+\begin{itemlist}
+\item SYS 323 (Human Machine Interface) does not count as a technical
+  elective.  Note that CS 305 has similar content (and CS 305 counts
+  as a CS elective).
+\item PHIL 242 (Introduction to Symbolic Logic) cannot be taken for
+  technical elective credit, as it overlaps CS 202.
+\item TMP 352 (Science and Technology Public Policy) is not a
+  technical elective. %; it is a STS elective.
+\item ECON 201 (Principles of Economics: Microeconomics) and ECON 202
+  (Principles of Economics: Macroeconomics) count as HSS  electives (or
+  general education or unrestricted), but not as technical electives. 
+\item ASTR 348 (Introduction to Cosmology) is not a technical elective
+  for CS majors.
+%\item COMM 320: COMM 320 cannot count as a technical elective because
+%of significant overlap with CS 201. % course no longer exists (as of 11-30-07)
+\end{itemlist}
+
+%\noindent What might count as a technical elective:
+%\begin{itemize}
+%\item ARCH 305: ARCH 305 in isolation is not considered a technical
+%elective. A case can be made if the student is taking ARCH 305 as part
+%of series of courses in architectural design.  See your advisor for
+%details.
+%\end{itemize}
+
+\subsection{Overlap with other courses}
+
+You can only receive technical elective credit for one course if you
+take multiple courses whose subject material overlaps.  Examples of
+courses that overlap include the following.
+
+\begin{itemize}
+
+\item Only one of ENGR 488 (Business and Technical Leadership in
+  Engineering) %, MAE 400 () % no longer exists
+  and CE 441 (Construction Engineering and Economics) may count as a
+  technical elective because of significant overlap.
+
+\item Students who have taken APMA 310 (Probability) cannot use APMA
+  311 (Applied Probability and Statistics) as a technical
+  elective. APMA 312 (Statistics) may be used as a technical elective;
+  however, no student can get credit for both APMA 311 and either of
+  APMA 310 or 312.  Note that students usually use APMA 312 to fulfill
+  the APMA elective requirement.
+
+\item The definition of MATH 404 (Discrete Mathematics) in the
+  Undergraduate Record indicates that there is too much overlap with
+  CS 202 to get credit for both. However, at least one instructor is
+  doing cryptography rather than discrete mathematics in the
+  course. Under those circumstances, you may get credit for both CS
+  202 and MATH 404.
+
+\item Students CAN take both SYS 321 (Deterministic Decision Models)
+  and CS 457 (Computer Networks).
+
+\item Because of substantial overlap, a student can earn credit for
+  only one of SYS 202 (Data and Information Engineering), SYS 204
+  (Data and Information Management), and CS 462 (Databases).  Multiple
+  classes taken from this set can only be used to fulfill the
+  unrestricted elective requirement.
+
+\end{itemize}
+
+
+%----------------------------------------------------------------------
+%\newpage
+\section{General Elective Policies}
+
+\label{geneduelectives}
+
+\subsection{General information}
+
+The goal of this requirement is for our majors to take additional
+courses in humanities, social sciences, arts, and other disciplines
+that serve to broaden the background of the student. In this context,
+``broaden'' means courses outside the areas required for the
+bachelor's degree (i.e. not science, math, engineering, or
+computing). Note that the general education elective courses are in
+addition to the nine credits of HSS electives that all SEAS students
+must take.  Courses where there is uncertainty as to whether or not it
+qualifies should be approved by the student's advisor and
+recorded with a signature.  See your advisor if you have any questions
+on the general education requirements.
+
+\subsection{Approved general elective courses}
+
+The following describes what courses may or may not count toward this
+requirement:
+
+\begin{enumerate}
+
+\item Any course that satisfies the SEAS HSS elective requirement will
+count. The description and list of courses for SEAS HSS requirements
+are listed online at
+\url{http://www.seas.virginia.edu/advising/undergradhandbook.php#hss}.
+
+\item Any course that could satisfy the CS elective or technical
+elective requirement cannot count.
+
+\item Other courses may count if they meet the spirit of the
+requirement (see the first paragraph of this section) and they are
+approved in advance by the department. The department maintains a
+partial list of courses that have been approved -- see below.
+
+\item Only one performance-oriented or skills-development courses may
+be allowed to count.
+
+\item Band classes (such as marching band) may count for 3 of the 9
+required general education elective credits.  Note that band classes
+may also count toward the unrestricted elective.
+
+\item Courses on communication in the student's native language,
+regardless of their level, may not be used to satisfy this
+requirement.  This is the same policy as that used for the SEAS HSS
+electives.
+
+\item ROTC classes can count for 6 of the 9 general education elective
+credits.  Note that you can also count ROTC classes toward the
+unrestricted elective.
+
+\end{enumerate}
+
+
+The following courses that satisfy the SEAS Minor in Business, and may
+also count for this requirement.
+
+\begin{itemlist}
+\item COMM 180 (Making Business Work)
+\item COMM 341 (Commercial Law I)
+\item COMM 351 (Fundamentals of Marketing)
+\item COMM 371 (Managerial Finance I)
+\item COMM 381 (Business Ethics)
+\item COMM 467 (Organizational Change and Development)
+\item COMM 468 (Entrepreneurship)
+\item TMP 352 (Science and Technology Public Policy)
+\item TMP 399 (Case Studies in Technology Management and Policy)
+\item ISBU 327 (Investment Analysis)
+\item ISBU 361 (Organizational Behavior)
+\item ISBU 384 (International Business)
+\item ISBU 485 (Strategic Management)
+\end{itemlist}
+
+Note that TMP 351 (The Technology and Product-Development Life Cycle),
+COMM 201 (Introduction to Financial Accounting) and COMM 202
+(Introduction to Management Accounting) satisfy the SEAS Minor in
+Business, but these count as technical electives.  ECON 201
+(Principles of Economics: Microeconomics) and ECON 202 (Principles of
+Economics: Macroeconomics) count for either the HSS requirement or the
+general education requirement, and they also count toward the
+business minor.
+
+
+%----------------------------------------------------------------------
+
+%\ifthenelse{\boolean{printmode}}{\newpage}{}
+
+\section{Minor in Computer Science}
+\label{minorreqs}
+
+The Department of Computer Science provides a minor program for
+qualified students. The courses in the minor program provide a solid
+foundation in computer science. The minor program is a six course,
+eighteen credit curriculum. The curriculum consists of the four
+required courses and two elective courses.  Full course descriptions
+are at the end of this document, beginning on page
+\pageref{coursedescriptions}.
+
+\subsection{SEAS students}
+
+All SEAS (School of Engineering and Applied Science) students are
+required to take (or place out of) CS 101, as part of the SEAS
+first-year curriculum.  This course is also the first required course
+for the minor.
+
+The following are the first four courses required for the minor.
+
+\begin{itemlist}
+\item CS 101: Introduction to Computer Science
+\item CS 201: Software Development Methods
+\item CS 202: Discrete Mathematics
+\item CS 216: Program and Data Representation
+\end{itemlist}
+
+Furthermore, two additional computer science electives are
+required. The elective courses must be computer science courses at the
+300 level or above.  The only restriction on elective courses is a
+limit to how many independent study courses one can count toward a
+minor -- contact the minor advisor for details at
+\url{minoradvisor@cs.virginia.edu}.
+
+Computer science courses typically build upon each other. In
+particular, CS 101 is a prerequisite of both CS 201 and CS 202.  CS
+201 and CS 202 are both prerequisites of CS 216. In addition, CS 216
+is a prerequisite for almost all of the computer science electives.
+The Department of Computer Science also requires that its courses be
+passed at a certain level (typically a C- or better) in order to take
+successive courses. Be aware that the department strictly enforces its
+prerequisite policy.
+
+\subsection{Non-SEAS students}
+
+We recommend that non-SEAS (School of Engineering and Applied Science)
+students interested in taking a computer science minor start in the
+fall semester. SEAS requires that its students take CS 101 in the
+spring semester, and thus there are many more students enrolled in CS
+101 in the spring semester.
+
+CS 150 and CS 205 are the recommended introductory courses for
+non-SEAS students. These courses count for CS 101 and CS 201,
+respectively, for the minor requirements.  However, students may
+choose to substitute CS 150 with CS 101 or substitute CS 205 with CS
+201, but will not get credit for taking both CS 101 and CS 150 or both
+CS 201 and CS 205.
+
+The rest of the minor requirements are the same: CS 202, CS 216, and
+two elective courses, as described in the previous section.
+
+\subsection{Declaring the minor}
+
+To declare a minor, a student should have completed CS 101 or 150, CS
+201 or 205, and CS 202.  Furthermore, the student should have
+completed, or at least be enrolled in, CS 216.  The student can then
+declare the minor by completing the appropriate form, available from
+your individual school.  Attach your current transcript, and bring it
+to Peggy Reed in Olsson 223.  For additional information, please
+contact the computer science minor advisor at
+\url{minoradvisor@cs.virginia.edu}.
+
+
+%----------------------------------------------------------------------
+
+%\ifthenelse{\boolean{printmode}}{\newpage}{}
+\section{Frequently Asked Questions}
+
+\subsection{What kind of  advanced placement credit is available?}
+
+Advanced placement (AP) credit is awarded by the University for most
+AP tests in which the grade is a 4 or a 5.  This section only deals
+with the AP computer science test.  A student's VISTAA report will
+always list which courses qualify for the AP test scores (both in
+computer science and in other fields).
+
+A 5 on the computer science AB test will receive course credit for CS
+101 and CS 201.  A 4 on the computer science AB test OR a 5 on the
+computer science A test will receive course credit for CS 101.  If the
+AP exam was not in Java, proficiency in Java must be demonstrated
+prior to taking CS 201.  Note that CS 201 is required for other
+majors: computer engineering, systems engineering, and electrical
+engineering.  There is also a placement exam before the fall semester
+that will allow the student to place out of CS 101, but does not allow
+credit to be received for the course -- the student must then take
+another 3 hour CS or technical course instead.  See the next section
+for information about the CS 101 placement exam.
+
+\subsection{Can I  place out of CS 101?}
+
+There is a placement exam for CS 101, which covers all the topics
+taught in the course.  For the current semester's syllabus, see the CS
+101 course website.  Successful completion will allow a student to
+place out of the course, but does NOT give course credit -- only a
+sufficient score on the AP test or transfer credit can give course
+credit for CS 101.  A student must still take CS 201 or a technical
+elective to fulfill the SEAS CS 101 requirement.  The test is offered
+before the beginning of the fall semester.  Note that any student who
+has ever enrolled in CS 101 -- even if they later dropped or withdrew
+from the course -- is not allowed to take the placement exam.  The
+exam may be taken by visiting the departmental office in Olsson 204.
+
+\subsection{Can CS courses from another college receive credit?}
+
+We officially discourage taking major courses elsewhere. This policy
+is especially true for the lab-based and required courses.  If, in
+spite of this departmental policy, you still want to take a course
+elsewhere, then the student needs an advisor signature AND the
+signature of the current instructor of that course from UVa. To
+receive the required signatures, you must bring in a detailed
+syllabus, so that faculty can make informed decisions.  Note that to
+receive credit for CS 216 elsewhere, you need both a data structures
+course and an assembly language programming course.
+
+
+\subsection{What are the Rodman Scholar requirements?}
+
+Rodman scholars have slightly different requirements for graduation.
+
+\begin{itemlist}
+\item The requirement for STS 101 is changed to an additional HSS
+elective
+\item ENGR 141R counts as ENGR 162
+\item STS 200R counts as their STS elective
+\item PHYS 142R counts for PHYS 142E and PHYS 142W
+\item PHYS 241R counts for PHYS 241E and PHYS 241W
+\end{itemlist}
+
+Furthermore, Rodman Scholars are required to complete 4 seminars (ENGR
+307 or ENGR 308) prior to graduation.
+
+\subsection{Is the number of computer majors capped?}
+
+Although it is the norm that a student be accepted into either of the
+computing programs, circumstances can occur that cause a limit in the
+number of accepted applicants. Given the continuing expansion of
+departmental resources, no limits on the number of majors are expected
+in the immediate future. The Department of Computer Science wants you
+as a major.  Both the department and the School of Engineering and
+Applied Science continue their efforts to ensure that any
+student, wishing to do so, can major in computing.
+
+\subsection{Where can I get information on VISTAA?}
+
+VISTAA is the Virginia Student Academic Audit reporting system for
+assisting students and their advisors in tracking programs of study. A
+student VISTAA report lists both the courses a student has completed
+and those in which s/he is currently enrolled.
+
+A VISTAA report groups the courses according to degree, major, and
+minor requirements.  These reports also provide information on which
+requirements are incomplete and which courses will satisfy them.
+VISTAA now supports a student and faculty record request update
+feature -- one can use this feature to put in an override for an
+improper VISTAA assignment of a course toward a program of study
+requirement.
+
+Further information VISTAA is available from the sources listed below.
+
+\begin{itemlist}
+\item Home page for VISTAA:
+\url{http://www.virginia.edu/registrar/vistaa.html}. The page contains
+a list of frequently asked questions. % verified url on 7 dec 2007
+\item Detailed student directions on the use of VISTAA:
+\url{http://www.virginia.edu/registrar/VISTAA2.pdf}. % verified url on 7 dec 2007
+\item Detailed faculty directions on the use of VISTAA:
+\url{http://www.virginia.edu/registrar/vistaafsa.html}. % verified url on 7 dec 2007
+\item Department faculty VISTAA liaison: \url{vistaa-cs@cs.virginia.edu} % verified url on 7 dec 2007
+\item SEAS VISTAA liaison: \url{vistaa-seas@cs.virginia.edu} % verified url on 7 dec 2007
+%\item Registrar office VISTAA liaison: \url{rfg@virginia.edu}
+\end{itemlist}
+
+It is recommended that you bring a copy of your VISTAA record with you
+to advising.
+
+\subsection{Can CS students study abroad?}
+
+To get more information about studying abroad, see
+\url{http://www.cs.virginia.edu/curriculum/study_abroad/}.
+
+\subsection{How do I transfer into the CS program?}
+
+There is also the Bachelor of Arts in Computer Science, offered
+through the College (see \url{http://www.cs.virginia.edu/ba/}).
+Students outside of the School of Engineering and Applied Science with
+an interest in obtaining a BS (as opposed to a BA) degree in computer
+science must transfer to the Engineering school.
+
+Like other SEAS students, transfer students must formally apply to,
+and be approved by, the Department of Computer Science to enroll in
+the computer science program of study. To minimize loss of credit upon
+transfer, students must take a rigorous program in mathematics and the
+sciences. The School of Engineering and Applied Science expects a
+minimum of 63 credits in the first two years, instead of the 60-credit
+minimum that is customary in the College of Arts and Sciences. The
+additional credits are often completed through summer courses.
+Detailed information on curriculum requirements may be obtained from
+the Office of the Dean of the School of Engineering and Applied
+Science.
+
+
+
+%----------------------------------------------------------------------
+
+%\ifthenelse{\boolean{printmode}}{\newpage}{}
+\section{Course Descriptions}
+
+\label{coursedescriptions}
+
+These course listings are from the undergraduate record
+(\url{http://records.ureg.virginia.edu/content.php?catoid=11&navoid=189}).
+The frequency code for each class specifies how often it is offered.
+(S) means offered each (spring and fall) semester; (Y) means offered
+once each academic year, and (SI) means offered upon sufficient
+student interest.
+
+%\begin{itemlist}
+%\item (S): offered fall and spring semesters
+%\item (Y): offered at least once every academic year (fall or spring semester)
+%\item (E): offered when the fall semester occurs in an even year (e.g., 2006-2007)
+%\item (O): offered when the fall semester occurs in an odd year (e.g., 2005-2006)
+%\item (SI): offered upon sufficient student interest
+%\item (IR): offered irregularly
+%\item (SS): offered during summer session
+%\item (J): offered during January session
+%\end{itemlist}
+
+\bigskip
+
+{\bf\noindent CS 101 - Introduction to Programming} (3 credits):
+Introduces the basic principles and concepts of object-oriented
+programming through a study of algorithms, data structures and
+software development methods in Java. Emphasizes both synthesis and
+analysis of computer programs. (S)
+      
+{\bf\noindent CS 101E - Introduction to Programming} (3 credits):
+Introduces the basic principles and concepts of object-oriented
+programming through a study of algorithms, data structures and
+software development methods in Java. Emphasizes both synthesis and
+analysis of computer programs. (S) Prerequisite: Prior programming
+experience.
+      
+{\bf\noindent CS 101X - Introduction to Programming} (3 credits):
+Introduces the basic principles and concepts of object-oriented
+programming through a study of algorithms, data structures and
+software development methods in Java. Emphasizes both synthesis and
+analysis of computer programs. (SI) Note: No prior programming
+experience.
+      
+{\bf\noindent CS 110 - Introduction to Information Technology} (3
+credits): Provides exposure to a variety of issues in information
+technology, such as computing ethics and copyright. Introduces and
+provides experience with various computer applications, including
+e-mail, newsgroups, library search tools, word processing, Internet
+search engines, and HTML. Not intended for students expecting to do
+further work in CS. Cannot be taken for credit by students in SEAS or
+Commerce. (S)
+      
+%{\bf\noindent CS 120 - Introduction to Business Computing} (3
+%credits): Overview of modern computer systems and introduction to
+%programming in Visual Basic, emphasizing development of programming
+%skills for business applications. Intended primarily for pre-commerce
+%students. May not be taken for credit by students in SEAS. (S)
+
+{\bf\noindent CS 150 - From Ada and Euclid to Quantum Computing and
+the World Wide Web} (3 credits): Introduction to computer science with
+no previous background.  Focuses on describing and reasoning about
+information processes using language and logic.  Uses motivating
+examples from liberal arts and sciences areas such as art, biology,
+economics, narrative, physics, and sociology. (Y)
+
+{\bf\noindent CS 201 - Software Development Methods} (3 credits): A
+continuation of CS 101, emphasizing modern software development
+methods. An introduction to the software development life cycle and
+processes. Topics include requirements analysis, specification,
+design, implementation, and verification. Emphasizes the role of the
+individual programmer in large software development projects. (S)
+Prerequisite: CS 101 with a grade of C- or higher.
+
+%{\bf\noindent CS 201K - Software Development Methods} (3 credits):
+%Covers tools and techniques used to manage complexity needed to build,
+%analyze, and test complex software systems including abstraction,
+%analysis, and specification.
+
+{\bf\noindent CS 202 - Discrete Mathematics} (3 credits): Introduces
+discrete mathematics and proof techniques involving first order
+predicate logic and induction. Application areas include sets (finite
+and infinite), elementary combinatorial problems, and
+probability. Development of tools and mechanisms for reasoning about
+discrete problems. Cross-listed as APMA 202. (S) Prerequisite: CS 101
+or 150 with a grade of C- or higher.
+      
+{\bf\noindent CS 205 - Engineering Software} (3 credits): Covers tools
+and techniques used to manage complexity and to build, analyze, and
+test complex software systems including abstraction, analysis, and
+specification. (Y) Prerequisite: CS 150 with a grade of C- or higher.
+Notes: Students may not receive credit for both CS 201 and CS 205.
+      
+{\bf\noindent CS 216 - Program and Data Representation} (3 credits):
+Introduces programs and data representation at the machine level. Data
+structuring techniques and the representation of data structures
+during program execution. Operations and control structures and their
+representation during program execution. Representations of numbers,
+arithmetic operations, arrays, records, recursion, hashing, stacks,
+queues, trees, graphs, and related concepts. (S) Prerequisite: CS 202
+and either CS 201 or CS 205 with all grades of C- or higher.
+
+{\bf\noindent CS 230 - Digital Logic Design} (3 credits): Includes
+number systems and conversion; Boolean algebra and logic gates;
+minimization of switching functions; combinational network design;
+flip-flops; sequential network design; arithmetic networks. Introduces
+computer organization and assembly language. Cross-listed as ECE
+230. (S)
+      
+{\bf\noindent CS 290 - Computer Science Seminar I} (1 credit):
+Provides cultural capstone to the undergraduate experience. Students
+make presentations based on topics not covered in the traditional
+curriculum. Emphasizes learning the mechanisms by which researchers
+and practicing computer scientists can access information relevant to
+their discipline, and on the professional computer scientist's
+responsibility in society. (Y) Prerequisite: CS 201 or 205 with a
+grade of C- or higher, as well as a computing major (BACS, BSCS, or
+CpE).
+
+{\bf\noindent CS 302 - Theory of Computation} (3 credits): Introduces
+computation theory including grammars, finite state machines and
+Turing machines; and graph theory. Cross-listed as APMA 302. (Y)
+Prerequisite: CS 202 and either CS 201 or 250 all with grades of C- or
+better.
+
+{\bf\noindent CS 305 - HCI in Software Development} (3 credits):
+Human-computer interaction and user-centered design in the context of
+software engineering. Examines the fundamental principles of
+human-computer interaction. Includes evaluating a systems usability
+based on well-defined criteria; user and task analysis, as well as
+conceptual models and metaphors; the use of prototyping for evaluating
+design alternatives; and physical design of software user-interfaces,
+including windows, menus, and commands. (Y) Prerequisite: CS 201 or
+205 with a grade of C- or higher.
+
+{\bf\noindent CS 333 - Computer Architecture} (3 credits): Includes
+the organization and architecture of computer systems hardware;
+instruction set architectures; addressing modes; register transfer
+notation; processor design and computer arithmetic; memory systems;
+hardware implementations of virtual memory, and input/output control
+and devices. Cross-listed as ECE 333. (S) Prerequisite: CS 201 or 205
+with a grade of C- or higher, and CS (or ECE) 230 with a grade of C-
+or higher.
+     
+{\bf\noindent CS 340 - Advanced Software Development Techniques} (3
+credits): Analyzes modern software engineering practice for
+multi-person projects; methods for requirements specification, design,
+implementation, verification, and maintenance of large software
+systems; advanced software development techniques and large project
+management approaches; project planning, scheduling, resource
+management, accounting, configuration control, and documentation. (Y)
+Prerequisite: CS 216 with a grade of C- or higher.
+
+{\bf\noindent CS 351 - Selected Topics in Computer Science} (1 to 3
+credits): Content varies annually, depending on students needs
+and interests. Recent topics include the foundations of computation,
+artificial intelligence, database design, real-time systems, Internet
+engineering, and electronic design automation. (SI) Prerequisite:
+Instructor permission.
+
+{\bf\noindent CS 414 - Operating Systems} (3 credits): Analyzes
+process communication and synchronization; resource management;
+virtual memory management algorithms; file systems; and networking and
+distributed systems. (S) Prerequisite: CS 216 and CS (or ECE) 333 with
+grades of C- or higher.
+
+{\bf\noindent CS 415 - Programming Languages} (3 credits): Presents
+the fundamental concepts of programming language design and
+implementation. Emphasizes language paradigms and implementation
+issues. Develops working programs in languages representing different
+language paradigms. Many programs oriented toward language
+implementation issues. (Y) Prerequisite: CS 216 with a grade
+of C- or higher.
+
+{\bf\noindent CS 416 - Artificial Intelligence} (3 credits):
+Introduces artificial intelligence. Covers fundamental concepts and
+techniques and surveys selected application areas. Core material
+includes state space search, logic, and resolution theorem
+proving. Application areas may include expert systems, natural
+language understanding, planning, machine learning, or machine
+perception. Provides exposure to AI implementation methods,
+emphasizing programming in Common LISP. (Y) Prerequisite: CS 216 with
+grades of C- or higher.
+
+{\bf\noindent CS 432 - Algorithms} (3 credits): Introduces the
+analysis of algorithms and the effects of data structures on
+them. Algorithms selected from areas such as sorting, searching,
+shortest paths, greedy algorithms, backtracking, divide- and-conquer,
+and dynamic programming. Data structures include heaps and search,
+splay, and spanning trees. Analysis techniques include asymptotic
+worst case, expected time, amortized analysis, and reductions between
+problems. (Y) Prerequisite: CS 216 with a grade of C- or higher.
+
+{\bf\noindent CS 433 - Advanced Computer Architecture} (3 credits):
+Provides an overview of modern microprocessor design. The topics
+covered in the course will include the design of super-scalar
+processors and their memory systems, and the fundamentals of
+multi-core processor design. (Y) Prerequisite: CS 216 and CS (or ECE)
+333 with a C- or better.
+
+{\bf\noindent CS 434 - Fault-tolerant Computing} (3 credits):
+Investigates techniques for designing and analyzing dependable
+computer-based systems. Topics include fault models and effects, fault
+avoidance techniques, hardware redundancy, error detecting and
+correcting codes, time redundancy, software redundancy, combinatorial
+reliability modeling, Markov reliability modeling, availability
+modeling, maintainability, safety modeling, trade-off analysis, design
+for testability, and the testing of redundant digital
+systems. Cross-listed as ECE 434. (SI) Prerequisite: CS (or ECE) 333,
+APMA 213, and APMA 310, each with grades of C- or higher.
+
+{\bf\noindent CS 441 - Principles of Software Design} (3 credits):
+Focuses on techniques for software design in the development of large
+and complex software systems. Topics will include software
+architecture, modeling (including UML), object-oriented design
+patterns, and processes for carrying out analysis and design. More
+advanced or recent developments may be included at the instructor's
+discretion. The course will balance an emphasis on design principles
+with an understanding of how to apply techniques and methods to create
+successful software systems.  (Y) Prerequisite: CS 216 with a C- or
+better.
+
+{\bf\noindent CS 444 - Introduction to Parallel Computing} (3
+credits): Introduces the student to the basics of high-performance
+parallel computing and the national cyber-infrastructure. The course
+is targeted for both computer science students and students from other
+disciplines who want to learn how to significantly increase the
+performance of applications.  (Y) Prerequisite: CS 216 and CS (or ECE)
+333 with a C- or better.
+
+{\bf\noindent CS 445 - Introduction to Computer Graphics} (3 credits):
+Introduces the fundamentals of three-dimensional computer graphics:
+rendering, modeling, and animation. Students learn how to represent
+three-dimensional objects (modeling) and the movement of those objects
+over time (animation). Students learn and implement the standard
+rendering pipeline, defined as the stages of turning a
+three-dimensional model into a shaded, lit, texture-mapped
+two-dimensional image. (Y) Prerequisites: CS 216 with a grade of C-.
+
+%{\bf\noindent CS 446 - Real Time Rendering} (3 credits): Examines
+%real-time rendering of high-quality interactive graphics. Studies the
+%advances in graphics hardware and algorithms that are allowing
+%applications such as video games, simulators, and virtual reality to
+%become capable of near cinematic-quality visuals at real-time
+%rates. Topics include non-photorealistic rendering, occlusion culling,
+%level of detail, terrain rendering, shadow generation, image-based
+%rendering, and physical simulation. Over several projects throughout
+%the semester students work in small teams to develop a small 3-D game
+%engine incorporating some state-of-the-art techniques. (Y)
+%Prerequisite: Grade of C- or better in CS 445 or equivalent working
+%knowledge.
+     
+{\bf\noindent CS 447 - Image Synthesis} (3 credits): Provides a broad
+overview of the theory and practice of rendering. Discusses classic
+rendering algorithms, although most of the course focuses on either
+fundamentals of image synthesis or current methods for physically
+based rendering. The final project is a rendering competition. (Y)
+Prerequisite: Grade of C- or better in CS 445 or equivalent working
+knowledge.
+
+%{\bf\noindent CS 448 - Computer Animation} (3 credits): Introduces
+%both fundamental and advanced computer animation techniques. Discusses
+%such traditional animation topics as keyframing, procedural
+%algorithms, camera control, and scene composition. Also introduces
+%modern research techniques covering dynamic simulation, motion
+%capture, and feedback control algorithms. These topics help prepare
+%students for careers as technical directors in the computer animation
+%industry and assist in the pursuit of research careers. (Y)
+%Prerequisite: Grade of C- or better in CS 445 or equivalent working
+%knowledge.
+
+{\bf\noindent CS 451 - Selected Topics in Computer Science} (1 to 3
+credits): Content varies annually, depending on students needs and
+interests. Recent topics include the foundations of computation,
+artificial intelligence, database design, real-time systems, Internet
+engineering, wireless sensor networks, and electronic design
+automation. (SI) Prerequisite: Instructor permission.
+
+{\bf\noindent CS 453 - Electronic Commerce Technologies} (3 credits):
+Focuses on the history of the Internet and electronic commerce on the
+web; case studies of success and failure; cryptographic techniques for
+privacy, security, and authentication; digital money; transaction
+processing; wired and wireless access technologies; Java; streaming
+multimedia; XML; Bluetooth. Defining, protecting, growing, and raising
+capital for an e-business. (Y) Prerequisite: CS 216 with a grade of C-
+or higher.
+
+{\bf\noindent CS 457 - Computer Networks} (3 credits): Intended as a
+first course in communication networks for upper-level undergraduate
+students. Topics include the design of modern communication networks;
+point-to-point and broadcast network solutions; advanced issues such
+as Gigabit networks; ATM networks; and real-time communications.
+Cross-listed as ECE 457. (Y) Prerequisite: CS (or ECE) 333 with a
+grade of C- or higher.
+
+{\bf\noindent CS 458 - Internet Engineering} (3 credits): An advanced
+course on computer networks on the technologies and protocols of the
+Internet. Topics include the design principles of the Internet
+protocols, including TCP/IP, the Domain Name System, routing
+protocols, and network management protocols. A set of laboratory
+exercises covers aspects of traffic engineering in a wide-area
+network. (Y) Prerequisite: CS 457 with a grade of C- or better.
+
+{\bf\noindent CS 462 - Database Systems} (3 credits): Introduces the
+fundamental concepts for design and development of database
+systems. Emphasizes relational data model and conceptual schema design
+using ER model, practical issues in commercial database systems,
+database design using functional dependencies, and other data
+models. Develops a working relational database for a realistic
+application. (Y) Prerequisite: CS 216 with grades of C- or higher.
+
+{\bf\noindent CS 471 - Compilers} (3 credits): Provides an
+introduction to the field of compilers, which translate programs
+written in high-level languages to a form that can be executed. The
+course covers the theories and mechanisms of compilation
+tools. Students will learn the core ideas behind compilation and how
+to use software tools such as lex/flex, yacc/bison to build a compiler
+for a non-trivial programming language. (Y) Prerequisite: CS 340 and
+CS (or ECE) 333 with grades of C- or higher.
+
+{\bf\noindent CS 493 - Independent Study} (1 to 3 credits): In-depth
+study of a computer science or computer engineering problem by an
+individual student in close consultation with departmental
+faculty. The study is often either a thorough analysis of an abstract
+computer science problem or the design, implementation, and analysis
+of a computer system (software or hardware). (S) Prerequisite:
+Instructor permission.
+
+{\bf\noindent CS 494 - Special Topics in Computer Science} (1 to 3
+credits): Content varies annually, depending on instructor interests
+and the needs of the department. Similar to CS 551 and CS 751, but
+taught strictly at the undergraduate level. (SI) Prerequisite:
+Instructor permission; additional specific requirements vary with
+topics.
+
+{\bf\noindent CS 551 - Selected Topics in Computer Science} (1 to 3
+credits): Content varies annually, depending on students needs
+and interests. Recent topics included the foundations of computation,
+artificial intelligence, database design, real-time systems, Internet
+engineering, and electronic design automation. (SI) Prerequisite:
+Instructor permission.
+
+%{\bf\noindent CS 586 - Real-Time Systems} (3 credits): Presents the
+%underlying theory, concepts, and practice for real-time systems, such
+%as avionics, process control, space travel, mobile computing and
+%ubiquitous computing.  (Y) Prerequisite: CS 414 with a grade of
+%C- or higher.
+
+%{\bf\noindent CS 587 - Security in Information Systems} (3 credits):
+%This course focuses on security as an aspect of a variety of software
+%systems. We will consider software implementations of security related
+%policies in the context of operating systems, networks, and data
+%bases. (Y) Prerequisite: CS 340 and either CS/ECE 457 or CS 414 with
+%grades of C- or higher.
+
+%{\bf\noindent CS 588 - Cryptology: Principles and Applications} (3
+%credits): Introduces the basic principles and mathematics of
+%cryptology including information theory, classical ciphers, symmetric
+%key cryptosystems and public-key cryptosystems. Develops applications
+%of cryptology such as anonymous email, digital cash and code
+%signing. (Y) Prerequisite: CS 302 with a grade of C- or higher.
+
+
+%----------------------------------------------------------------------
+
+\ifthenelse{\boolean{printmode}}{}{\newpage}
+\section{Degree Requirement Revisions}
+\label{sec:degreereqrevisions}
+
+Computer science is an evolving field, and our undergraduate
+curriculum reflects this.  The department sometimes makes changes to
+the requirements for the bachelor's degree.  Note that you are allowed
+to graduate using ANY SINGLE set of requirements that were in effect
+when you were a declared computer science major -- thus, if the
+requirements change, you are allowed to complete the degree using the
+older version of the requirements.  You cannot ``mix and match''
+requirements from the different sets.  For example, a student using
+the fall 2004 rules below (no general electives) is not allowed to
+take something other than ECE 435 (Computer Organization and Design)
+for the computer architecture elective.
+
+Any changes to the requirements will occur after the spring semester
+and before the following fall semester, unless the change is
+considered minor.  A minor change is something that does not in any
+way restrict the degree requirements.  Examples of minor changes would
+be expanding the allowed courses for one of the elective types, or
+clarifying what counts as a technical elective.  Note that unless the
+change to the requirements directly affects the third semester (i.e.\
+the first semester of the second year), a student cannot choose to
+graduate using a set of requirements that were in effect during his or
+her first year at UVa but that were not in effect during his or her
+second year, as they were not a declared computer science major during
+their first year.
+
+The requirement revisions below describe what major changes occurred
+during the previous years, and what courses students must complete to
+graduate using that set of requirements.  Note that the older sets are
+kept for historical reasons, even though there may not be any more
+students who are eligible to graduate with those sets.
+
+The current set of requirements, which this document reflects, became
+effective in the fall of 2006.  No (non-minor) changes were made for
+the fall of 2007.
+
+\subsection{Requirement revision from fall 2005}
+
+The main change in the requirements from the fall of 2005 to the fall
+of 2006 was that ECE 435 is no longer an absolute requirement.
+Instead, students must choose one course from a list of ``computer
+architecture electives.''  The list of acceptable courses is described
+on page \pageref{comparchelective}.  Because of the above change, a
+student can now graduate with 124.5 credits.
+
+Students graduating using the fall 2005 requirements must take ECE 435,
+and are not allowed to take an alternative computer architecture
+elective as described on page \pageref{comparchelective}.  However, as
+this change (allowing courses other than ECE 435) only expands the
+allowed courses a student can take, it is not expected that anyone
+will graduate using this set of requirements.
+
+       
+\subsection{Requirement revision from fall 2004}
+
+The main change in the requirements from the fall of 2004 to the fall
+of 2005 was the addition of general education classes.  Students must
+complete 9 credits of general education courses, in addition to the 9
+credits of HSS required of all SEAS students. Students now only need
+9 technical electives credits (at most 3 credits at 200-level) and 3
+credits of unrestricted electives.
+
+Students graduating using the fall 2004 requirements must take 12
+credits of technical electives and 9 credits of unrestricted
+electives.  This is in addition to the 9 credits of HSS courses
+required of all SEAS students.  In addition, students must take ECE
+435 (as described above, in the 'fall 2005' requirements section).
+
+Furthermore, CS 390 was renamed to CS 290, and should be taken in the
+2nd year.  However, taking either class (290 or 390) will fulfill this
+requirement.
+
+
+\subsection{Requirement revision from fall 2003}
+
+The main change in the requirements from the fall of 2003 to the fall
+2004 was the change in math requirements.  Students must take APMA 310 and
+then must choose two from APMA 213, APMA 308 or APMA 312.   This means
+a student could graduate with 125.5 credits instead of 126.5.
+
+There are currently no students enrolled that are eligible to graduate
+using these requirements.
+
+\ifthenelse{\boolean{printmode}}{
+\newpage
+\section{Individual Notes}
+\ 
+}{}
+
+
+%----------------------------------------------------------------------
+
+
+%\newpage
+%\section*{Questions and todos and such}
+
+%\noindent These are things that still need to be done / changed / fixed.
+
+%\begin{enumerate}
+
+%\item make the study abroad e-mail point somewhere
+
+%\item CS 451 needs to be removed from the VISTAA requirements
+
+%\item the ugrad handbook needs to be updated with what's in here -- in
+%particular, a number of courses were removed (120, 201K, real-time
+%rendering, animation, 5xx).  And CS 202's name needs to change.  And
+%descriptions for 205, 433, 444, etc.  And a bunch of pre-reqs.
+
+%\end{enumerate}
+
+%----------------------------------------------------------------------
+
+\ifthenelse{\boolean{printmode}}{
+
+\newpage
+\pagestyle{empty}
+
+
+
+\vspace*{2in}
+\begin{tabular}{p{1.1in}p{4.1in}}
+& {\em Enlighten the people generally, and tyranny and oppression of body
+and mind will vanish like evil spirits at the dawn of day\ldots\/ the
+diffusion of knowledge among the people is to be the instrument by
+which it is to be effected. } \\
+\\
+& --Thomas Jefferson, 1816 \\
+\end{tabular}
+
+%\newpage
+%\pagestyle{empty}
+%\epsfig{figure=mls-bw.jpg,height=\textheight}
+
+\newpage
+\pagestyle{empty}
+\Large
+\vspace*{3in}
+
+
+\begin{tabular}{c}
+\hspace{6.3in} \\
+Department of Computer Science \\
+School of Engineering and Applied Science \\
+The University of Virginia \\
+151 Engineer's Way \\
+P.O.\ Box 400740 \\
+Charlottesville, Virginia 22904-4740 \\
+434.982.2200 \\
+http://www.cs.virginia.edu \\
+\vspace{1in} \\
+\epsfig{figure=rolg_blueseal_bw.png,width=1.5in}
+%\includegraphics{rolg_blueseal_bw,width=2in}
+\end{tabular}
+
+}{}
+
+\end{document}
