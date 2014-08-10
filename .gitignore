@@ -1,6 +1,7 @@
 *~
-cs-ug-hbk.aux
-cs-ug-hbk.log
-cs-ug-hbk.out
+*.aux
+*.log
+*.out
+*.toc
 cs-ug-hbk.pdf
-cs-ug-hbk.toc
+ba-integration-electives.pdf
