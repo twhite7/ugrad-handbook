@@ -21,3 +21,6 @@ flowcharts:	/dev/null
 	pngtopnm diagrams/ba-cs.png | pnmfile
 	pdftoppm -r 600 diagrams/bs-cpe.pdf | pnmtopng > diagrams/bs-cpe.png
 	pngtopnm diagrams/bs-cpe.png | pnmfile
+
+latex2html:
+	latex2html -split 0 cs-ug-hbk.tex
