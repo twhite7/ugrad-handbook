@@ -1,15 +1,24 @@
+.PHONY: html
+
 tex:
 	pdflatex ba-integration-electives.tex
 	pdflatex cs-ug-hbk.tex
 	pdflatex cs-ug-hbk.tex
 
+# requires tex4ht package
 html:
 	/bin/rm -rf html
 	mkdir html
-	latex2html -split 4 -long_titles 4 -rootdir html -no_navigation cs-ug-hbk-11-12.tex
+	htlatex cs-ug-hbk.tex "" "" -dhtml/
+	/bin/rm -f cs-ug-hbk*.html
+	/bin/rm -f cs-ug-hbk.4ct cs-ug-hbk.4tc cs-ug-hbk.css cs-ug-hbk.dvi \
+		cs-ug-hbk.idv cs-ug-hbk.lg cs-ug-hbk.tmp cs-ug-hbk.xref
+
 
 clean:
-	/bin/rm *.aux *.log *.out *.toc *~
+	-/bin/rm *.aux *.log *.out *.toc *~
+	-/bin/rm -f cs-ug-hbk.4ct cs-ug-hbk.4tc cs-ug-hbk.css cs-ug-hbk.dvi \
+		cs-ug-hbk.idv cs-ug-hbk.lg cs-ug-hbk.tmp cs-ug-hbk.xref
 
 booklet:
 	./make-booklet cs-ug-hbk.pdf
@@ -23,4 +32,6 @@ flowcharts:	/dev/null
 	pngtopnm diagrams/bs-cpe.png | pnmfile
 
 latex2html:
-	latex2html -split 0 cs-ug-hbk.tex
+	/bin/rm -rf cs-ug-hbk
+	mkdir cs-ug-hbk
+	latex2html -split 3 -long_titles 4 -rootdir html -no_navigation cs-ug-hbk.tex
