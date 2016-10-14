@@ -15,7 +15,6 @@ html:
 	/bin/rm -f cs-ug-hbk.4ct cs-ug-hbk.4tc cs-ug-hbk.css cs-ug-hbk.dvi \
 		cs-ug-hbk.idv cs-ug-hbk.lg cs-ug-hbk.tmp cs-ug-hbk.xref
 
-
 clean:
 	-/bin/rm *.aux *.log *.out *.toc *~
 	-/bin/rm -f cs-ug-hbk.4ct cs-ug-hbk.4tc cs-ug-hbk.css cs-ug-hbk.dvi \
