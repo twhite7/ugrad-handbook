@@ -1,5 +1,7 @@
 \noindent Online: \url{http://www.cs.virginia.edu/acad/}
 
+\iffalse
+
 \mysection{Major Focal Paths}
 
 A focal path is a selection of courses that a student can take to
@@ -57,7 +59,7 @@ Security \& Privacy.
   courses, CS 4501)
 \item STS 2xxx/3xxx elective (1): N/A
 \item Notes: BA students need to take CS 3102 which is critical for a
-  theory focal path, but is not (at this time) a required course for
+f  theory focal path, but is not (at this time) a required course for
   the BA
 \end{itemlist}
 
@@ -137,6 +139,8 @@ Security \& Privacy.
   understanding of this area.
 \end{itemlist}
 
+\fi
+
 \mysection{HSS Electives}
 \label{hsselectives}
 
@@ -151,7 +155,9 @@ The following course mnemonics are generally acceptable for HSS
 elective credit. A student may normally take any course under any one
 of these mnemonics, with the exception of those listed below.
 
-\begin{multicols}{4}
+\setlength\columnsep{5pt}
+\begin{multicols}{5}
+\small
 \begin{itemlist}
 \item AAS
 \item AMEL
@@ -260,6 +266,7 @@ of these mnemonics, with the exception of those listed below.
 \item YIDD
 \end{itemlist}
 \end{multicols}
+\setlength\columnsep{10pt} % back to the default
 
 Note that only ETP 2020, 2030, 3870, 4800 can count, as well as EDLF
 5000 (but not EDLF 5001).
@@ -381,7 +388,7 @@ course (see your advisor for details about a 'technical course')
 instead. See the next question and answer for information about the CS
 1110 placement exam.
 
-\subsection{Can I place out of CS 1110? What about CS 2110 ?}
+\subsection{Can I place out of CS 1110? What about CS 2110?}
 \label{101placement}
 
 There is a placement exam for CS 1110, which covers all the topics
@@ -512,6 +519,7 @@ entered with the appropriate approval.  Your academic advisor can
 request approval from the appropriate degree committee, and have such
 an exception entered by contacting the SEAS undergraduate office.
 
+\iffalse 
 \subsection{Why are ECE 4435 and ECE 4440 not showing up in my list of
   fulfilled CS electives?}
 \label{sec:sisece4435issue}
@@ -528,6 +536,8 @@ exception will need to be entered.
 office.  Note that this course can only count as one elective each,
 even though it is a 4.5 credit course (meaning that only 3 credits
 counts toward the CS elective requirement).
+
+\fi
 
 \subsection{Why do the SIS requirements for the BS CS major list 6 HSS
   electives, and not 5?}
@@ -625,23 +635,59 @@ the spring, but it is in the fall.  We don't understand why, either.
 But you can take ECE 2330 to fulfill this requirement, as it's all the
 same course.
 
+\subsection{How do I conquer the world?}
+
+You are on your own on that one.  But getting a computing degree from
+UVa is a good start!
+
 
 \ifthenelse{\boolean{lettersize}}{}{\clearpage}
 
 \mysection{Course Descriptions}
 \label{sec:coursedesc}
 
-These course listings in this section are from the undergraduate
-record\myurl{http://records.ureg.virginia.edu/content.php?catoid=11\&navoid=189}.
-Table~\ref{table:course-offering-history}
-(page~\pageref{table:course-offering-history}) gives this history of
-which courses were taught when for the last few years.  The department
-generally cannot guarantee that electives can be taught at least once
-a year, as when an elective is offered is dependent on the available
-faculty.  However, many electives are still offered regularly.
-Lower-level causes are typically taught every semester.
+%Table~\ref{table:course-offering-history}
+%(page~\pageref{table:course-offering-history}) gives this history of
+%which courses were taught when for the last few years.
 
 \subsection{Course Offering History}
+
+A history of the course offerings by the department can be found
+online\myurl{http://rabi.phys.virginia.edu/mySIS/CS2/page.php?Type=Group&Group=CompSci}.
+These course listings in this section are from the undergraduate
+record\myurl{http://records.ureg.virginia.edu/content.php?catoid=11\&navoid=189}.
+
+Most of the lower-level courses (1000-level and 2000-level) are
+offered every semester.  The exception is CS 2190, the 1 credit
+Computer Science Seminar, which is only offered in the spring.  Note
+that CS 1120 is no longer regularly offered by the department.
+
+Required courses in the 3000-level and 4000-level are typically
+offered every semester.  These include: CS 3102 (Theory of
+Computation), CS 3240 (Advanced Software Development Techniques), CS
+3330 (Computer Architecture), CS 4102 (Algorithms), and CS 4414
+(Operating Systems).
+
+The department tries to offer each elective at least once a year.
+Note that the department cannot guarantee this, as when an elective is
+offered is dependent on the available faculty.  Popular electives tend
+to be offered every semester.  Examples of the popular elecives
+include: CS 4630 (Defense Against the Dark Arts), CS 4720 (Web and
+Mobile Systems), and CS 4750 (Database Systems).
+
+Special topics courses (CS 1501, 2501, 3501, and 4501) are offered on
+varying schedules.  Because CS 4501 is tyipcally used for new
+electives, there are often multiple offerings each semester, each one
+on a different topic.  Independent project courses are available every
+semester, but they are only available by instructor permission.  These
+independent courses include: CS 4980 (Capstone Research), CS 4993
+(Independent Study), and CS 4998 (Distinguished BA Majors Research).
+
+There are a few courses that are no longer regularly offered by the
+department.  These include: CS 4434 (Dependable Computing Systems) and
+CS 4458 (Internet Engineering).
+
+\iffalse
 
 \ifthenelse{\boolean{lettersize}}{The table below shows which courses
   were offered in recent semesters.}{ See
@@ -707,6 +753,8 @@ CS 4971 &    &    &    &    &    &    &    &    &    & \X &    & \X &    \\
 \caption{Computer Science Course Offering History.  Note that many courses were offered via their ECE cross-listed course or via a 4501 course.}
 \end{center}
 \end{table}
+
+\fi
 
 \subsection{1000 Level CS Courses}
 
@@ -1236,6 +1284,16 @@ The current set of requirements, which this document reflects, became
 effective in the spring of 2013 (and before then-first year SEAS
 majors declared the BS CS and CpE majors).
 
+\subsection{Prior requirements revisions}
+
+There are no known currently enrolled students who are eligible to graduate
+using any set of requirements prior to those listed above, and thus
+prior sets of revisions are not included in this handbook.  Earlier
+editions of this handbook, available from the department, describe
+the prior sets of requirements.
+
+\iffalse
+
 \subsection{Requirements revision from spring 2013}
 
 The inclusion BS CS capstone requirement added 3 additional credits
@@ -1269,41 +1327,52 @@ reference.  Anybody interested in the original 3-digit course numbers
 can find the mapping
 online\myurl{http://www.virginia.edu/registrar/atoz.html\#CS}.
 
-\subsection{Prior requirements revisions}
+\subsection{Requirements revision from spring 2010}
 
-There are no known currently enrolled students who are eligible to graduate
-using any set of requirements prior to those listed above, and thus
-prior sets of revisions are not included in this handbook.  Earlier
-editions of this handbook, available from the department, describe
-the prior sets of requirements.
+In January of 2010, the elective structure was changed. Previously,
+majors were required to take 3 HSS electives, 3 general education
+electives, 3 technical electives, and 1 unrestricted elective. With
+the change, these 10 elective courses are now split into 5 HSS
+electives and 5 unrestricted electives. Students wishing to graduate
+using the old rules (if you were a declared major prior to 2010)
+should see the previous editions of this handbook for the description
+of what constitutes general education electives and technical
+electives. However, the new requirements are more general, and we
+expect most students to graduate using these updated requirements. The
+old versions of this handbook are available from the department.
 
-%\subsection{Requirements revision from spring 2010}
+\subsection{Requirements revision from fall 2009}
 
-%In January of 2010, the elective structure was changed. Previously,
-%majors were required to take 3 HSS electives, 3 general education
-%electives, 3 technical electives, and 1 unrestricted elective. With
-%the change, these 10 elective courses are now split into 5 HSS
-%electives and 5 unrestricted electives. Students wishing to graduate
-%using the old rules (if you were a declared major prior to 2010)
-%should see the previous editions of this handbook for the description
-%of what constitutes general education electives and technical
-%electives. However, the new requirements are more general, and we
-%expect most students to graduate using these updated requirements. The
-%old versions of this handbook are available from the department.
+In addition to the course numbering change, the change in the
+requirements was that the computer architecture elective was replaced
+with an additional CS elective, to bring the total number of required
+CS electives to 5. The previous computer architecture requirement had
+the students take one class from a set of 3: CS 4444
+(Introduction to Parallel Computing), CS 4330 (Advanced Computer
+Architecture) or ECE 4435 (Computer Architecture and
+Design). Since all of those three courses count as CS electives,
+students who have already fulfilled this old requirement will still
+fulfill the CS elective that replaced it.
 
-%\subsection{Requirements revision from fall 2009}
+Focal paths were also added to the undergraduate handbook, although
+they do not change the major requirements.
 
-%In addition to the course numbering change, the change in the
-%requirements was that the computer architecture elective was replaced
-%with an additional CS elective, to bring the total number of required
-%CS electives to 5. The previous computer architecture requirement had
-%the students take one class from a set of 3: CS 4444
-%(Introduction to Parallel Computing), CS 4330 (Advanced Computer
-%Architecture) or ECE 4435 (Computer Architecture and
-%Design). Since all of those three courses count as CS electives,
-%students who have already fulfilled this old requirement will still
-%fulfill the CS elective that replaced it.
-%
-%Focal paths were also added to the undergraduate handbook, although
-%they do not change the major requirements.
+\fi
 
+\clearpage
+\vspace*{3in}
+\begin{center}
+This page intentionally left blank.
+\end{center}
+
+\clearpage
+\vspace*{3in}
+\begin{center}
+This page intentionally left blank.
+\end{center}
+
+\clearpage
+\vspace*{3in}
+\begin{center}
+This page intentionally left blank.
+\end{center}
