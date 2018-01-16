@@ -5,6 +5,9 @@ tex:
 	pdflatex cs-ug-hbk.tex
 	pdflatex cs-ug-hbk.tex
 
+index:
+	pandoc -V "pagetitle:handbook.cs.virginia.edu" -f markdown -c markdown.css -t html -o index.html index.md
+
 # requires tex4ht package
 html:
 	/bin/rm -rf html
