@@ -68,6 +68,7 @@
 \newcommand{\mysection}[1]{\section{#1}\renewcommand{\rightmark}{#1}}
 
 \newcommand{\myurl}[1]{\footnote{\scriptsize\url{#1}}}
+\newcommand{\myurlFormatted}[1]{\footnote{\scriptsize{#1}}}
 
 % The next two adapted from
 % http://anthony.liekens.net/index.php/LaTeX/MultipleFootnoteReferences
@@ -76,6 +77,8 @@
 
 \raggedbottom
 \setlength{\footskip}{0pt}
+
+\input{urls}
 
 \begin{document}
 \pagestyle{empty}
@@ -132,15 +135,15 @@ the errata or addendum applies.
 \newline
 
 The BS CS web site is at
-\url{http://www.cs.virginia.edu/acad/bscs/}
+\bscsURL
 \newline
 
 The BA CS web site is at
-\url{http://www.cs.virginia.edu/acad/ba/}
+\bacsURL
 \newline
 
 The BS CpE web site is at
-\url{http://www.cpe.virginia.edu/ugrads/}
+\bscpeURL
 \newline
 
 This handbook was written by, and is currently maintained by,
