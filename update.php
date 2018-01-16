@@ -52,7 +52,7 @@ foreach ( $commands2 as $c ) {
 
 echo "<h2>Building the main handbook.cs.virginia.edu page...</h2>";
 foreach ( $commands3 as $c ) {
-	$cmd = "cd $command2dir; export PATH=$path; $c";
+	$cmd = "cd $command3dir; export PATH=$path; $c";
 	echo "<p>Command: $cmd</p><pre>";
 	echo `$cmd`;
 	echo "</pre><hr>\n";
