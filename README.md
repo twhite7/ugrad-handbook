@@ -11,4 +11,6 @@ To create the PDF of the handbook:
 
 - Ensure that the following programs are installed: make pdflatex pdftoppm pnmtopng pngtopnm, as well as a few other LaTeX extras (fonts and packages)
     - On Ubuntu 18.04, that's the following packages: `netpbm git make poppler-utils texlive-latex-base texlive-fonts-recommended texlive-latex-extra`
+- Run `make flowcharts`
+    - Note that this will modify the PNG images -- unless an actual modification has been made to the flowcharts, these changes should *not* be committed to the repo
 - Run `make` twice
