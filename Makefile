@@ -33,6 +33,8 @@ flowcharts:	/dev/null
 	pngtopnm diagrams/ba-cs.png | pnmfile
 	pdftoppm -r 600 diagrams/bs-cpe.pdf | pnmtopng > diagrams/bs-cpe.png
 	pngtopnm diagrams/bs-cpe.png | pnmfile
+	pdftoppm -r 600 diagrams/venn-diagram.pdf | pnmtopng > diagrams/venn-diagram.png
+	pngtopnm diagrams/venn-diagram.png | pnmfile
 
 latex2html:
 	/bin/rm -rf cs-ug-hbk
